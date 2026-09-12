@@ -6629,6 +6629,786 @@
       "state": "machine_translated",
       "source_hash": "aa52b88a569d9b8e7403cb85f0dd2c03e895624af7c6ee5c3c5c9fc1bcdb99d1",
       "note": "fork-specific seed; review welcome"
+    },
+    "ui.auto.28f73a0090c9": {
+      "text": "  （保持：本帧缺失）",
+      "state": "machine_translated",
+      "source_hash": "fcf0b2343ae35364cfdf001495dc80e780c5928766891fb7c4d3c014869f71a4",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.3bddd02dc550": {
+      "text": "（Vulkan 原生）",
+      "state": "machine_translated",
+      "source_hash": "4bcc3852abc2d11755fcaaa3e6feb2529399e9c5a70236f9129a4490f5428e73",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.fd0816e5b5c5": {
+      "text": "%.2f ms",
+      "state": "machine_translated",
+      "source_hash": "9a6f47397546f5b6ed84296ad0fec41551b726c2435805b3ce23e665b8415059",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.19700482e2de": {
+      "text": "%3.0f%%  %.5f",
+      "state": "machine_translated",
+      "source_hash": "e22915aa221ef233b4a59ab4afdad141e3c7a209d6e51d267ce60191f9ba3108",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.c2c509c054e7": {
+      "text": "%u 个候选项；在明暗区域之间移动以测试它们。",
+      "state": "machine_translated",
+      "source_hash": "b33124f770fea7f456d4dae1f8a288978755015cc90f41ecd6370b462e54ad32",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.b80f9dd2b6f7": {
+      "text": "%zu. %s —— 尚未读取",
+      "state": "machine_translated",
+      "source_hash": "d6f808ff8842e16b42c3386dbbc21b7646ce0cf4b4dc8230d2b4eeb6c6802af0",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.51434bf92639": {
+      "text": "%zu. %s = %.5f（已观测 %.5f..%.5f）%s",
+      "state": "machine_translated",
+      "source_hash": "ae643386d3ad286108cfdbcffee7971f93b889895cb2fd5377b144f03edb22a9",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.31c4a6700438": {
+      "text": "1（2X）",
+      "state": "machine_translated",
+      "source_hash": "566e2ed0e13cbd61218b57978aa0e1ba54ebafa80458c3c5092c209830a0a0fa",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.a2bceb825b59": {
+      "text": "2（3X）",
+      "state": "machine_translated",
+      "source_hash": "9581f1737e2e9145596319d552d54f252ddebc484c69754df55c116c0d797e20",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.16008d2ca38c": {
+      "text": "3（4X）",
+      "state": "machine_translated",
+      "source_hash": "957bcc56d0497cc6dd6fa88a52384b4e849a9c8bad4d7a674f9d22992be99393",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.5e01cd612b06": {
+      "text": "只会增加的数值可能是计数器。",
+      "state": "machine_translated",
+      "source_hash": "e0c8c975488376a7394fbf80063f80fad5c70d1750277f4c7f12b4906d58ab3a",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.c782cc10ef67": {
+      "text": "对外报告的最大值（1=2X，2=3X，3=4X）。实际数量由游戏决定。\n0 = 默认能力上限（最高允许 4X）。\n保存设置并重启后生效。",
+      "state": "machine_translated",
+      "source_hash": "af30860853e9e60cecfc2c6ace0a83782dd529c9871ded151fa8600dae857f1f",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.67e797f1ba81": {
+      "text": "允许近似的帧生成相机引导（实验性）",
+      "state": "machine_translated",
+      "source_hash": "d63a141fed9fbaf6b2d8885a94964991929231d7723800cc29773e0e9e871394",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.0cf6de12e804": {
+      "text": "允许肤色 / 颜色变化",
+      "state": "machine_translated",
+      "source_hash": "112b141227a08114e5c0dfb4c25754e9b939e74ce8d1f4b760c2d5b83f7e3fe9",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.5812e0d26182": {
+      "text": "在此锚定",
+      "state": "machine_translated",
+      "source_hash": "14c0eead4af249329d83114ea60d5e8bccfad2c81fca418932e6627f85415a58",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.89ddbc4a943a": {
+      "text": "自动：选择最合适的格式（Linux/Proton、RTX 3080 Ti 或 Turing 使用 PTX）。\nPTX：驱动 JIT 编译路径，推荐用于 Linux/Proton、RTX 3080 Ti 和 RTX 20 系列。\nCubin：预编译二进制，在 Windows 上要求物理 SM 完全匹配。\n保存设置并重启后生效。",
+      "state": "machine_translated",
+      "source_hash": "1ef509283f97010c853f6330a8b0cf0388aca5a2cafa48929ecd0a54ac42aaec",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.3eb63ce5b807": {
+      "text": "由于 Ampere（SM86）MFG 解锁器已启用，此项自动锁定为开启。\n若要关闭外部帧生成，请先关闭下方的 Ampere SM86 MFG。",
+      "state": "machine_translated",
+      "source_hash": "88154be30601b319178e2414c0c29b4fdf8c2152e997e700ab6da671a8523ab4",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.2d8c50f693cc": {
+      "text": "内置 RTX 40 MFG 解锁（实验性；需重启）",
+      "state": "machine_translated",
+      "source_hash": "3c023a8ad0fc461295a62d1ee2a9c8d1eaaf80814b45b53a3010c15f9a0444e4",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.ed5ff914ebdf": {
+      "text": "能力默认值（3X）",
+      "state": "machine_translated",
+      "source_hash": "66b2730361f80167eb2b4be2be31a5ec87133ac4741410124e9a1829662b4253",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.5073c1e2abd7": {
+      "text": "将 Pre-SR 调整延续到 RR（实验性）",
+      "state": "machine_translated",
+      "source_hash": "ededd737d0a4e2aa0d977a3f648f029e3af78110c7d92c8b7cc817c9aa33fe88",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.4d0b6747ca08": {
+      "text": "颜色强度",
+      "state": "machine_translated",
+      "source_hash": "d9bf921b2ee52ff5ed71ced2f9c894ffe315395686a179f8bdaade73f73dfc3e",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.8d105cf44d39": {
+      "text": "对比",
+      "state": "machine_translated",
+      "source_hash": "e888155d8c7d2e3c3f9eb1bf57e8d81ba1a3c182b5e94b01e09de2cb2cca81f9",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.66cdaa0c02e6": {
+      "text": "Cubin",
+      "state": "machine_translated",
+      "source_hash": "d85e4ecd8058a52f8c3eb73a88cb8b27b2e67a198b45798bdd98d2ef3a120ce8",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.63858078d09a": {
+      "text": "调试视图",
+      "state": "machine_translated",
+      "source_hash": "e155055adb362af48dc9b69236c93f62a81f5774dc59b65f6304b6f7ac873058",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.fc3dd731f343": {
+      "text": "默认：继承 Pass 1；局部色调 = 0。",
+      "state": "machine_translated",
+      "source_hash": "fcaf77c2381c0e47ce0314924f371794c9c317b1ff9ca2aa874d85213d20872d",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.91c91ce03f93": {
+      "text": "默认：继承 Pass 1；局部色调 = 0。重置会恢复这些默认值。",
+      "state": "machine_translated",
+      "source_hash": "d655cfe818a72c5a84f21308472ca1a8210bbf8685098ff636c4d77213419839",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.4bd4b169bb71": {
+      "text": "细节累积速率",
+      "state": "machine_translated",
+      "source_hash": "d009b93aeace50650579d4e567c126fbd4d635ea8360ac32f613155b50ac52c0",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.4a7cac450c24": {
+      "text": "细节强度",
+      "state": "machine_translated",
+      "source_hash": "5d1358b8500ff7f52c798c09ad77e3f488b1d1a2b52280bdea6360f0590eb2a3",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.77a5c7b022f9": {
+      "text": "若要使用 Vulkan 原生 NR，请关闭“在 SR 前生成、SR 后应用（DLSS）”。",
+      "state": "machine_translated",
+      "source_hash": "b5b620068650e8482ffa09c9f1f0bd1185da442e4cec84a36d3c630d97fd92a0",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.d6ab0754ccb4": {
+      "text": "由于外部帧生成已启用，此项已禁用。\n请先关闭外部帧生成，保存设置并重启。",
+      "state": "machine_translated",
+      "source_hash": "302fdcb83e379ed24dcbfb9300cca3e2a920e370e869dd563dc0bac246720f21",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.2e7f081880aa": {
+      "text": "由于 Ada（RTX 40）MFG 解锁已启用，此项已禁用。\n请先关闭 AdaMfgUnlock，保存设置并重启。",
+      "state": "machine_translated",
+      "source_hash": "e0e544a7ca289ac9cd6035945b5b0688ce1ea672f12b68dd63f32503351bd24e",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.3fd7057df352": {
+      "text": "由于 Ampere（RTX 30）SM86 MFG 解锁已启用，此项已禁用。\n请先关闭 AmpereMfgUnlock，保存设置并重启。",
+      "state": "machine_translated",
+      "source_hash": "ffd3221635512645835bc86814d07c153f3b320d9342a6010c2f3776fd2efc11",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.a508e7cc481c": {
+      "text": "DLL：%s | 路由器：%s | INI：%s | 已加载：%s",
+      "state": "machine_translated",
+      "source_hash": "fb6647b125eddbd06acac1e454d0dcdc78f953f3f11ecf82149834d5439760b9",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.ee35ad05cf80": {
+      "text": "DLSSG %s：能力 %s，验证 %s，已重定向内核组 %u",
+      "state": "machine_translated",
+      "source_hash": "42c9c01d6a234d0e48a045b753c8c14b6792873544fc92095f93790ed6b1c2fd",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.b9112cf8e1b3": {
+      "text": "DlssNrExposureScan",
+      "state": "machine_translated",
+      "source_hash": "5c75f1b87c1b14d6960e3321fed085189c6948cfe85bd9c500d3525b443b4303",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.7bd67fef9d30": {
+      "text": "降采样器（NR）",
+      "state": "machine_translated",
+      "source_hash": "a6b77a140a21fb288af9dbc1b1e6d4585b0f2976830018a0fbea1aa7df4549a7",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.43cd6182e96b": {
+      "text": "效果强度",
+      "state": "machine_translated",
+      "source_hash": "f3c8db8cb41fd238514897a9651ad31e5c17b847a33319645a77ed817ca2d289",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.105fd003b2bb": {
+      "text": "启用 SM86/SM75 MFG（实验性；需重启）##ampere",
+      "state": "machine_translated",
+      "source_hash": "e3d43c8ba43e32891b1aa07de6ce8a30697c82fec585577ccb73856b6bdf9375",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.17525ce70bb2": {
+      "text": "放大倍率",
+      "state": "machine_translated",
+      "source_hash": "4434bb35d2b7471d1c485e004c048dc1931aea68d3ad4e4af1804bf9171d0c68",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.837b2a97c56f": {
+      "text": "错误：%s",
+      "state": "machine_translated",
+      "source_hash": "a6aee4e1f82b59bc0c02498b5368ef98dcd3239e18eb1588013123f8c1471738",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.8027553d4b7c": {
+      "text": "实验性模型提示；视觉效果尚未验证。请使用“风格”选择配置。",
+      "state": "machine_translated",
+      "source_hash": "ae1aceffe79a25073c7c1b0b0b76b5f2b5cc05fa253435f6c92230ef0105f35d",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.0a23a9d949ea": {
+      "text": "已找到曝光候选项。调整“纸白”，然后选择“在此锚定”。",
+      "state": "machine_translated",
+      "source_hash": "8ff9e6bae6ca16ee9f79432d7503b99c919d0ad73812975ce4b62ad13e6cb0b0",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.3d8cb2175dca": {
+      "text": "外部帧生成已启用。请在游戏或解锁器中设置倍数，而不是在 OptiScaler 中设置。",
+      "state": "machine_translated",
+      "source_hash": "a8b03e27bc431d9aa77d34ce94640b2da63a127f6cba86bd079152c5c452308a",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.8bbb19e5e8f7": {
+      "text": "外部帧生成 / MFG 解锁器",
+      "state": "machine_translated",
+      "source_hash": "e3e832c8890dacef1030cf922ace49ff7869723bc921a711168d5707f89fe804",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.1ceef8c0bcd0": {
+      "text": "目前无变化",
+      "state": "machine_translated",
+      "source_hash": "8db65c2d156a4c1fc105b66ec226900f6f5f58f0180229cf3a8cc9e1a5f000b2",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.2739bb260ce4": {
+      "text": "已找到",
+      "state": "machine_translated",
+      "source_hash": "bcc649cfdb8cc557053da67df7e7fcb740dcf7f721cebe1f2082597ad0d5e7d8",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.84d8fc9e2d7e": {
+      "text": "游戏曝光 %.4f  →  白点 %.2f%s",
+      "state": "machine_translated",
+      "source_hash": "c400c42a785f8ea702e6ef762147ff655fce1a46db5ad93bc249d7e1f479743c",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.7d977bff8468": {
+      "text": "可读取游戏曝光。",
+      "state": "machine_translated",
+      "source_hash": "101e330a2f9e3a6869e2f28450982590cfbf4251c3f8675e891db0a667f8c678",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.9fffe2f120e0": {
+      "text": "使用 RR 时无法“先生成 / 后应用”。“在超分辨率前应用”用于控制 NR 的位置。",
+      "state": "machine_translated",
+      "source_hash": "c0ea457417c154e9c542d387bf2158a68dba40da1016aa6436ccd1f247ab5027",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.c67247fa9854": {
+      "text": "SR 前生成，SR 后应用（DLSS）",
+      "state": "machine_translated",
+      "source_hash": "f0dd665b02af8860f58343dfbd84002c8625564950e37611f0536342f632f5f1",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.f4eeeee9aa6b": {
+      "text": "硬件双线性（近似采样）##sm86",
+      "state": "machine_translated",
+      "source_hash": "731be16b16dbe50c41d2945bbba2c742528826ff43fb968892b1e8ef6f349c04",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.c62be04d9261": {
+      "text": "HDR 输入设置。调整提供给 NR 的亮度范围。",
+      "state": "machine_translated",
+      "source_hash": "c99188400e69e8a70f3c91eaf8600a14ec13347a7bf2797866dc26f5ec4dd463",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.73626cd61037": {
+      "text": "HDR 映射（实验性）",
+      "state": "machine_translated",
+      "source_hash": "54960aaad9043030afed32198739c75f2abcb8c4bd044a1eee991c435f755a5e",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.c70fb868c7b1": {
+      "text": "高光保护",
+      "state": "machine_translated",
+      "source_hash": "1ed0a7bc53a1b026738974b61f7da0d11a51f86a7839039b280dd9485399fe9a",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.dbc16b0ecdc2": {
+      "text": "冻结画面",
+      "state": "machine_translated",
+      "source_hash": "21076652231b08e40f664e2cde6d4fc6c5b6aa1d38430313597cc3622faa5259",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.d571a44edf5b": {
+      "text": "包含与其他 GPU 工作共享的时间。",
+      "state": "machine_translated",
+      "source_hash": "4ca5ed5d2add8df027f296b334b2433bfc64037da4fc42e2e36e24cce08b1dda",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.a6060480611f": {
+      "text": "反转曝光跟踪",
+      "state": "machine_translated",
+      "source_hash": "fe2ff29cfc9fb312fc8a2f9ba7995ab52ba83191037751dc02c22a64c2bb0c99",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.76cf9bde110e": {
+      "text": "内核镜像##sm86",
+      "state": "machine_translated",
+      "source_hash": "90f378ecbd57f6f75424c1307e2ed261e658517fa850dd27492514429d2381c9",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.f6a3ad4a5b9b": {
+      "text": "标签大小",
+      "state": "machine_translated",
+      "source_hash": "4afd9a94e7ac2c3fbb22548a376ccc8b4161b5499fc7ee8e0638b9704d94e4d7",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.14345f86a7f4": {
+      "text": "显示两侧标签",
+      "state": "machine_translated",
+      "source_hash": "0951ff1b188d41f66cc835ad3e148319f4c8b3f31e007732f575273d734f7912",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.387adb510cda": {
+      "text": "将 Streamline、Reflex 和帧生成控制交给游戏/外部 Mod。\nNR 和 NGX 超分仍可使用。保存设置并重启。\n不会安装解锁器，也不会在不支持帧生成的游戏中强行启用。",
+      "state": "machine_translated",
+      "source_hash": "d8bcf0bdd02fa6d2417a7d128fb84417e9915aff638cae109efc056791a6a354",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.0cfd2f6170e0": {
+      "text": "提高模型 Pass 上限（最高 30；开销很大）",
+      "state": "machine_translated",
+      "source_hash": "c52254e99bdbd1ba5c064f9cfad3d3f55ae9431356be2fd68f0fe2fc074e9266",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.d010685fc836": {
+      "text": "已匹配",
+      "state": "machine_translated",
+      "source_hash": "eadc688cd557ee351fa9b718e87a6e8dfb9c9fce69e9944c71c0f58f8b972632",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.950df307f0c6": {
+      "text": "最大生成帧数##sm86",
+      "state": "machine_translated",
+      "source_hash": "9542d7ce2cfa35528ed72b12b4d8a08397488e8669c530f4c727d40611377187",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.5a013c495082": {
+      "text": "缺失",
+      "state": "machine_translated",
+      "source_hash": "ffa63583dfa6706b87d284b86b0d693a161e4840aad2c5cf6b5d27c3b9621f7d",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.5832c01623d1": {
+      "text": "模型分辨率",
+      "state": "machine_translated",
+      "source_hash": "04f177dbc56b515a7492013ddafc326500b10a09ee50c891342c11481063d3b9",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.059d4765fd9c": {
+      "text": "在明暗区域之间移动，以检查曝光跟踪。",
+      "state": "machine_translated",
+      "source_hash": "4e6c08c8e07dd4cae91377582fb4c10ef1535b1d2d1c0615c9dc11a1e85425d6",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.0790bd260240": {
+      "text": "有变化",
+      "state": "machine_translated",
+      "source_hash": "1fa1f999236c6957f7e21dd84eb10964487197771d87b46160f6ed15cba74550",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.a0884e409716": {
+      "text": "神经渲染（耗时）",
+      "state": "machine_translated",
+      "source_hash": "c28afa02409befb01f90ef1b9e345acfc17042dff1057db8a0e497c3fd4bfe57",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.fd1286353570": {
+      "text": "否",
+      "state": "machine_translated",
+      "source_hash": "9390298f3fb0c5b160498935d79cb139aef28e1c47358b4bbba61862b9c26e59",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.acd5c021634d": {
+      "text": "未找到曝光候选项。",
+      "state": "machine_translated",
+      "source_hash": "08ac19115ad48c6678590f590d04c21b02f7a5cfd16225b7356ae34bbdc44ad8",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.9a0496fe329a": {
+      "text": "无法读取游戏曝光，使用手动纸白。",
+      "state": "machine_translated",
+      "source_hash": "de68f5d1a9c798740f8b279962825e24081d55175f53f24147d2114a533213d1",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.66c394a9042d": {
+      "text": "未匹配",
+      "state": "machine_translated",
+      "source_hash": "32dd83c99484d9a5241d33e9a36e3ea37448d366fb1c9a45b85e3a9e6e19163d",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.e5b3b7d84962": {
+      "text": "未修补",
+      "state": "machine_translated",
+      "source_hash": "e6fc520002a7e1b82190944109cd95838380801db5ce24a27a63c8cf0713d5d9",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.2b63cb06a897": {
+      "text": "未写入",
+      "state": "machine_translated",
+      "source_hash": "8976ff4d2dc21cec02bc1bef50ad22c4f11d6fbdee678a043ce8278e53f8c002",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.963cebb0f517": {
+      "text": "每隔一帧运行 NR（NVIDIA 帧生成，实验性）",
+      "state": "machine_translated",
+      "source_hash": "c8a6b06b80cec313389a2fd881fbc837bc7831cdf8b5642bd17fac72b7b8fa18",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.cb6a1fda9777": {
+      "text": "在 D3D11 下，NR 需要 D3D12 桥接。请选择标有 w/Dx12 的超分器并重启。",
+      "state": "machine_translated",
+      "source_hash": "092307e8bde42c6fe50d8f994d26e79f07da5a30f678a10ab73823512bdb1a75",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.96ba36de6819": {
+      "text": "NR 已关闭。",
+      "state": "machine_translated",
+      "source_hash": "f872faba55b266435b1e2bc698c6670c9f172a77c751c623586db23d1412959f",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.b610ec5d8404": {
+      "text": "NR 比例：%.2fx。分辨率越高，GPU 开销越大。",
+      "state": "machine_translated",
+      "source_hash": "080d44b6adbf0fc50367530f3370e1eb28fa61682ff85ccc98ba9cb0890abe55",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.e3de5ab0ca4c": {
+      "text": "关闭",
+      "state": "machine_translated",
+      "source_hash": "ca7981b46ecf2c1787b6d76d81d9fd7fa0ca95842e2fcc2a452869891a9334d1",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.8b1e6cce1caa": {
+      "text": "本次会话已关闭：%s。",
+      "state": "machine_translated",
+      "source_hash": "83020a0e8272927de301f3beb66b4508434648e38f2d2fe691f3c0c809bbdc5f",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.a080910d0755": {
+      "text": "可选的 y4my4my4m Ada 解锁。保存设置并重启以启用或移除。\n覆盖倍率需要受支持的 DLSSG 运行库和 Streamline 2.7.1+。\n不要与其他 MFG 解锁器同时使用。不会为本身不支持帧生成的游戏添加帧生成。\n此处尚未在 RTX 40 硬件上验证；RTX 20/30/50 保持不变。",
+      "state": "machine_translated",
+      "source_hash": "7cf4a919a97b9a2cf9f66ddba1e7b6a6c05bc7831ec2a8d44daea0dbf59a6c1f",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.a7b853038cf3": {
+      "text": "纸白",
+      "state": "machine_translated",
+      "source_hash": "f9c74fbec990a8a0d925842c68e4d083a996bbe03c3a55b252fc8ccbc39e2eae",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.9a48da92c946": {
+      "text": "Pass 1 预设提示",
+      "state": "machine_translated",
+      "source_hash": "4cdcbda2578e6fa1e6c49699bfd21bd8f931d3fe6988bab8d6545e20902931fb",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.dc1925a6d8a8": {
+      "text": "Pass 设置适用于 DX12 和 Vulkan 原生路径中的 SR 与 RR。驱动代理后端仅支持一个 Pass。",
+      "state": "machine_translated",
+      "source_hash": "48d505380f64d79d6155d272ef206fe3cf4ec53f1b962ccfc16ef403db189e25",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.0723392d9c11": {
+      "text": "Pass {}",
+      "state": "machine_translated",
+      "source_hash": "b0a69932a62edd14ef305d0d267bed1e3b8774954e60eb5e25a107035075276f",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.997677244942": {
+      "text": "Pre-SR 变化：%s",
+      "state": "machine_translated",
+      "source_hash": "0a5b52abd35e05a0af735638abbb5465aac91e20f5865b9c41cb04fb73089fbc",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.e7852702b35a": {
+      "text": "预览基于颜色的遮罩",
+      "state": "machine_translated",
+      "source_hash": "1a440284236f628df0c2a45914693efea3f0d5bb29a5f134ee38c1d1c5aa9838",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.8b313c08bd90": {
+      "text": "PTX",
+      "state": "machine_translated",
+      "source_hash": "2c496d39ae56f5b4ac948123783e806af0d2c15c75792cb2ff81a487ee715390",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.3b982a1a9650": {
+      "text": "正在读取曝光……",
+      "state": "machine_translated",
+      "source_hash": "564b7ece1dc9b434bbf637c6d8d343d136dee2826417327fd91f53d7987424e9",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.e5e1e6d9a2b6": {
+      "text": "重置##colour",
+      "state": "machine_translated",
+      "source_hash": "2f3e927326ff2dd5e6f76f2d3e2f92d3ae2b7114708bf576dad0abb00c2ad3e0",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.ceaeec296e21": {
+      "text": "重置##detail",
+      "state": "machine_translated",
+      "source_hash": "5b00bd7fbc0f4b896fdc9a9c837d94e5f2022e624ff30adaea9a1dfd88987206",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.f9155caf8386": {
+      "text": "重置##guard",
+      "state": "machine_translated",
+      "source_hash": "ff48c37b8b07768e47ab04ae0ab85a314f12c75390f40ccd12e56b246d4366d6",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.0c076870cbdc": {
+      "text": "重置##mask",
+      "state": "machine_translated",
+      "source_hash": "9dcc5b92b6a5291c88ba92153baa7937c5d96bf940a59573d05ddede3164ab5f",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.d3eb585acf24": {
+      "text": "重置##scantrim",
+      "state": "machine_translated",
+      "source_hash": "893efe0343e72fdb29f4e0adaec54563bd7a44803994dac727b38fdf8329f759",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.826cee1e2d3e": {
+      "text": "重置##wptrim",
+      "state": "machine_translated",
+      "source_hash": "34cf853ef6434f2400155d43b9df4e09487b5551fe7540746e22af43f5c7930e",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.e1a67ea9b9dd": {
+      "text": "残余 DLSS：%s",
+      "state": "machine_translated",
+      "source_hash": "12aba38cc0a9e73c42519685917f25586bed879cc18bef06dfc74635218197cf",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.06df1cb6b0e2": {
+      "text": "重启游戏以重新尝试 Vulkan 原生 NR。",
+      "state": "machine_translated",
+      "source_hash": "629ec7b2b606ed8a3f89d0975be0cc653f86db861a140c8e062109511016e059",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.9f5cd8a2e880": {
+      "text": "重试",
+      "state": "machine_translated",
+      "source_hash": "942087cc2d41e01304b7195558d093d10c72af8e838c7556d6a02d471ee71852",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.1342e415c825": {
+      "text": "RTX 20 / 30（SM75 / SM86）MFG 解锁",
+      "state": "machine_translated",
+      "source_hash": "698687745fab7931ebd99200ed59e16be81587971d49925360fb638a92955099",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.956d0a6e5867": {
+      "text": "正在 Vulkan 原生路径运行 - %llu 帧%s",
+      "state": "machine_translated",
+      "source_hash": "0fe1a53e1b078fd7e97fcfe02c5c98ae1bb560df521472af2f569048bc7add22",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.f8fa204e8491": {
+      "text": "运行中%s - 已耗时 %.2f ms%s",
+      "state": "machine_translated",
+      "source_hash": "9112d78f0a5a874d6149f67adff24133f10be8757207d0daaa3dd5c425212886",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.2905d824f6c8": {
+      "text": "运行中。%s",
+      "state": "machine_translated",
+      "source_hash": "e38b8b1c5630e3e411119a2fa6a469a5292767cb14cd5ef1605b726bc47541f9",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.a0f1490a20d0": {
+      "text": "s",
+      "state": "machine_translated",
+      "source_hash": "043a718774c572bd8a25adbeb1bfcd5c0256ae11cecf9f9c3f925d0e52beaf89",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.167f82793983": {
+      "text": "保存设置并重启，以更改帧生成控制权。",
+      "state": "machine_translated",
+      "source_hash": "6155261598f60e7f6aa1e0ee7477559cc18ec8bab0600cb28de472e034147d00",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.f0afd36e1841": {
+      "text": "扫描 %.5f  →  白点 %.2f（%u 个点%s）",
+      "state": "machine_translated",
+      "source_hash": "a65ded19dde5aab096b4e0fb4466d59ea9f1ed492b15f0ca43ba7f92c0699ebd",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.05c154e541a1": {
+      "text": "扫描得到的曝光不是当前选择的白点来源。",
+      "state": "machine_translated",
+      "source_hash": "9f34dbd81c55351f99d93b5e70ba8246a125fa59dc2f263c942cff0274106b80",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.621f50d1d812": {
+      "text": "sdli1995 Ampere/Turing 解锁。旁加载 dlssg_for_sm86 代理。\n会自动启用“外部帧生成”模式：由游戏自身菜单控制 MFG。\n支持 RTX 20（SM75）和 RTX 30（SM86）系列。保存设置并重启。\n不要与 Ada 解锁或其他外部 MFG 解锁器同时使用。",
+      "state": "machine_translated",
+      "source_hash": "118ff279f72322e27d69f25328d3bff613c2ef0f2b1412579e3be97a39d1289d",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.ee91c13c52cd": {
+      "text": "选择一行进行编辑；再次选择即可取消。> 表示当前活动点。",
+      "state": "machine_translated",
+      "source_hash": "71f5af35f17902d070f288bc47cca589ace0d5ec8743ed637eb681dccd6aafd1",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.b06cd57c4717": {
+      "text": "按颜色选择皮肤区域，并分别调整皮肤与环境的最终 NR 效果。选择可能不准确，请通过预览检查。",
+      "state": "machine_translated",
+      "source_hash": "819cd7453ed61f8c07f1d77e0e781e04df7e7b0cf1ba8dc66f6898dc7baa3df1",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.2dbd51db2e3a": {
+      "text": "分离皮肤 / 环境控制",
+      "state": "machine_translated",
+      "source_hash": "caa3f20beb50e2d05a5dd38591bd8103e3b21c2f17bc863579be4b88de98a643",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.c164dbc0f00d": {
+      "text": "请在“按键绑定”中设置 NR 开关快捷键。",
+      "state": "machine_translated",
+      "source_hash": "146bedc71eefe383449cdfe789f9373fab316bc93ee1eba4f6253acb504313d7",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.744b450a80d7": {
+      "text": "松开滑块时应用设置。",
+      "state": "machine_translated",
+      "source_hash": "d953d63046070753e86c84aea17f356070d28b65fd3e137c4ed07b24812c095a",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.01bef3e13fa7": {
+      "text": "显示曝光计",
+      "state": "machine_translated",
+      "source_hash": "b26096656499c95047707850c099cd0583853f0fdcbcab60b61ceea1d51e06c6",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.80279ba438a7": {
+      "text": "皮肤与环境（最终调整）",
+      "state": "machine_translated",
+      "source_hash": "a03197d66ea83de7eee3b20de5c003e6ea977443ecb74d7438dd80e01a29f22d",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.bbef62173dd3": {
+      "text": "仅适用于 SM86（RTX 30 系列）。0 = 精确输出（默认）；1 = 可选的近似\n硬件双线性采样，可额外降低约 2-4% GPU 延迟。\n保存设置并重启后生效。",
+      "state": "machine_translated",
+      "source_hash": "2956ef40204062150d381f32877320104d4fcc1051744bfda438a87096e8f462",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.fc8230b4119a": {
+      "text": "分割线",
+      "state": "machine_translated",
+      "source_hash": "32afaa784333648025e24b162bece7474051bcaaa29e98e19922b400b4ceb04b",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.99a0efc6cfd8": {
+      "text": "风格",
+      "state": "machine_translated",
+      "source_hash": "7e744141b40ea5501412e42c8b40fd0b05f1608aa2e4073944ccccbd82f24ee8",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.89376e096de8": {
+      "text": "交换两侧",
+      "state": "machine_translated",
+      "source_hash": "f2059d5584e95337ca4faf0d2f0b7287b366c12d05cf43367ce1d54eb4ba726f",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.c696457aa2c9": {
+      "text": "此选项需要原生 DirectX 12 游戏。",
+      "state": "machine_translated",
+      "source_hash": "d7cd8d662708604c8303175fbf5b9dc4225f4487906d5e8c3cf757ac12b47c26",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.bbb8b8d6e22b": {
+      "text": "GPU 上从 NR 开始到结束的时间，包括其他工作造成的等待。\n请对比 FPS 以判断对游戏性能的影响。",
+      "state": "machine_translated",
+      "source_hash": "e517808e0b2afdf2e44652eb4986b9f62274a2277fd184e5b813d5a85d97a9f0",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.c83db3e058f1": {
+      "text": "微调（扫描值倍数）",
+      "state": "machine_translated",
+      "source_hash": "5f4c04b317bccd77695473b45f36120d67c6502b8497dabd174a48d7fe9b1e1c",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.a2f6bade1f57": {
+      "text": "正在使用游戏曝光。",
+      "state": "machine_translated",
+      "source_hash": "f79d991482a56528ace9029041c03faf0534cbe9873060551f9768d87d3ae351",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.6e5d02ba48f2": {
+      "text": "正在等待画面帧……",
+      "state": "machine_translated",
+      "source_hash": "2006c00dee733c844ce21a77cee9668ed80c11dc5050c1ba74ea3db9693fb8b1",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.5b2639a6e005": {
+      "text": "正在等待超分器运行。",
+      "state": "machine_translated",
+      "source_hash": "b61d7e71264d24faf7e3551b2f57f7c29fe1abb39e0c27e6cfd998955d4d57e9",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.a66d6f1d497f": {
+      "text": "白点来源",
+      "state": "machine_translated",
+      "source_hash": "2dee064b0c9218effebd30a30c1a334012ca94100d68cd6a44fd97003ae893ae",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.6180960e2c7a": {
+      "text": "已写入",
+      "state": "machine_translated",
+      "source_hash": "ccc0e8da6b80e08e80d75a89afe11e8f2d5cd0f29a10f782104ca5f2648e8903",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.11f6ad8ec52a": {
+      "text": "x",
+      "state": "machine_translated",
+      "source_hash": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.fb360f9c09ac": {
+      "text": "是",
+      "state": "machine_translated",
+      "source_hash": "8a798890fe93817163b10b5f7bd2ca4d25d84c52739a645a889c173eee7d9d3d",
+      "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.9b3cbed5c490": {
+      "text": "缩放",
+      "state": "machine_translated",
+      "source_hash": "509c517ede79fef060a5f3a109fd1f45951eef2c7970b25c20992011e36a4070",
+      "note": "completed fork-specific UI translation 2026-09-12"
     }
   }
 }
