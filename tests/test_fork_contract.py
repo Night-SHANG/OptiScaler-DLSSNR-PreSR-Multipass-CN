@@ -28,6 +28,12 @@ class ForkContractTests(unittest.TestCase):
         self.assertIn('-HybridAssetsDirectory', text)
         self.assertIn('asset-manifest.json', text)
 
+    def test_hybrid_fetch_destination_must_not_exist_before_fetch(self):
+        text=(ROOT/'tools/package.ps1').read_text(encoding='utf-8')
+        fetch_pos=text.index('& $hybridFetcher @invokeArgs')
+        prefix=text[:fetch_pos]
+        self.assertNotIn('New-Item -ItemType Directory -Force -Path $hybridScratch', prefix)
+
     def test_scanner_covers_dlssnr_sources(self):
         rules=json.loads((ROOT/'Localization/scanner-rules.json').read_text(encoding='utf-8'))
         self.assertIn('OptiScaler/dlssnr/**/*.cpp',rules['include_globs'])

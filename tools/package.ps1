@@ -22,9 +22,11 @@ $hybridFetcher = Join-Path $SourceRoot "get_hybrid_assets.ps1"
 if (-not (Test-Path -LiteralPath $hybridFetcher)) {
     throw "Fork get_hybrid_assets.ps1 not found; refusing to package without upstream hybrid assets"
 }
+New-Item -ItemType Directory -Force -Path $OutputDir | Out-Null
 $hybridScratch = Join-Path $OutputDir "_hybrid-assets"
 if (Test-Path -LiteralPath $hybridScratch) { Remove-Item $hybridScratch -Recurse -Force }
-New-Item -ItemType Directory -Force -Path $hybridScratch | Out-Null
+# Important: get_hybrid_assets.ps1 requires its destination path to NOT exist.
+# It creates the destination itself after validating the requested location.
 
 $command = Get-Command $hybridFetcher
 $invokeArgs = @{}
