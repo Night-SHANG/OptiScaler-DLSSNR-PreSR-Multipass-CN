@@ -17,6 +17,12 @@ class V083ReleaseContractTests(unittest.TestCase):
         self.assertIn('dlssnr_forwarder.vcxproj', text)
         self.assertIn('Test-Path -LiteralPath $forwarderProject', text)
 
+    def test_build_workflow_is_also_capability_adaptive(self):
+        text = (ROOT / '.github/workflows/build.yml').read_text(encoding='utf-8')
+        self.assertIn('Test-Path -LiteralPath $forwarderProject', text)
+        self.assertIn('EnableRtx40Mfg', text)
+        self.assertIn('/p:OptiScalerRtx40Mfg=true', text)
+
     def test_packager_supports_both_legacy_hybrid_and_v083_dual_package_contracts(self):
         text = (ROOT / 'tools/package.ps1').read_text(encoding='utf-8')
         self.assertIn("ContainsKey('HybridAssetsDirectory')", text)
