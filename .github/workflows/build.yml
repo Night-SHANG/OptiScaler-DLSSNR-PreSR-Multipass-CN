@@ -64,12 +64,33 @@ jobs:
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v2
 
-      - name: Build DLSSNR forwarder and Release x64
+      - name: Build legacy DLSSNR forwarder when present
         shell: pwsh
         run: |
-          msbuild _upstream\OptiScaler\dlssnr\forwarder\dlssnr_forwarder.vcxproj /m /p:Configuration=Release /p:Platform=x64 /verbosity:minimal 2>&1 | Tee-Object -FilePath reports\msbuild-forwarder.log
-          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          $forwarderProject = Join-Path $env:GITHUB_WORKSPACE "_upstream\OptiScaler\dlssnr\forwarder\dlssnr_forwarder.vcxproj"
+          if (Test-Path -LiteralPath $forwarderProject) {
+            msbuild $forwarderProject /m /p:Configuration=Release /p:Platform=x64 /verbosity:minimal 2>&1 | Tee-Object -FilePath reports\msbuild-forwarder.log
+            if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          } else {
+            Write-Host "Legacy DLSSNR forwarder project is not present in this upstream ref; skipping."
+          }
+
+      - name: Build standard Release x64
+        shell: pwsh
+        run: |
           msbuild _upstream\OptiScaler.sln /m /p:Configuration=Release /p:Platform=x64 /verbosity:minimal 2>&1 | Tee-Object -FilePath reports\msbuild.log
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+      - name: Build RTX 40 MFG Release x64 when supported
+        shell: pwsh
+        run: |
+          $packager = Join-Path $env:GITHUB_WORKSPACE "_upstream\package_release.ps1"
+          $command = Get-Command $packager
+          if (-not $command.Parameters.ContainsKey('EnableRtx40Mfg')) {
+            Write-Host "Upstream packager has no EnableRtx40Mfg parameter; legacy single-package build."
+            exit 0
+          }
+          msbuild _upstream\OptiScaler.sln /m /p:Configuration=Release /p:Platform=x64 /p:OptiScalerRtx40Mfg=true /verbosity:minimal 2>&1 | Tee-Object -FilePath reports\msbuild-rtx40-mfg.log
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
       - name: Package community CN build
