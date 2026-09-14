@@ -7409,6 +7409,150 @@
       "state": "machine_translated",
       "source_hash": "509c517ede79fef060a5f3a109fd1f45951eef2c7970b25c20992011e36a4070",
       "note": "completed fork-specific UI translation 2026-09-12"
+    },
+    "ui.auto.2e60eb40960e": {
+      "text": "启用 NR 处理。",
+      "state": "reviewed",
+      "source_hash": "decbfe6d17a7dc78bfd999e155c5ab9aec1076344e85ecc5f4cd9a3abdab0c8f",
+      "note": "v0.8.3 manually reviewed translation"
+    },
+    "ui.auto.d03c320037fe": {
+      "text": "显示或隐藏 NR 效果。隐藏时模型仍会运行。\n关闭“启用神经渲染”可停止其 GPU 开销。",
+      "state": "reviewed",
+      "source_hash": "af631ec19cece5112ae8b6f676f571124f24fde8e61f6199f20160a5afd4f526",
+      "note": "v0.8.3 manually reviewed translation"
+    },
+    "ui.auto.be5794cc5788": {
+      "text": "在游戏后期效果和 HUD 之后应用 NR。较早阶段生成的编辑结果会通过独立升频器传递。",
+      "state": "reviewed",
+      "source_hash": "1c4c140276813a60ca8965926b19c45c5639a93a43f5897678e843359e55fc12",
+      "note": "v0.8.3 manually reviewed translation"
+    },
+    "ui.auto.a56b688f68fe": {
+      "text": "保持游戏的 SR/RR 输入不受影响，仅使用独立的非 RR 后端升频 NR 编辑结果。\n在升频后应用；启用完成画面模式时则在呈现阶段应用。",
+      "state": "reviewed",
+      "source_hash": "4b4897d983c2b9cbc3e69533e05b33762fc6f82155ffdd43474c496f5802ecfe",
+      "note": "v0.8.3 manually reviewed translation"
+    },
+    "ui.auto.80e78fb23096": {
+      "text": "独立 NR 升频器",
+      "state": "reviewed",
+      "source_hash": "d5208c40a9bc61fc74a9f5dce386f660016a2908114f05341ca9f2bdf0c15494",
+      "note": "v0.8.3 manually reviewed translation"
+    },
+    "ui.auto.91626b52beb8": {
+      "text": "检查 NR",
+      "state": "reviewed",
+      "source_hash": "7ef829a3fe4adeaff2f399a673381b928c21d3530da4a912ba010d167ab7ae95",
+      "note": "v0.8.3 manually reviewed translation"
+    },
+    "ui.auto.3ce6218bd33c": {
+      "text": "%u 个曝光候选",
+      "state": "reviewed",
+      "source_hash": "8cf07a47b039a59b3d6f152bcf9159a59e602de20a649f14994bf7b0038a8587",
+      "note": "v0.8.3 manually reviewed translation"
+    },
+    "ui.auto.dc7c2d667812": {
+      "text": "已找到曝光候选。",
+      "state": "reviewed",
+      "source_hash": "735042fea658fe59ca79023c5947e344865080177abd8d94fcd6c2014d066a30",
+      "note": "v0.8.3 manually reviewed translation"
+    },
+    "ui.auto.3d7f6e691720": {
+      "text": "未验证的曝光候选。",
+      "state": "reviewed",
+      "source_hash": "ca46dd824de3b6ed1ec83fc751634f5cd02e2f2e2de33972ebc3309f0bf2d77a",
+      "note": "v0.8.3 manually reviewed translation"
+    },
+    "ui.auto.887d15ac74f3": {
+      "text": "匹配 HDR 亮度响应（实验性）",
+      "state": "reviewed",
+      "source_hash": "66634843c6694199084e7893e95d9abcd793a6ff01ccdbbd6ad252b52f7b026a",
+      "note": "v0.8.3 manually reviewed translation"
+    },
+    "ui.auto.6df55ca4519a": {
+      "text": "此选项需要 DirectX 12，或标记为 w/Dx12 的 DirectX 11 升频器。",
+      "state": "reviewed",
+      "source_hash": "cf30c6109e5ef562b4c8d7cf22bfa348145913e72bde728f7a71e7399bd86156",
+      "note": "v0.8.3 manually reviewed translation"
+    },
+    "ui.auto.602d6b42ff22": {
+      "text": "独立升频：%s",
+      "state": "reviewed",
+      "source_hash": "dd8d0c67b501cfa22fa3238b16d0e80388d14a697bf1632e1e8653e768697154",
+      "note": "v0.8.3 manually reviewed translation"
+    },
+    "ui.auto.18790724efd5": {
+      "text": "独立编辑升频路径需要 DirectX 12 或其桥接层。要使用原生 Vulkan NR，请关闭独立编辑升频。",
+      "state": "reviewed",
+      "source_hash": "52f6f893bf47bc2a539285c0dffc93180f8436e774b65ecfd7a32900f03495f1",
+      "note": "v0.8.3 manually reviewed translation"
+    },
+    "ui.auto.c45f03b33131": {
+      "text": "RTX 40 MFG 解锁（需重启）",
+      "state": "reviewed",
+      "source_hash": "00fd475e097d81527a22840b56c3ce106728d594518e3c362e4cb9c73d3bb3a1",
+      "note": "v0.8.3 manually reviewed translation"
+    },
+    "ui.auto.a5156a5dce63": {
+      "text": "实验性功能。保存设置并重启。需要受支持的 DLSSG 运行时。\n请勿与其他 MFG 解锁器同时使用。",
+      "state": "reviewed",
+      "source_hash": "e986b03da1a020904d83c017fd14f4842c492259abf5a475068ccdd348267529",
+      "note": "v0.8.3 manually reviewed translation"
+    },
+    "ui.auto.cdcd0059bae3": {
+      "text": "保存设置并重启以应用此更改。",
+      "state": "reviewed",
+      "source_hash": "b549b5ae0b2be9ae4dc573df927e41ccf38c7c8091a371357b45a4b538667290",
+      "note": "v0.8.3 manually reviewed translation"
+    },
+    "ui.auto.cc3ed135a1b0": {
+      "text": "正在等待 DLSSG 加载。",
+      "state": "reviewed",
+      "source_hash": "c9c8a7fff8d3f62aa857fb6e95d9fa8c2808eb42785029a3aff4b5b210889405",
+      "note": "v0.8.3 manually reviewed translation"
+    },
+    "ui.auto.9196b000ac6e": {
+      "text": "DLSSG %s：已应用 RTX 40 MFG 解锁。",
+      "state": "reviewed",
+      "source_hash": "99317d67468b71544f3a62bed9090d39839e5bd037f6c23c17b313fd5becd4e0",
+      "note": "v0.8.3 manually reviewed translation"
+    },
+    "ui.auto.3d6cca096764": {
+      "text": "DLSSG %s：此运行时无法解锁。",
+      "state": "reviewed",
+      "source_hash": "b085e61c618d26f1002f77f0232b25250f669fbaf984f344f4aefc1b2711a5f0",
+      "note": "v0.8.3 manually reviewed translation"
+    },
+    "ui.auto.a5a32bb07192": {
+      "text": "正在等待帧时序。",
+      "state": "reviewed",
+      "source_hash": "191357aedf07e251720fb7b52771c785ebf2d069de83eeeca9d6c57e54edaf96",
+      "note": "v0.8.3 manually reviewed translation"
+    },
+    "ui.auto.685707ead826": {
+      "text": "NR %.2f ms  |  帧其余部分约 %.2f ms",
+      "state": "reviewed",
+      "source_hash": "c09f0569067ebe010d297fc859989f9953e2fce069487a189ed199e458aa0048",
+      "note": "v0.8.3 manually reviewed translation"
+    },
+    "ui.auto.8301372916ee": {
+      "text": "NR GPU 时间与帧间隔对比。两者可能重叠执行。",
+      "state": "reviewed",
+      "source_hash": "03d35b3d1d549eb38fe309ea15b0e7bfaab7384e0a82fdf196c05026bdf1385c",
+      "note": "v0.8.3 manually reviewed translation"
+    },
+    "ui.auto.79c7326b2106": {
+      "text": "渲染帧：%.2f ms%s",
+      "state": "reviewed",
+      "source_hash": "2c62e968a307fb24b96c5d9e926e9853354ea842d0e8cd1969909c76a456253d",
+      "note": "v0.8.3 manually reviewed translation"
+    },
+    "ui.auto.4255f5f63dc4": {
+      "text": " （NR 与该间隔重叠/超过该间隔）",
+      "state": "reviewed",
+      "source_hash": "04d8a1ce94b44dd67d879f627fc938aa44dd3c3b673669e3fd1f0143a1614b9b",
+      "note": "v0.8.3 manually reviewed translation"
     }
   }
 }

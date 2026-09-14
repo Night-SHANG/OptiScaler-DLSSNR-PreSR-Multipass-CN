@@ -10,22 +10,26 @@ class ForkContractTests(unittest.TestCase):
         self.assertEqual(cfg['branch'], 'main')
         self.assertEqual(cfg['package_prefix'], 'OptiScaler-DLSSNR-PreSR-Multipass-CN')
 
-    def test_builds_dlssnr_forwarder_before_solution(self):
-        for name in ('build.yml','release.yml'):
-            text=(ROOT/'.github/workflows'/name).read_text(encoding='utf-8')
-            self.assertIn(r'OptiScaler\dlssnr\forwarder\dlssnr_forwarder.vcxproj', text)
-            self.assertIn(r'OptiScaler.sln', text)
+    def test_builds_dlssnr_forwarder_before_solution_on_legacy_main(self):
+        build=(ROOT/'.github/workflows/build.yml').read_text(encoding='utf-8')
+        self.assertIn(r'OptiScaler\dlssnr\forwarder\dlssnr_forwarder.vcxproj', build)
+        self.assertIn(r'OptiScaler.sln', build)
+
+        release=(ROOT/'.github/workflows/release.yml').read_text(encoding='utf-8')
+        self.assertIn('dlssnr_forwarder.vcxproj', release)
+        self.assertIn('Test-Path -LiteralPath $forwarderProject', release)
+        self.assertIn(r'OptiScaler.sln', release)
 
     def test_package_wrapper_uses_fork_packager_and_never_mentions_proprietary_runtime_as_payload(self):
         text=(ROOT/'tools/package.ps1').read_text(encoding='utf-8')
         self.assertIn('package_release.ps1',text)
-        self.assertIn('-SkipBuild',text)
+        self.assertIn('SkipBuild = $true',text)
         self.assertNotIn('Copy-Item nvngx_dlssnr.dll',text)
 
-    def test_public_package_includes_verified_upstream_hybrid_assets(self):
+    def test_public_package_includes_verified_upstream_hybrid_assets_for_legacy_contract(self):
         text=(ROOT/'tools/package.ps1').read_text(encoding='utf-8')
         self.assertIn('get_hybrid_assets.ps1', text)
-        self.assertIn('-HybridAssetsDirectory', text)
+        self.assertIn('HybridAssetsDirectory', text)
         self.assertIn('asset-manifest.json', text)
 
     def test_hybrid_fetch_destination_must_not_exist_before_fetch(self):

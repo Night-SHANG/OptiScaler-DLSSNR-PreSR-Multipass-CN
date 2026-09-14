@@ -3,10 +3,10 @@ name: Localization Check - OptiScaler DLSSNR Pre-SR Multipass CN
 on:
   workflow_dispatch:
   pull_request:
-    paths: ["Localization/**", "tools/**", "overlay/**", ".github/workflows/**", "upstream.json"]
+    paths: ["Localization/**", "tools/**", "overlay/**", "tests/**", ".github/workflows/**", "upstream.json"]
   push:
     branches: [main, master]
-    paths: ["Localization/**", "tools/**", "overlay/**", ".github/workflows/**", "upstream.json"]
+    paths: ["Localization/**", "tools/**", "overlay/**", "tests/**", ".github/workflows/**", "upstream.json"]
 
 concurrency:
   group: localization-check-${{ github.ref }}

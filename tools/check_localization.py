@@ -7,8 +7,9 @@ from loclib import *
 def analyze(cat: dict, en: dict, zh: dict) -> dict:
     """Validate structural safety and report fallback states separately.
 
-    Missing/stale translations are intentionally not structural errors: runtime
-    falls back to the canonical English source for those entries.
+    Missing/stale translations remain safe at runtime because they fall back to
+    the canonical English source. Release/CI callers can additionally use
+    --strict to require complete, current zh-CN coverage.
     """
     errors=[]; warnings=[]
     active={k:v for k,v in cat.get('entries',{}).items() if not v.get('obsolete')}
@@ -46,9 +47,18 @@ def analyze(cat: dict, en: dict, zh: dict) -> dict:
     return {'errors':errors,'warnings':warnings,'stats':stats}
 
 
+def should_fail(result: dict, strict: bool = False) -> bool:
+    if result.get('errors'):
+        return True
+    if strict:
+        stats=result.get('stats',{})
+        return bool(stats.get('missing',0) or stats.get('stale',0))
+    return False
+
+
 def main():
     ap=argparse.ArgumentParser()
-    ap.add_argument('--strict',action='store_true')
+    ap.add_argument('--strict',action='store_true',help='also require zero missing/stale zh-CN translations')
     ap.add_argument('--channel',choices=(*CHANNELS,'all'),default='all')
     args=ap.parse_args()
     zh=load_json(LOC/'zh-CN.json',{})
@@ -63,6 +73,9 @@ def main():
         for w in result['warnings'][:50]: print(f'WARN [{channel}]:',w)
         for e in result['errors']:
             print(f'ERROR [{channel}]: {e}',file=sys.stderr)
+        if args.strict and (st['missing'] or st['stale']):
+            print(f"ERROR [{channel}]: strict mode requires complete zh-CN coverage (missing={st['missing']}, stale={st['stale']})",file=sys.stderr)
+        if should_fail(result,args.strict):
             failed=True
     return 1 if failed else 0
 

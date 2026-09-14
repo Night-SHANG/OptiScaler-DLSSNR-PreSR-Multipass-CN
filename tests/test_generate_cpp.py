@@ -12,7 +12,7 @@ class GenerateCppTests(unittest.TestCase):
         self.assertNotIn('中', out)
         self.assertIn('\\', out)
 
-    def test_render_header_uses_only_fresh_approved_translation(self):
+    def test_render_header_uses_only_fresh_approved_translation_without_embedding_sources(self):
         catalog = {'entries': {
             'a': {'source':'Quality','source_hash':sha('Quality'),'obsolete':False},
             'b': {'source':'Changed','source_hash':sha('Changed'),'obsolete':False},
@@ -24,11 +24,19 @@ class GenerateCppTests(unittest.TestCase):
             'c': {'text':'旧','source_hash':sha('Old'),'state':'reviewed'},
         }}
         text = generate_cpp.render_header(catalog, zh)
-        self.assertIn('Quality', text)
-        self.assertIn('\\350\\264\\250', text) # beginning of UTF-8 for 质量
-        self.assertIn('{"b", "Changed", ""}', text)
+        self.assertNotIn('Quality', text)
+        self.assertNotIn('Changed', text)
         self.assertNotIn('"Old"', text)
+        self.assertIn('\\350\\264\\250', text) # beginning of UTF-8 for 质量
+        self.assertIn(f'0x{generate_cpp.fnv1a64("Quality"):016x}ULL', text)
+        self.assertIn(f'0x{generate_cpp.fnv1a64("Changed"):016x}ULL', text)
         self.assertTrue(text.isascii())
+
+    def test_fnv1a64_is_stable_for_runtime_lookup(self):
+        self.assertEqual(generate_cpp.fnv1a64(''), 0xcbf29ce484222325)
+        self.assertEqual(generate_cpp.fnv1a64('a'), 0xaf63dc4c8601ec8c)
+        self.assertEqual(generate_cpp.fnv1a64('Quality'), generate_cpp.fnv1a64('Quality'))
+        self.assertNotEqual(generate_cpp.fnv1a64('Quality'), generate_cpp.fnv1a64('quality'))
 
 if __name__ == '__main__':
     unittest.main()

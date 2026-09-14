@@ -22,4 +22,13 @@ class CheckLocalizationTests(unittest.TestCase):
         result=check_localization.analyze(cat,en,zh)
         self.assertTrue(any('printf placeholders differ' in e for e in result['errors']))
 
+    def test_strict_mode_rejects_missing_or_stale_translations(self):
+        complete={'errors':[],'stats':{'missing':0,'stale':0}}
+        missing={'errors':[],'stats':{'missing':1,'stale':0}}
+        stale={'errors':[],'stats':{'missing':0,'stale':1}}
+        self.assertFalse(check_localization.should_fail(complete, strict=True))
+        self.assertTrue(check_localization.should_fail(missing, strict=True))
+        self.assertTrue(check_localization.should_fail(stale, strict=True))
+        self.assertFalse(check_localization.should_fail(missing, strict=False))
+
 if __name__=='__main__': unittest.main()
