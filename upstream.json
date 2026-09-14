@@ -1,7 +1,7 @@
 {
   "repository": "https://github.com/wilsjo2/OptiScaler-DLSSNR-PreSR-Multipass.git",
   "branch": "main",
-  "commit": "auto",
+  "commit": "v0.8.3",
   "stable_release": "v0.7.7",
   "last_scanned_commit": "e237f895623742b761f9e5f00067cb3dc62619f4",
   "last_released_upstream_tag": "v0.7.7",
