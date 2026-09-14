@@ -78,7 +78,7 @@ jobs:
       - name: Build standard Release x64
         shell: pwsh
         run: |
-          msbuild _upstream\OptiScaler.sln /m /p:Configuration=Release /p:Platform=x64 /verbosity:minimal 2>&1 | Tee-Object -FilePath reports\msbuild.log
+          msbuild _upstream\OptiScaler.sln /m /p:Configuration=Release /p:Platform=x64 /p:PostBuildEventUseInBuild=false /verbosity:minimal 2>&1 | Tee-Object -FilePath reports\msbuild.log
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
       - name: Build RTX 40 MFG Release x64 when supported
@@ -90,7 +90,7 @@ jobs:
             Write-Host "Upstream packager has no EnableRtx40Mfg parameter; legacy single-package build."
             exit 0
           }
-          msbuild _upstream\OptiScaler.sln /m /p:Configuration=Release /p:Platform=x64 /p:OptiScalerRtx40Mfg=true /verbosity:minimal 2>&1 | Tee-Object -FilePath reports\msbuild-rtx40-mfg.log
+          msbuild _upstream\OptiScaler.sln /m /p:Configuration=Release /p:Platform=x64 /p:PostBuildEventUseInBuild=false /p:OptiScalerRtx40Mfg=true /verbosity:minimal 2>&1 | Tee-Object -FilePath reports\msbuild-rtx40-mfg.log
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
       - name: Package community CN build
