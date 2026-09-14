@@ -1170,26 +1170,6 @@
       "text": "Active##3",
       "source_hash": "38cbcd60b64f67b1837a09a92cda4c7c52482c47834dcb95ef679e69c78ad962"
     },
-    "ui.auto.992ac48914e2": {
-      "text": "2X",
-      "source_hash": "f1d106f917e3dbf468ff5eae3d43d12d0bf38a8909affd56399e04211f928402"
-    },
-    "ui.auto.5736a4c66680": {
-      "text": "3X",
-      "source_hash": "69f04a035b2396214cfab006612d992b2f4fa028876bc398e318ce2dff48c05a"
-    },
-    "ui.auto.e5ce501b4fb1": {
-      "text": "4X",
-      "source_hash": "cedf19b4ec873bd0ab6aea7ec442b5ae7e44d5475f3e317db698a58c9266fd13"
-    },
-    "ui.auto.dfd3eb4bffb4": {
-      "text": "5X",
-      "source_hash": "841361d350818bc40d69812d551766ab224e32ab22a8eb4dc66e6d7a1c5b2f1d"
-    },
-    "ui.auto.31ad6e30bfd3": {
-      "text": "6X",
-      "source_hash": "43650ec252ffc8c1674ef880157c62c68d9c3ea62e80cdcf31e4ee0822325196"
-    },
     "ui.auto.f0572004732c": {
       "text": "Set XeFG interpolation count",
       "source_hash": "cc3e0bbfff10771a4ee6e2b6585828a21a93b15dea19b04c65fd1e8a60695ef4"
@@ -2558,73 +2538,9 @@
       "text": "DLSS Neural Rendering",
       "source_hash": "e2212ef3f7eb4de4f3cf4e7f536eac95bbf158e33f3f897cb2c1d2f23a1a3a05"
     },
-    "ui.auto.1a6bd1741ca9": {
-      "text": "Enable Neural Rendering",
-      "source_hash": "07df46a09a00f4ea8c56a11534499f96fe2d54c6c895264670955a8ac672a4ab"
-    },
-    "ui.auto.5a7bd4840dea": {
-      "text": "Apply NR to the finished picture",
-      "source_hash": "e05f1a753b0aae00229256bdeb5dbab90fa25701efb2ec054ee4b7595c6b1fc2"
-    },
-    "ui.auto.c696457aa2c9": {
-      "text": "This option needs a native DirectX 12 game.",
-      "source_hash": "d7cd8d662708604c8303175fbf5b9dc4225f4487906d5e8c3cf757ac12b47c26"
-    },
-    "ui.auto.5073c1e2abd7": {
-      "text": "Carry the pre-SR edit across RR (experimental)",
-      "source_hash": "ededd737d0a4e2aa0d977a3f648f029e3af78110c7d92c8b7cc817c9aa33fe88"
-    },
-    "ui.auto.4bd4b169bb71": {
-      "text": "Detail accumulation rate",
-      "source_hash": "d009b93aeace50650579d4e567c126fbd4d635ea8360ac32f613155b50ac52c0"
-    },
-    "ui.auto.1c65783cc092": {
-      "text": "Model precision",
-      "source_hash": "cb8a4172baf38e8e90ab2b76551342d898266c9a8460c5cf55ecb90907fde0f9"
-    },
-    "ui.auto.83ff1ba950bc": {
-      "text": "Loading may pause the game and look like a freeze. Please wait.",
-      "source_hash": "19bcfca309d50141d92648a85e2268b4ddab2630f20d2802d731028b2fbcfb81"
-    },
-    "ui.auto.c67247fa9854": {
-      "text": "Generate before SR, apply after SR (DLSS)",
-      "source_hash": "f0dd665b02af8860f58343dfbd84002c8625564950e37611f0536342f632f5f1"
-    },
-    "ui.auto.9fffe2f120e0": {
-      "text": "Generate before / apply after is unavailable with RR. Apply before Super Resolution controls NR placement.",
-      "source_hash": "c0ea457417c154e9c542d387bf2158a68dba40da1016aa6436ccd1f247ab5027"
-    },
-    "ui.auto.e1a67ea9b9dd": {
-      "text": "Residual DLSS: %s",
-      "source_hash": "12aba38cc0a9e73c42519685917f25586bed879cc18bef06dfc74635218197cf"
-    },
-    "ui.auto.963cebb0f517": {
-      "text": "NR every second frame (NVIDIA FG, experimental)",
-      "source_hash": "c8a6b06b80cec313389a2fd881fbc837bc7831cdf8b5642bd17fac72b7b8fa18"
-    },
-    "ui.auto.67e797f1ba81": {
-      "text": "Allow approximate FG camera guides (experimental)",
-      "source_hash": "d63a141fed9fbaf6b2d8885a94964991929231d7723800cc29773e0e9e871394"
-    },
-    "ui.auto.997677244942": {
-      "text": "Pre-SR changes: %s",
-      "source_hash": "0a5b52abd35e05a0af735638abbb5465aac91e20f5865b9c41cb04fb73089fbc"
-    },
-    "ui.auto.c164dbc0f00d": {
-      "text": "Set the NR toggle shortcut under Keybinds.",
-      "source_hash": "146bedc71eefe383449cdfe789f9373fab316bc93ee1eba4f6253acb504313d7"
-    },
-    "ui.auto.eeecf231fcf4": {
-      "text": "Apply the model",
-      "source_hash": "aa52b88a569d9b8e7403cb85f0dd2c03e895624af7c6ee5c3c5c9fc1bcdb99d1"
-    },
     "ui.auto.96ba36de6819": {
       "text": "NR off.",
       "source_hash": "f872faba55b266435b1e2bc698c6670c9f172a77c751c623586db23d1412959f"
-    },
-    "ui.auto.8b1e6cce1caa": {
-      "text": "Off for this session: %s.",
-      "source_hash": "83020a0e8272927de301f3beb66b4508434648e38f2d2fe691f3c0c809bbdc5f"
     },
     "ui.auto.06df1cb6b0e2": {
       "text": "Restart the game to retry native Vulkan NR.",
@@ -2637,10 +2553,6 @@
     "ui.auto.cb6a1fda9777": {
       "text": "NR needs the D3D12 bridge on D3D11. Choose an upscaler marked w/Dx12 and restart.",
       "source_hash": "092307e8bde42c6fe50d8f994d26e79f07da5a30f678a10ab73823512bdb1a75"
-    },
-    "ui.auto.77a5c7b022f9": {
-      "text": "Disable Generate before SR, apply after SR (DLSS) to use native Vulkan NR.",
-      "source_hash": "b5b620068650e8482ffa09c9f1f0bd1185da442e4cec84a36d3c630d97fd92a0"
     },
     "ui.auto.5b2639a6e005": {
       "text": "Waiting for the upscaler to run.",
@@ -2666,14 +2578,6 @@
       "text": "Time between the start and end of NR on the GPU, including delays while other work runs.\nCompare FPS to check the effect on game performance.",
       "source_hash": "e517808e0b2afdf2e44652eb4986b9f62274a2277fd184e5b813d5a85d97a9f0"
     },
-    "ui.auto.d571a44edf5b": {
-      "text": "Includes time shared with other GPU work.",
-      "source_hash": "4ca5ed5d2add8df027f296b334b2433bfc64037da4fc42e2e36e24cce08b1dda"
-    },
-    "ui.auto.0cfd2f6170e0": {
-      "text": "Lift model pass limit (up to 30; expensive)",
-      "source_hash": "c52254e99bdbd1ba5c064f9cfad3d3f55ae9431356be2fd68f0fe2fc074e9266"
-    },
     "ui.auto.9839492214ea": {
       "text": "Model passes",
       "source_hash": "b5c947bb7112be1c81011f220fdbc312db4fcc926bbd241f3b764ed523dfea2d"
@@ -2682,10 +2586,6 @@
       "text": "Model resolution",
       "source_hash": "04f177dbc56b515a7492013ddafc326500b10a09ee50c891342c11481063d3b9"
     },
-    "ui.auto.b610ec5d8404": {
-      "text": "NR scale: %.2fx. Higher resolution increases GPU cost.",
-      "source_hash": "080d44b6adbf0fc50367530f3370e1eb28fa61682ff85ccc98ba9cb0890abe55"
-    },
     "ui.auto.7bd67fef9d30": {
       "text": "Downscaler (NR)",
       "source_hash": "a6b77a140a21fb288af9dbc1b1e6d4585b0f2976830018a0fbea1aa7df4549a7"
@@ -2693,10 +2593,6 @@
     "ui.auto.17525ce70bb2": {
       "text": "Enlargement",
       "source_hash": "4434bb35d2b7471d1c485e004c048dc1931aea68d3ad4e4af1804bf9171d0c68"
-    },
-    "ui.auto.43cd6182e96b": {
-      "text": "Effect strength",
-      "source_hash": "f3c8db8cb41fd238514897a9651ad31e5c17b847a33319645a77ed817ca2d289"
     },
     "ui.auto.4a7cac450c24": {
       "text": "Detail strength",
@@ -2718,10 +2614,6 @@
       "text": "HDR mapping (experimental)",
       "source_hash": "54960aaad9043030afed32198739c75f2abcb8c4bd044a1eee991c435f755a5e"
     },
-    "ui.auto.744b450a80d7": {
-      "text": "Settings apply when you release a slider.",
-      "source_hash": "d953d63046070753e86c84aea17f356070d28b65fd3e137c4ed07b24812c095a"
-    },
     "ui.auto.efa11f2da55e": {
       "text": "Pass 1",
       "source_hash": "dc3f60f225fc5092f0f33b0b466e550f10b332177ef2070b6241627ff59f89d8"
@@ -2738,53 +2630,13 @@
       "text": "Pass 2",
       "source_hash": "b0c3ecfce51ee19f1cd7ad3ea851701639f83f10b6d0231655968c6934253590"
     },
-    "ui.auto.91c91ce03f93": {
-      "text": "Defaults: inherit Pass 1; Local tone = 0. Reset restores these defaults.",
-      "source_hash": "d655cfe818a72c5a84f21308472ca1a8210bbf8685098ff636c4d77213419839"
-    },
     "ui.auto.0c076870cbdc": {
       "text": "Reset##mask",
       "source_hash": "9dcc5b92b6a5291c88ba92153baa7937c5d96bf940a59573d05ddede3164ab5f"
     },
-    "ui.auto.bd7b74549e19": {
-      "text": "Pass 3",
-      "source_hash": "8283f273c34ec66a6508b91306b85099384684c33d2b49d878f7ac4bb12143da"
-    },
-    "ui.auto.0723392d9c11": {
-      "text": "Pass {}",
-      "source_hash": "b0a69932a62edd14ef305d0d267bed1e3b8774954e60eb5e25a107035075276f"
-    },
-    "ui.auto.fc3dd731f343": {
-      "text": "Defaults: inherit Pass 1; Local tone = 0.",
-      "source_hash": "fcaf77c2381c0e47ce0314924f371794c9c317b1ff9ca2aa874d85213d20872d"
-    },
-    "ui.auto.aed7033fe9a7": {
-      "text": "Advanced preset hints (effect unverified)",
-      "source_hash": "68e3a3f06c5b593f4b3648af6388f6f44cb2965f38f3804f399cf3376f147224"
-    },
-    "ui.auto.8027553d4b7c": {
-      "text": "Experimental model hints; visual effect unverified. Use Style to select a profile.",
-      "source_hash": "ae1aceffe79a25073c7c1b0b0b76b5f2b5cc05fa253435f6c92230ef0105f35d"
-    },
-    "ui.auto.9a48da92c946": {
-      "text": "Pass 1 preset hint",
-      "source_hash": "4cdcbda2578e6fa1e6c49699bfd21bd8f931d3fe6988bab8d6545e20902931fb"
-    },
-    "ui.auto.dc1925a6d8a8": {
-      "text": "Pass settings apply to SR and RR on DX12 and native Vulkan. The driver-proxy backend supports one pass.",
-      "source_hash": "48d505380f64d79d6155d272ef206fe3cf4ec53f1b962ccfc16ef403db189e25"
-    },
-    "ui.auto.f28563a477a9": {
-      "text": "Colour",
-      "source_hash": "3a9dfa58df63e0dda962a147a6cea86cc5294a5e859d89ddfa8e74a977fedf5d"
-    },
     "ui.auto.80279ba438a7": {
       "text": "Skin and environment (final edit)",
       "source_hash": "a03197d66ea83de7eee3b20de5c003e6ea977443ecb74d7438dd80e01a29f22d"
-    },
-    "ui.auto.b06cd57c4717": {
-      "text": "Select skin by colour and adjust the final NR effect separately for skin and scenery. Selection can be inaccurate; check Preview.",
-      "source_hash": "819cd7453ed61f8c07f1d77e0e781e04df7e7b0cf1ba8dc66f6898dc7baa3df1"
     },
     "ui.auto.2dbd51db2e3a": {
       "text": "Separate skin / environment controls",
@@ -2797,10 +2649,6 @@
     "ui.auto.e7852702b35a": {
       "text": "Preview colour-based mask",
       "source_hash": "1a440284236f628df0c2a45914693efea3f0d5bb29a5f134ee38c1d1c5aa9838"
-    },
-    "ui.auto.c62be04d9261": {
-      "text": "HDR input settings. Adjust the brightness range presented to NR.",
-      "source_hash": "c99188400e69e8a70f3c91eaf8600a14ec13347a7bf2797866dc26f5ec4dd463"
     },
     "ui.auto.a66d6f1d497f": {
       "text": "White point source",
@@ -2833,14 +2681,6 @@
     "ui.auto.acd5c021634d": {
       "text": "No exposure candidates found.",
       "source_hash": "08ac19115ad48c6678590f590d04c21b02f7a5cfd16225b7356ae34bbdc44ad8"
-    },
-    "ui.auto.c2c509c054e7": {
-      "text": "%u candidates; move between bright and dark areas to test them.",
-      "source_hash": "b33124f770fea7f456d4dae1f8a288978755015cc90f41ecd6370b462e54ad32"
-    },
-    "ui.auto.0a23a9d949ea": {
-      "text": "Exposure candidate found. Adjust Paper white, then select Anchor here.",
-      "source_hash": "8ff9e6bae6ca16ee9f79432d7503b99c919d0ad73812975ce4b62ad13e6cb0b0"
     },
     "ui.auto.7d977bff8468": {
       "text": "Game exposure is available.",
@@ -2921,14 +2761,6 @@
     "ui.auto.1ceef8c0bcd0": {
       "text": "flat so far",
       "source_hash": "8db65c2d156a4c1fc105b66ec226900f6f5f58f0180229cf3a8cc9e1a5f000b2"
-    },
-    "ui.auto.059d4765fd9c": {
-      "text": "Move between bright and dark areas to check exposure tracking.",
-      "source_hash": "4e6c08c8e07dd4cae91377582fb4c10ef1535b1d2d1c0615c9dc11a1e85425d6"
-    },
-    "ui.auto.5e01cd612b06": {
-      "text": "A value that only increases may be a counter.",
-      "source_hash": "e0c8c975488376a7394fbf80063f80fad5c70d1750277f4c7f12b4906d58ab3a"
     },
     "ui.auto.8d105cf44d39": {
       "text": "Compare",
@@ -3122,154 +2954,6 @@
       "text": "Use generic appid with NGX\nFixes OptiScaler preset override not working with certain games\nRequires a game restart",
       "source_hash": "9323ca6a23175cd7f41867fc774cd61652a855f171694d6fc6812d252036365f"
     },
-    "ui.auto.8bbb19e5e8f7": {
-      "text": "External frame generation / MFG unlocker",
-      "source_hash": "e3e832c8890dacef1030cf922ace49ff7869723bc921a711168d5707f89fe804"
-    },
-    "ui.auto.3eb63ce5b807": {
-      "text": "Automatically locked to enabled because the Ampere (SM86) MFG unlocker is active.\nTo disable External FG, disable Ampere SM86 MFG below first.",
-      "source_hash": "88154be30601b319178e2414c0c29b4fdf8c2152e997e700ab6da671a8523ab4"
-    },
-    "ui.auto.387adb510cda": {
-      "text": "Leaves Streamline, Reflex and FG control to the game/external mod.\nNR and NGX upscaling remain available. Save Settings and restart.\nDoes not install an unlocker or enable FG in unsupported games.",
-      "source_hash": "d8bcf0bdd02fa6d2417a7d128fb84417e9915aff638cae109efc056791a6a354"
-    },
-    "ui.auto.167f82793983": {
-      "text": "Save Settings and restart to change frame-generation ownership.",
-      "source_hash": "6155261598f60e7f6aa1e0ee7477559cc18ec8bab0600cb28de472e034147d00"
-    },
-    "ui.auto.2d8c50f693cc": {
-      "text": "Built-in RTX 40 MFG unlock (experimental; restart)",
-      "source_hash": "3c023a8ad0fc461295a62d1ee2a9c8d1eaaf80814b45b53a3010c15f9a0444e4"
-    },
-    "ui.auto.3fd7057df352": {
-      "text": "Disabled because the Ampere (RTX 30) SM86 MFG unlock is active.\nDisable AmpereMfgUnlock first, Save Settings and restart.",
-      "source_hash": "ffd3221635512645835bc86814d07c153f3b320d9342a6010c2f3776fd2efc11"
-    },
-    "ui.auto.d6ab0754ccb4": {
-      "text": "Disabled because External frame generation is active.\nDisable External FG first, Save Settings and restart.",
-      "source_hash": "302fdcb83e379ed24dcbfb9300cca3e2a920e370e869dd563dc0bac246720f21"
-    },
-    "ui.auto.a080910d0755": {
-      "text": "Optional y4my4my4m Ada unlock. Save Settings and restart to enable or remove it.\nRequires a supported DLSSG runtime and Streamline 2.7.1+ for multiplier overrides.\nDo not combine with another MFG unlocker. Does not add FG to an unsupported game.\nNot validated on RTX 40 hardware here; RTX 20/30/50 are left unchanged.",
-      "source_hash": "7cf4a919a97b9a2cf9f66ddba1e7b6a6c05bc7831ec2a8d44daea0dbf59a6c1f"
-    },
-    "ui.auto.ee35ad05cf80": {
-      "text": "DLSSG %s: capability %s, validation %s, retargeted kernel groups %u",
-      "source_hash": "42c9c01d6a234d0e48a045b753c8c14b6792873544fc92095f93790ed6b1c2fd"
-    },
-    "ui.auto.e5b3b7d84962": {
-      "text": "not patched",
-      "source_hash": "e6fc520002a7e1b82190944109cd95838380801db5ce24a27a63c8cf0713d5d9"
-    },
-    "ui.auto.d010685fc836": {
-      "text": "matched",
-      "source_hash": "eadc688cd557ee351fa9b718e87a6e8dfb9c9fce69e9944c71c0f58f8b972632"
-    },
-    "ui.auto.66c394a9042d": {
-      "text": "not matched",
-      "source_hash": "32dd83c99484d9a5241d33e9a36e3ea37448d366fb1c9a45b85e3a9e6e19163d"
-    },
-    "ui.auto.1342e415c825": {
-      "text": "RTX 20 / 30 (SM75 / SM86) MFG Unlock",
-      "source_hash": "698687745fab7931ebd99200ed59e16be81587971d49925360fb638a92955099"
-    },
-    "ui.auto.105fd003b2bb": {
-      "text": "Enable SM86/SM75 MFG (experimental; restart)##ampere",
-      "source_hash": "e3d43c8ba43e32891b1aa07de6ce8a30697c82fec585577ccb73856b6bdf9375"
-    },
-    "ui.auto.2e7f081880aa": {
-      "text": "Disabled because the Ada (RTX 40) MFG unlock is active.\nDisable AdaMfgUnlock first, Save Settings and restart.",
-      "source_hash": "e0e544a7ca289ac9cd6035945b5b0688ce1ea672f12b68dd63f32503351bd24e"
-    },
-    "ui.auto.621f50d1d812": {
-      "text": "sdli1995 Ampere/Turing unlock. Sideloads the dlssg_for_sm86 proxy.\nAuto-enables External FG mode: the game controls MFG from its own menu.\nSupports RTX 20 (SM75) and RTX 30 (SM86) series. Save Settings and restart.\nDo not combine with the Ada unlock or another external MFG unlocker.",
-      "source_hash": "118ff279f72322e27d69f25328d3bff613c2ef0f2b1412579e3be97a39d1289d"
-    },
-    "ui.auto.837b2a97c56f": {
-      "text": "Error: %s",
-      "source_hash": "a6aee4e1f82b59bc0c02498b5368ef98dcd3239e18eb1588013123f8c1471738"
-    },
-    "ui.auto.a508e7cc481c": {
-      "text": "DLL: %s | Router: %s | INI: %s | Loaded: %s",
-      "source_hash": "fb6647b125eddbd06acac1e454d0dcdc78f953f3f11ecf82149834d5439760b9"
-    },
-    "ui.auto.2739bb260ce4": {
-      "text": "found",
-      "source_hash": "bcc649cfdb8cc557053da67df7e7fcb740dcf7f721cebe1f2082597ad0d5e7d8"
-    },
-    "ui.auto.5a013c495082": {
-      "text": "missing",
-      "source_hash": "ffa63583dfa6706b87d284b86b0d693a161e4840aad2c5cf6b5d27c3b9621f7d"
-    },
-    "ui.auto.6180960e2c7a": {
-      "text": "written",
-      "source_hash": "ccc0e8da6b80e08e80d75a89afe11e8f2d5cd0f29a10f782104ca5f2648e8903"
-    },
-    "ui.auto.2b63cb06a897": {
-      "text": "not written",
-      "source_hash": "8976ff4d2dc21cec02bc1bef50ad22c4f11d6fbdee678a043ce8278e53f8c002"
-    },
-    "ui.auto.fb360f9c09ac": {
-      "text": "yes",
-      "source_hash": "8a798890fe93817163b10b5f7bd2ca4d25d84c52739a645a889c173eee7d9d3d"
-    },
-    "ui.auto.fd1286353570": {
-      "text": "no",
-      "source_hash": "9390298f3fb0c5b160498935d79cb139aef28e1c47358b4bbba61862b9c26e59"
-    },
-    "ui.auto.ed5ff914ebdf": {
-      "text": "Capability default (3X)",
-      "source_hash": "66b2730361f80167eb2b4be2be31a5ec87133ac4741410124e9a1829662b4253"
-    },
-    "ui.auto.31c4a6700438": {
-      "text": "1 (2X)",
-      "source_hash": "566e2ed0e13cbd61218b57978aa0e1ba54ebafa80458c3c5092c209830a0a0fa"
-    },
-    "ui.auto.a2bceb825b59": {
-      "text": "2 (3X)",
-      "source_hash": "9581f1737e2e9145596319d552d54f252ddebc484c69754df55c116c0d797e20"
-    },
-    "ui.auto.16008d2ca38c": {
-      "text": "3 (4X)",
-      "source_hash": "957bcc56d0497cc6dd6fa88a52384b4e849a9c8bad4d7a674f9d22992be99393"
-    },
-    "ui.auto.950df307f0c6": {
-      "text": "Max Generated Frames##sm86",
-      "source_hash": "9542d7ce2cfa35528ed72b12b4d8a08397488e8669c530f4c727d40611377187"
-    },
-    "ui.auto.c782cc10ef67": {
-      "text": "Advertised maximum (1=2X, 2=3X, 3=4X). The game chooses the actual count.\n0 = Default capability limit (allows up to 4X).\nSave Settings and restart to apply.",
-      "source_hash": "af30860853e9e60cecfc2c6ace0a83782dd529c9871ded151fa8600dae857f1f"
-    },
-    "ui.auto.8b313c08bd90": {
-      "text": "PTX",
-      "source_hash": "2c496d39ae56f5b4ac948123783e806af0d2c15c75792cb2ff81a487ee715390"
-    },
-    "ui.auto.66cdaa0c02e6": {
-      "text": "Cubin",
-      "source_hash": "d85e4ecd8058a52f8c3eb73a88cb8b27b2e67a198b45798bdd98d2ef3a120ce8"
-    },
-    "ui.auto.76cf9bde110e": {
-      "text": "Kernel Image##sm86",
-      "source_hash": "90f378ecbd57f6f75424c1307e2ed261e658517fa850dd27492514429d2381c9"
-    },
-    "ui.auto.89ddbc4a943a": {
-      "text": "Auto: resolves to optimal format (PTX on Linux/Proton, RTX 3080 Ti, or Turing).\nPTX: JIT-compiled driver path, recommended for Linux/Proton, RTX 3080 Ti, and RTX 20 series.\nCubin: precompiled binary, requires exact physical SM match on Windows.\nSave Settings and restart to apply.",
-      "source_hash": "1ef509283f97010c853f6330a8b0cf0388aca5a2cafa48929ecd0a54ac42aaec"
-    },
-    "ui.auto.f4eeeee9aa6b": {
-      "text": "Hardware Bilinear (approximate sampling)##sm86",
-      "source_hash": "731be16b16dbe50c41d2945bbba2c742528826ff43fb968892b1e8ef6f349c04"
-    },
-    "ui.auto.bbef62173dd3": {
-      "text": "SM86 (RTX 30 series) only. 0 = exact output (default); 1 = optional approximate\nhardware bilinear sampling for ~2-4% additional GPU latency reduction.\nSave Settings and restart to apply.",
-      "source_hash": "2956ef40204062150d381f32877320104d4fcc1051744bfda438a87096e8f462"
-    },
-    "ui.auto.3d8cb2175dca": {
-      "text": "External FG is active. Set the multiplier in the game or unlocker, not OptiScaler.",
-      "source_hash": "a8b03e27bc431d9aa77d34ce94640b2da63a127f6cba86bd079152c5c452308a"
-    },
     "ui.auto.d369481c7339": {
       "text": "Support not implemented, they meant FG Output",
       "source_hash": "8332bd90ce5bef353e0cdad9504bae2e029bfdc7bcc652c09c58122f91ae773a"
@@ -3317,10 +3001,6 @@
     "ui.auto.6e673b4a70eb": {
       "text": "FG Nvngx Replacement",
       "source_hash": "0893bcec1994c0604251dcdf55ef4a6e507a5edcab675d3608feffafde0d5b79"
-    },
-    "ui.auto.e3de5ab0ca4c": {
-      "text": "Off",
-      "source_hash": "ca7981b46ecf2c1787b6d76d81d9fd7fa0ca95842e2fcc2a452869891a9334d1"
     },
     "ui.auto.6e23184d03ec": {
       "text": "Override DLSSG Ratio",
@@ -3825,6 +3505,102 @@
     "ui.auto.19700482e2de": {
       "text": "%3.0f%%  %.5f",
       "source_hash": "e22915aa221ef233b4a59ab4afdad141e3c7a209d6e51d267ce60191f9ba3108"
+    },
+    "ui.auto.2e60eb40960e": {
+      "text": "Enable NR processing.",
+      "source_hash": "decbfe6d17a7dc78bfd999e155c5ab9aec1076344e85ecc5f4cd9a3abdab0c8f"
+    },
+    "ui.auto.d03c320037fe": {
+      "text": "Show or hide the NR effect. The model still runs when hidden.\nDisable Enable Neural Rendering to stop its GPU cost.",
+      "source_hash": "af631ec19cece5112ae8b6f676f571124f24fde8e61f6199f20160a5afd4f526"
+    },
+    "ui.auto.be5794cc5788": {
+      "text": "Apply NR after game effects and HUD. Early generation carries the edit through a separate upscaler.",
+      "source_hash": "1c4c140276813a60ca8965926b19c45c5639a93a43f5897678e843359e55fc12"
+    },
+    "ui.auto.a56b688f68fe": {
+      "text": "Keep the game's SR/RR input clean and upscale only the NR edit with a separate non-RR backend.\nApply after upscale, or at presentation when finished-picture mode is enabled.",
+      "source_hash": "4b4897d983c2b9cbc3e69533e05b33762fc6f82155ffdd43474c496f5802ecfe"
+    },
+    "ui.auto.80e78fb23096": {
+      "text": "Private NR upscaler",
+      "source_hash": "d5208c40a9bc61fc74a9f5dce386f660016a2908114f05341ca9f2bdf0c15494"
+    },
+    "ui.auto.91626b52beb8": {
+      "text": "Inspect NR",
+      "source_hash": "7ef829a3fe4adeaff2f399a673381b928c21d3530da4a912ba010d167ab7ae95"
+    },
+    "ui.auto.3ce6218bd33c": {
+      "text": "%u exposure candidates",
+      "source_hash": "8cf07a47b039a59b3d6f152bcf9159a59e602de20a649f14994bf7b0038a8587"
+    },
+    "ui.auto.dc7c2d667812": {
+      "text": "Exposure candidate found.",
+      "source_hash": "735042fea658fe59ca79023c5947e344865080177abd8d94fcd6c2014d066a30"
+    },
+    "ui.auto.3d7f6e691720": {
+      "text": "Unverified exposure candidate.",
+      "source_hash": "ca46dd824de3b6ed1ec83fc751634f5cd02e2f2e2de33972ebc3309f0bf2d77a"
+    },
+    "ui.auto.887d15ac74f3": {
+      "text": "Match HDR brightness response (experimental)",
+      "source_hash": "66634843c6694199084e7893e95d9abcd793a6ff01ccdbbd6ad252b52f7b026a"
+    },
+    "ui.auto.6df55ca4519a": {
+      "text": "This option needs DirectX 12 or a DirectX 11 upscaler marked w/Dx12.",
+      "source_hash": "cf30c6109e5ef562b4c8d7cf22bfa348145913e72bde728f7a71e7399bd86156"
+    },
+    "ui.auto.602d6b42ff22": {
+      "text": "Private upscale: %s",
+      "source_hash": "dd8d0c67b501cfa22fa3238b16d0e80388d14a697bf1632e1e8653e768697154"
+    },
+    "ui.auto.18790724efd5": {
+      "text": "The private edit-upscale path requires DirectX 12 or its bridge. Disable separate edit upscaling to use native Vulkan NR.",
+      "source_hash": "52f6f893bf47bc2a539285c0dffc93180f8436e774b65ecfd7a32900f03495f1"
+    },
+    "ui.auto.c45f03b33131": {
+      "text": "RTX 40 MFG unlock (restart)",
+      "source_hash": "00fd475e097d81527a22840b56c3ce106728d594518e3c362e4cb9c73d3bb3a1"
+    },
+    "ui.auto.a5156a5dce63": {
+      "text": "Experimental. Save Settings and restart. Requires a supported DLSSG runtime.\nDo not combine with another MFG unlocker.",
+      "source_hash": "e986b03da1a020904d83c017fd14f4842c492259abf5a475068ccdd348267529"
+    },
+    "ui.auto.cdcd0059bae3": {
+      "text": "Save Settings and restart to apply this change.",
+      "source_hash": "b549b5ae0b2be9ae4dc573df927e41ccf38c7c8091a371357b45a4b538667290"
+    },
+    "ui.auto.cc3ed135a1b0": {
+      "text": "Waiting for DLSSG to load.",
+      "source_hash": "c9c8a7fff8d3f62aa857fb6e95d9fa8c2808eb42785029a3aff4b5b210889405"
+    },
+    "ui.auto.9196b000ac6e": {
+      "text": "DLSSG %s: RTX 40 MFG unlock applied.",
+      "source_hash": "99317d67468b71544f3a62bed9090d39839e5bd037f6c23c17b313fd5becd4e0"
+    },
+    "ui.auto.3d6cca096764": {
+      "text": "DLSSG %s: unlock unavailable for this runtime.",
+      "source_hash": "b085e61c618d26f1002f77f0232b25250f669fbaf984f344f4aefc1b2711a5f0"
+    },
+    "ui.auto.a5a32bb07192": {
+      "text": "Waiting for frame timing.",
+      "source_hash": "191357aedf07e251720fb7b52771c785ebf2d069de83eeeca9d6c57e54edaf96"
+    },
+    "ui.auto.685707ead826": {
+      "text": "NR %.2f ms  |  Rest of frame ~%.2f ms",
+      "source_hash": "c09f0569067ebe010d297fc859989f9953e2fce069487a189ed199e458aa0048"
+    },
+    "ui.auto.8301372916ee": {
+      "text": "NR GPU time versus frame interval. Work can overlap.",
+      "source_hash": "03d35b3d1d549eb38fe309ea15b0e7bfaab7384e0a82fdf196c05026bdf1385c"
+    },
+    "ui.auto.79c7326b2106": {
+      "text": "Rendered frame: %.2f ms%s",
+      "source_hash": "2c62e968a307fb24b96c5d9e926e9853354ea842d0e8cd1969909c76a456253d"
+    },
+    "ui.auto.4255f5f63dc4": {
+      "text": " (NR overlaps/exceeds this interval)",
+      "source_hash": "04d8a1ce94b44dd67d879f627fc938aa44dd3c3b673669e3fd1f0143a1614b9b"
     }
   }
 }
