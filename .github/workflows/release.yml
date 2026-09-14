@@ -91,7 +91,7 @@ jobs:
       - name: Build standard Release x64
         shell: pwsh
         run: |
-          msbuild _upstream\OptiScaler.sln /m /p:Configuration=Release /p:Platform=x64 /verbosity:minimal
+          msbuild _upstream\OptiScaler.sln /m /p:Configuration=Release /p:Platform=x64 /p:PostBuildEventUseInBuild=false /verbosity:minimal
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
       - name: Build RTX 40 MFG Release x64 when supported
@@ -103,7 +103,7 @@ jobs:
             Write-Host "Upstream packager has no EnableRtx40Mfg parameter; legacy single-package release."
             exit 0
           }
-          msbuild _upstream\OptiScaler.sln /m /p:Configuration=Release /p:Platform=x64 /p:OptiScalerRtx40Mfg=true /verbosity:minimal
+          msbuild _upstream\OptiScaler.sln /m /p:Configuration=Release /p:Platform=x64 /p:PostBuildEventUseInBuild=false /p:OptiScalerRtx40Mfg=true /verbosity:minimal
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
       - name: Package
