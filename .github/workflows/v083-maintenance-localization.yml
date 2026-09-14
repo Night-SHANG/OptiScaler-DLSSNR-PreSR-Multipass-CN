@@ -17,18 +17,20 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Materialize v0.8.3 source
-        run: python tools/prepare_tree.py --worktree _upstream_v083 --ref v0.8.3 --no-submodules
-
-      - name: Refresh v0.8.3 master and stable catalogs
+      - name: Materialize tracked master and v0.8.3 stable sources
         run: |
-          python tools/scan_ui.py --source _upstream_v083 --channel master --upstream-ref v0.8.3 --update --report reports/master-localization-scan.md
-          python tools/scan_ui.py --source _upstream_v083 --channel stable --upstream-ref v0.8.3 --update --report reports/stable-localization-scan.md
+          python tools/prepare_tree.py --worktree _upstream_master --ref main --no-submodules
+          python tools/prepare_tree.py --worktree _upstream_stable --ref v0.8.3 --no-submodules
+
+      - name: Refresh master and v0.8.3 stable catalogs
+        run: |
+          python tools/scan_ui.py --source _upstream_master --channel master --upstream-ref main --update --report reports/master-localization-scan.md
+          python tools/scan_ui.py --source _upstream_stable --channel stable --upstream-ref v0.8.3 --update --report reports/stable-localization-scan.md
 
       - name: Apply reviewed v0.8.3 translations
         shell: bash
         run: |
-          python - <<'PY'
+          PYTHONPATH=tools python - <<'PY'
           from loclib import LOC, localization_channel_paths, load_json, save_json
 
           translations = {
@@ -81,7 +83,7 @@ jobs:
 
           missing_sources = set(translations) - found_sources
           if missing_sources:
-              raise SystemExit("Reviewed source strings not found in v0.8.3 catalog: " + repr(sorted(missing_sources)))
+              raise SystemExit("Reviewed source strings not found in v0.8.3 stable catalog: " + repr(sorted(missing_sources)))
           save_json(zh_path, zh)
           print(f"Applied {len(found_sources)} reviewed v0.8.3 source translations")
           PY
@@ -89,13 +91,13 @@ jobs:
       - name: Synchronize translation memory
         run: python tools/update_translation_memory.py
 
-      - name: Require complete v0.8.3 localization
+      - name: Require complete localization
         run: python tools/check_localization.py --channel all --strict
 
       - name: Verify source integration
         run: |
-          python tools/localize_source.py --source _upstream_v083 --channel master
-          python tools/localize_source.py --source _upstream_v083 --channel stable
+          python tools/localize_source.py --source _upstream_master --channel master
+          python tools/localize_source.py --source _upstream_stable --channel stable
 
       - name: Persist localization files
         shell: bash
@@ -108,7 +110,7 @@ jobs:
             echo "No localization changes to persist."
             exit 0
           fi
-          git commit -m "localization: update reviewed catalog for v0.8.3"
+          git commit -m "localization: update reviewed stable catalog for v0.8.3"
           git push origin "HEAD:${{ github.ref_name }}"
 
       - name: Upload scan reports
