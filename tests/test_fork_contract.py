@@ -23,7 +23,7 @@ class ForkContractTests(unittest.TestCase):
     def test_package_wrapper_uses_fork_packager_and_never_mentions_proprietary_runtime_as_payload(self):
         text=(ROOT/'tools/package.ps1').read_text(encoding='utf-8')
         self.assertIn('package_release.ps1',text)
-        self.assertIn('-SkipBuild',text)
+        self.assertIn('SkipBuild = $true',text)
         self.assertNotIn('Copy-Item nvngx_dlssnr.dll',text)
 
     def test_public_package_includes_verified_upstream_hybrid_assets_for_legacy_contract(self):
