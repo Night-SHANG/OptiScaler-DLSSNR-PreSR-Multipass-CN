@@ -137,7 +137,7 @@ jobs:
               if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
             }
           } else {
-            $ghArgs = @("release","create",$tag) + ($assets | ForEach-Object { $_.FullName }) + @("--title",$title,"--notes-file",release-notes.md)
+            $ghArgs = @("release","create",$tag) + ($assets | ForEach-Object { $_.FullName }) + @("--title",$title,"--notes-file","release-notes.md")
             if ("${{ inputs.prerelease }}" -eq "true") { $ghArgs += "--prerelease" }
             & gh @ghArgs
             if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
