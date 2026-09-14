@@ -23,6 +23,15 @@ class V083ReleaseContractTests(unittest.TestCase):
         self.assertIn('EnableRtx40Mfg', text)
         self.assertIn('/p:OptiScalerRtx40Mfg=true', text)
 
+    def test_ci_builds_preserve_variant_dlls_for_skipbuild_packaging(self):
+        for workflow in ('build.yml', 'release.yml'):
+            text = (ROOT / f'.github/workflows/{workflow}').read_text(encoding='utf-8')
+            self.assertGreaterEqual(
+                text.count('/p:PostBuildEventUseInBuild=false'),
+                2,
+                f'{workflow} must disable the upstream post-build mover for both standard and RTX40 MFG builds',
+            )
+
     def test_packager_supports_both_legacy_hybrid_and_v083_dual_package_contracts(self):
         text = (ROOT / 'tools/package.ps1').read_text(encoding='utf-8')
         self.assertIn("ContainsKey('HybridAssetsDirectory')", text)
