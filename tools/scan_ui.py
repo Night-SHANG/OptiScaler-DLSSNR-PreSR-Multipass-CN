@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse, difflib, subprocess
 from pathlib import Path
 from loclib import *
+from ui_scan import find_ui_candidates
 
 def git_sha(root: Path):
     try: return subprocess.check_output(['git','-C',str(root),'rev-parse','HEAD'],text=True).strip()
@@ -104,7 +105,7 @@ def main():
     for p in iter_source_files(args.source,rules):
         rel=p.relative_to(args.source).as_posix()
         text,_=read_source_text(p)
-        found.extend(find_candidates(text,rel,rules))
+        found.extend(find_ui_candidates(text,rel,rules))
 
     result=reconcile(found, old_entries, zh, tm)
     entries=result.catalog_entries
@@ -141,8 +142,6 @@ def main():
         save_json(LOC/'zh-CN.json',{'locale':'zh-CN','entries':zentries})
         save_json(paths['pending'],pending)
         save_json(paths['meta'],{'channel':args.channel,'upstream_ref':args.upstream_ref,'upstream_commit':commit})
-        # Backward-compatible mirrors for repositories created before dual-channel layout.
-        # Authoritative files are Localization/master/* and Localization/stable/*.
         if args.channel == 'master':
             save_json(LOC/'catalog.json',catalog)
             save_json(LOC/'en-US.json',{'locale':'en-US','channel':'master','entries':en_entries})
