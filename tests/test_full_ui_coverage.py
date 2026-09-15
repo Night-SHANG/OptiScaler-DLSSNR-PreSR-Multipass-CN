@@ -5,14 +5,17 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
-from loclib import find_candidates
+from ui_scan import find_ui_candidates
 
 RULES = json.loads((ROOT / "Localization" / "scanner-rules.json").read_text(encoding="utf-8"))
 
 
 class FullUiCoverageTests(unittest.TestCase):
+    def candidates(self, text: str, rel: str):
+        return find_ui_candidates(text, rel, RULES)
+
     def sources(self, text: str, rel: str):
-        return {c.source: c for c in find_candidates(text, rel, RULES)}
+        return {c.source: c for c in self.candidates(text, rel)}
 
     def test_dlssnr_help_marker_and_wrapped_checkbox_are_discovered(self):
         text = '''
@@ -23,11 +26,14 @@ class FullUiCoverageTests(unittest.TestCase):
         self.assertIn("Enable Neural Rendering", got)
         self.assertIn("Enable NR processing and show the result.", got)
 
-    def test_deferred_slider_label_is_catalogued_without_rewriting_logic_key(self):
-        text = 'DeferredSlider("Intensity", &config->DlssNrIntensity, 0.0f, 2.0f, 1.0f);\n'
-        got = self.sources(text, "OptiScaler/dlssnr/DlssNr_MenuModel.cpp")
-        self.assertIn("Intensity", got)
-        self.assertFalse(got["Intensity"].rewrite)
+    def test_deferred_slider_label_and_comparison_are_localized_together(self):
+        text = '''
+        DeferredSlider("Intensity", &config->DlssNrIntensity, 0.0f, 2.0f, 1.0f);
+        if (std::strcmp(label, "Intensity") == 0) {}
+        '''
+        got = [c for c in self.candidates(text, "OptiScaler/dlssnr/DlssNr_MenuModel.cpp") if c.source == "Intensity"]
+        self.assertEqual(len(got), 2)
+        self.assertTrue(all(c.rewrite for c in got))
 
     def test_dlssnr_snprintf_visible_format_is_discovered(self):
         text = 'snprintf(lbl, sizeof(lbl), "Paper white (editing point %d)", index + 1);\n'
