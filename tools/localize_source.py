@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse, re, shutil, subprocess, sys
 from pathlib import Path
 from loclib import *
+from ui_scan import find_ui_candidates
 
 INCLUDE_LINE = '#include "localization/Localization.h"\n'
 
@@ -121,7 +122,7 @@ def patch_dynamic_helpers(path: Path):
 
 def instrument_file(path: Path, rel: str, rules: dict, source_to_key: dict):
     text, source_encoding = read_source_text(path)
-    candidates=find_candidates(text,rel,rules)
+    candidates=find_ui_candidates(text,rel,rules)
     changes=[]
     for c in candidates:
         if not c.rewrite: continue
