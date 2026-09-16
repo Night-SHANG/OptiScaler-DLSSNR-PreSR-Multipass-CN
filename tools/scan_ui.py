@@ -20,6 +20,18 @@ class ReconcileResult:
     stale: list[str]
 
 
+def load_translation_memory() -> dict:
+    """Merge the general TM with reviewed DLSS-NR UI translations.
+
+    The supplemental file is intentionally small and reviewable. It covers UI
+    surfaces discovered by the extended scanner without forcing large rewrites
+    of the long-lived general translation-memory file.
+    """
+    tm=load_json(LOC/'translation-memory.zh-CN.json',{})
+    tm.update(load_json(LOC/'translation-memory.dlssnr.zh-CN.json',{}))
+    return tm
+
+
 def reconcile(found: list[Candidate], old_entries: dict, zh: dict, tm: dict) -> ReconcileResult:
     """Reconcile one upstream channel using immutable source-derived keys.
 
@@ -98,7 +110,7 @@ def main():
     old=load_json(paths['catalog'],{'schema':1,'channel':args.channel,'entries':{}})
     en=load_json(paths['en'],{'locale':'en-US','channel':args.channel,'entries':{}})
     zh=load_json(LOC/'zh-CN.json',{'locale':'zh-CN','entries':{}})
-    tm=load_json(LOC/'translation-memory.zh-CN.json',{})
+    tm=load_translation_memory()
     old_entries=old.get('entries',{})
 
     found=[]
