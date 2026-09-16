@@ -50,6 +50,7 @@
   "Broad lighting changes. Later passes default to 0.": "大范围光照变化。后续 Pass 默认为 0。",
   "Skin structure": "皮肤结构",
   "Skin detail. -1 follows Local structure.": "皮肤细节。-1 表示跟随“局部结构”。",
+  "Unlock up to 10 passes": "解锁最多 10 次 Pass",
   "Model-based skin selection.": "基于模型的皮肤区域选择。",
   "DLSS NR : ON": "DLSS NR：开启",
   "DLSS NR : OFF": "DLSS NR：关闭",
