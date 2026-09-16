@@ -2,9 +2,7 @@ name: Release OptiScaler DLSSNR Pre-SR Multipass CN
 
 on:
   push:
-    branches: [main, master]
-    paths:
-      - "Localization/zh-CN.json"
+    branches: ["release/v0.8.4-cn"]
   workflow_dispatch:
     inputs:
       upstream_ref:
@@ -50,7 +48,9 @@ jobs:
         shell: pwsh
         run: |
           $requested = "${{ inputs.upstream_ref }}"
-          if ($requested) { $ref = $requested } else { $ref = "${{ steps.upstream.outputs.stable_tag }}" }
+          if ("${{ github.ref_name }}" -eq "release/v0.8.4-cn") { $ref = "v0.8.4" }
+          elseif ($requested) { $ref = $requested }
+          else { $ref = "${{ steps.upstream.outputs.stable_tag }}" }
           if (-not $ref) { throw "No fork stable release could be resolved" }
           "ref=$ref" >> $env:GITHUB_OUTPUT
 
@@ -137,8 +137,8 @@ jobs:
               if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
             }
           } else {
-            $ghArgs = @("release","create",$tag) + ($assets | ForEach-Object { $_.FullName }) + @("--title",$title,"--notes-file","release-notes.md")
-            if ("${{ inputs.prerelease }}" -eq "true") { $ghArgs += "--prerelease" }
+            $ghArgs = @("release","create",$tag) + ($assets | ForEach-Object { $_.FullName }) + @("--title",$title,"--notes-file","release-notes.md","--target","main")
+            if (("${{ inputs.prerelease }}" -eq "true") -or ("${{ github.ref_name }}" -eq "release/v0.8.4-cn")) { $ghArgs += "--prerelease" }
             & gh @ghArgs
             if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           }
