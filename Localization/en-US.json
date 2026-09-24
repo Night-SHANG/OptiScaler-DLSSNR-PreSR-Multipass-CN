@@ -3825,6 +3825,178 @@
     "ui.auto.19700482e2de": {
       "text": "%3.0f%%  %.5f",
       "source_hash": "e22915aa221ef233b4a59ab4afdad141e3c7a209d6e51d267ce60191f9ba3108"
+    },
+    "ui.auto.dc6cf324fe7b": {
+      "text": "Overall enhancement strength for this pass. 1 = default; results depend on the profile.\nValues above 1 are experimental; the runtime may clamp or ignore them.",
+      "source_hash": "9a5fe65f999e24df256c771fd21a72e3ac3f5f6a7504191aaa7f3f9ba69858b0"
+    },
+    "ui.auto.a0be8b06a8ae": {
+      "text": "Fine detail and local contrast requested from the model (high-frequency structure).\n1 = default; values above 1 are experimental.",
+      "source_hash": "946d8a5e3e8567f4151e603a57a565304e3874b8185c9ac421dc0c34e77a4a3f"
+    },
+    "ui.auto.164e5a0b20ce": {
+      "text": "Broad brightness and lighting changes requested from the model (low-frequency tone).\nLater passes default to 0. Values above 1 are experimental.",
+      "source_hash": "7078c973371f029ebd95ea7ab96674aacdbbbb40e520c9a6872ffa53f9814919"
+    },
+    "ui.auto.4d535843e16d": {
+      "text": "Fine detail for pixels the model identifies as skin. -1 follows Local structure; 0 reduces skin detail.\nSkin colour is controlled separately. Values above 1 are experimental.",
+      "source_hash": "88328e77f5a50376fe1e31103ab44cfb1e551f2e94c5bf5983cb0829f673c871"
+    },
+    "ui.auto.7ce1c6dc6541": {
+      "text": "Enhance lighting and material appearance with the NR model. Placement selects before or after upscaling.\nRequires nvngx_dlssnr.dll plus the included nvngx.dll_dlssnr.dll helper.",
+      "source_hash": "ee34a55bf6c63a6f8e7559a330e0774ac1540a585701d007c5977eb06bdf0f41"
+    },
+    "ui.auto.a2920be8e2f5": {
+      "text": "Apply NR after the game has finished its lighting and effects. This may help with green noise.\nWorks with frame generation on or off in native DirectX 12 games, including SDR, HDR10 and scRGB.\nIt can also change the HUD and menus. Enable Run the model before Super Resolution to generate the changes earlier.",
+      "source_hash": "3b77dfc846e27939abbb97d5e7e9f7a0e2346423756e947ee9102b02c8791adf"
+    },
+    "ui.auto.7646d65c57dc": {
+      "text": "Only with Apply before Super Resolution on and the game's Ray Reconstruction active.\nRuns the model before SR but leaves the colour input untouched, then adds its edit back onto the RR+SR output so it survives RR's denoise.\nThe edit is carried as a motion-vector-reprojected temporal accumulator: the per-frame ray-trace noise averages out, the enhancement stays. Inert otherwise.",
+      "source_hash": "218146267f33ded5444292d2b7db59b523bce6630208d34dd072c7a72313b813"
+    },
+    "ui.auto.4b21ccf41b72": {
+      "text": "How fast the carried edit builds up. Lower = stabler but slower to appear; 1.0 = no accumulation (each frame's raw residual, which flickers). Default 0.08.",
+      "source_hash": "c8d2a0332d7831291526e75c8d75744b0b6954a616c3c8ec8e7425ec59df5e08"
+    },
+    "ui.auto.2d4a887308e8": {
+      "text": "NVIDIA: original FP8 model (default), with some sensitive operations kept at higher precision.\nExperimental: this fork's FP8+NVFP4 hybrid for RTX 50 GPUs; output may differ slightly.",
+      "source_hash": "0560a46ac063458d963fbd407efa5b2128e702895f3b207e49e0a1abc78622a8"
+    },
+    "ui.auto.547dad2ae781": {
+      "text": "Compute NR at input resolution, upscale its changes with DLSS, then apply them after SR.\nExperimental: may flicker and adds GPU cost. Requires DLSS on DX12 or its bridges; does not support RR.\nOverrides Apply before Super Resolution. Disable Hold frame, Compare and Debug view.",
+      "source_hash": "0c2a96de227170a1a4f31e465324ec1b4a8a8dc43c6a348bbfb8ff8b1c12f64e"
+    },
+    "ui.auto.56ed36cf46f2": {
+      "text": "Run NR every other rendered frame and use NVIDIA FG to interpolate its changes.\nRequires the option above. Adds one rendered frame of latency and may misalign effects or UI.\nIf motion vectors are unavailable, each NR result is reused for two frames.",
+      "source_hash": "3a626236c2beaedd2ea14cb1bd9bb328dc56e65689fab8046efe914cd894dc43"
+    },
+    "ui.auto.66ff23c8de7d": {
+      "text": "Use estimated camera data when the game does not provide it. May cause artifacts during camera movement.",
+      "source_hash": "41d5dbcfb82595b3e69713aff8aaf34155e8e6ed367896a0f701e26d2731e038"
+    },
+    "ui.auto.d03c320037fe": {
+      "text": "Show or hide the NR effect. The model still runs when hidden.\nDisable Enable Neural Rendering to stop its GPU cost.",
+      "source_hash": "af631ec19cece5112ae8b6f676f571124f24fde8e61f6199f20160a5afd4f526"
+    },
+    "ui.auto.37b0798e03d8": {
+      "text": "Allow up to 30 passes instead of 3. More passes use more GPU time and VRAM; high values may crash the game.",
+      "source_hash": "61eddeb68baf76a6956300d3a42fabbb6a745a448e1a424c912fb22abe5c7ae1"
+    },
+    "ui.auto.a081415ea37f": {
+      "text": "Process the image repeatedly. More passes strengthen the effect and increase GPU cost.\nEach pass has its own settings and history. Start with 1.",
+      "source_hash": "49605d21fd70c9e4b0235262f9ceffd661d8356a0b813b5bb79df2113b9f6151"
+    },
+    "ui.auto.356588435bc1": {
+      "text": "NR resolution relative to the image it processes. 50% halves width and height; 100% uses the full size.\nLower values reduce cost and fine detail. Above 100% increases cost. Game output resolution is unchanged.",
+      "source_hash": "0a34e4b485ece5a5e6a424f7a86ce1d83f6ac8e6b07b3f4445b8ea3c3a831268"
+    },
+    "ui.auto.b10f1bb313e1": {
+      "text": "Filter used to reduce NR output when Model resolution exceeds 100%.\nSharper filters may introduce ringing around edges.",
+      "source_hash": "55958255f4a78bcb101092cf07c508ee2626de1399eb641d55ef4251eefb4391"
+    },
+    "ui.auto.1ed5a4b4e33c": {
+      "text": "Below 100% model resolution: Classic enlarges the model output; Matched residual enlarges only its changes.\nMatched residual can reduce blur and colour shifts. No effect at 100% or above.",
+      "source_hash": "ca2f5dcf0d5ec4a4d8670b1fbec782202118c64855ccc47b1aaea32099112336"
+    },
+    "ui.auto.8e2bdcc273dd": {
+      "text": "Overall NR detail strength: 0 = no effect, 1 = normal, above 1 = exaggerated.",
+      "source_hash": "db9dd81a9de136d7dc36c8355f2cd5e68ebf5781560248e9f551bb24bd14cca4"
+    },
+    "ui.auto.4f1bc1edd661": {
+      "text": "NR colour strength: 0 = preserve game colours, 1 = model colours, above 1 = stronger saturation.",
+      "source_hash": "93ac4795b6862da82ec4c6093bc21592ea104d743e17894a2fe3988c614c984a"
+    },
+    "ui.auto.39c2902faff4": {
+      "text": "Choose how HDR brightness is mapped for NR.\nSoft knee compresses highlights. Neutwo uses a reversible curve. Hybrid preserves midtones and compresses highlights.\nComposed uses the strength and highlight controls. Replace bypasses them and may flicker.",
+      "source_hash": "81d9f19c735871768fcf6d8ec2bdb1a60bf06170ba45ef534c441f10920c14d4"
+    },
+    "ui.auto.c25348d1f3e5": {
+      "text": "Select the appearance profile: Standard, Natural or Cinematic. Intensity controls its strength.",
+      "source_hash": "8a257548c154ead4f58cc71ea2f91623fed79dde42e8e1b5927de402b8e26a0f"
+    },
+    "ui.auto.8f3c09feb02c": {
+      "text": "Use the model's learned skin selection to apply Skin structure without an authored mask.\nAccuracy varies. This is separate from the colour-based mask below.",
+      "source_hash": "591ca9714b4eef79942ef01cd7d258ef7bbf4c4088371efa224e8af9f6fd7673"
+    },
+    "ui.auto.657eacb22194": {
+      "text": "Allow NR colour changes in the selected skin region. Turn off to preserve its colour; detail can still change.",
+      "source_hash": "0260fbcb9f445f5ab244cdc1c698d6560ceca95792f9e920762c8d8a4c86fd34"
+    },
+    "ui.auto.b0ea40c51a3d": {
+      "text": "NR strength in this region: 0 = no change, 1 = full effect.",
+      "source_hash": "644bfa0b16fe7ef84b17adba7c613dcb84fd196533ca6b0bba97573e58749a82"
+    },
+    "ui.auto.947a8f0824eb": {
+      "text": "Manual: use Paper white. Game exposure: use exposure supplied by the game.\nScanned exposure: estimate it from game buffers; requires calibration and may select the wrong buffer.",
+      "source_hash": "2128ec9f1854163593e38d0a3244dcd2f6a9635b3c8c5545d321887780f4cc30"
+    },
+    "ui.auto.4336677c35e0": {
+      "text": "Paper white (editing point %d)",
+      "source_hash": "673ac2de00bab9e925578c4463e8450475b1121feb0778fda6901fe80c1a1503"
+    },
+    "ui.auto.a6bc0be434b6": {
+      "text": "Adjust the selected calibration point, or set the value for the next point.\nUse Anchor here to save the current lighting condition.",
+      "source_hash": "2ec7271113a4230e52430ae3245e8683c2ce46c8a5b417515e8e54cf38e64248"
+    },
+    "ui.auto.030761ce7013": {
+      "text": "Multiply the calibrated white point. Anchor here saves the adjusted value and resets this multiplier to 1.",
+      "source_hash": "607319fbf843aec16332d0356857808671b1f17d95df8b49d46a38f6cfa74f06"
+    },
+    "ui.auto.16b71cb2c825": {
+      "text": "Multiply the white point derived from game exposure. 1 = no adjustment.",
+      "source_hash": "023ae74517a856d7f0edcebd49078f08ab63fbe950e53f29bf3f7e2574f7f7a9"
+    },
+    "ui.auto.ad4d285238b2": {
+      "text": "Brightness reference used to prepare HDR colour for NR. Higher values darken the model input; lower values brighten it.\nAdjust if NR loses detail or produces colour shifts.",
+      "source_hash": "d4ee91f387bae79bdb836469901b893eed9fba34e2dd1d542b273f9f37ace778"
+    },
+    "ui.auto.e8922543a2fb": {
+      "text": "Limit how much NR can brighten or darken a pixel. Lower values restrict highlight changes; higher values allow more.",
+      "source_hash": "02bf4f75f389b05c2ec84dd1565153ef6a81318a3f2470e9b92fc76af6547422"
+    },
+    "ui.auto.3c4c514a074e": {
+      "text": "Show the scanned exposure value and a colour indicator. Display only; does not change the image.",
+      "source_hash": "0752f51878e57fe9dd72858845d05fb95d23c3a0d31500a7e3c59cc8752dc3d2"
+    },
+    "ui.auto.56fe6aad16d2": {
+      "text": "Save the current exposure and white point as a calibration point.\nAdjust Paper white for the first point, then Trim for additional lighting conditions. Up to 8 points.",
+      "source_hash": "b48fd265ba540ac2135d87ca08f0c5d7a1084cd69e0aa80d9b10beb31682e7aa"
+    },
+    "ui.auto.6410d0f7dcc8": {
+      "text": "%s scan %.4f  ->  white %.2f%s",
+      "source_hash": "b7aafd194d5d6c73ba1cdd9a120b4e36dbe981fcd27bfe3acd0f60e5d71b5dea"
+    },
+    "ui.auto.f54f15264dda": {
+      "text": "Reverse how scanned exposure changes the white point. Only needed with one calibration point.",
+      "source_hash": "32b1fb1642ff1bf2b3c9df46ab47b755997b31104ccbb8777c15a400df2b8707"
+    },
+    "ui.auto.7f82bcd4dd77": {
+      "text": "Freeze NR's input to compare its settings. The game's HUD and later effects may keep updating.\nDoes not re-run SR/RR or show changes to their settings. Turn off to resume.",
+      "source_hash": "75fa69d96d5b5b46eb9fe7e9fd991b8ee1a9e0295287068ab756fd655dd4a6eb"
+    },
+    "ui.auto.f4b1894db040": {
+      "text": "Compare the original and NR result. Side by side fits both images; Wipe divides one full-size image.",
+      "source_hash": "d33a5ed23fc517ec9848039dd405d86f0b06225db7ab5c9069132df771dfa88f"
+    },
+    "ui.auto.273cade7ea26": {
+      "text": "Swap the original and NR sides.",
+      "source_hash": "3c4dfcc0e82ab966cd67006dca708910fc02de71ab41a2a47a6eb5727925faf9"
+    },
+    "ui.auto.5bb951d63ad7": {
+      "text": "Display labels identifying the original and NR sides.",
+      "source_hash": "e4afb7b0a8cd0d24bb85e55c24280728665cc8cad4aa5450fa6c79918996561e"
+    },
+    "ui.auto.0f52e6ae5f87": {
+      "text": "Side-by-side zoom: 1 = fit the whole image, 2 = fill each half by cropping the sides.",
+      "source_hash": "04b2152e12e77deaa1b3b95198f76ef55da0bfae181ff61e42d889ad5221f696"
+    },
+    "ui.auto.6ee25a46defa": {
+      "text": "Position of the comparison boundary. Swap sides reverses which image appears on each side.",
+      "source_hash": "e819a2a5d783e44ac615ee087a14b3431a49343acd5f1ac526c4301f8f88d587"
+    },
+    "ui.auto.5a6fb3e787c0": {
+      "text": "Show the model input, raw output, or a 20x amplified difference. Grey in Difference means no change.",
+      "source_hash": "dc468f3b957e95637260b974e9121b44440af64cae3cd8fb657acd52c834561e"
     }
   }
 }

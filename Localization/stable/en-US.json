@@ -2538,6 +2538,14 @@
       "text": "DLSS Neural Rendering",
       "source_hash": "e2212ef3f7eb4de4f3cf4e7f536eac95bbf158e33f3f897cb2c1d2f23a1a3a05"
     },
+    "ui.auto.1a6bd1741ca9": {
+      "text": "Enable Neural Rendering",
+      "source_hash": "07df46a09a00f4ea8c56a11534499f96fe2d54c6c895264670955a8ac672a4ab"
+    },
+    "ui.auto.5a7bd4840dea": {
+      "text": "Apply NR to the finished picture",
+      "source_hash": "e05f1a753b0aae00229256bdeb5dbab90fa25701efb2ec054ee4b7595c6b1fc2"
+    },
     "ui.auto.96ba36de6819": {
       "text": "NR off.",
       "source_hash": "f872faba55b266435b1e2bc698c6670c9f172a77c751c623586db23d1412959f"
@@ -3601,6 +3609,278 @@
     "ui.auto.4255f5f63dc4": {
       "text": " (NR overlaps/exceeds this interval)",
       "source_hash": "04d8a1ce94b44dd67d879f627fc938aa44dd3c3b673669e3fd1f0143a1614b9b"
+    },
+    "ui.auto.f6849bb6c451": {
+      "text": "50% halves width and height. 100% uses the full input size.",
+      "source_hash": "894e4b2cf5bce3489242e576ad713a89b0a98b1e187df6ae7375776cda3d2406"
+    },
+    "ui.auto.4281f1e14380": {
+      "text": "Downsampling filter for resolutions above 100%.",
+      "source_hash": "6c383054ec58c51e8e3e2d70229f9a9968d9357bf08fdf24a9bba6d86bf388e6"
+    },
+    "ui.auto.6b10db3d4b9d": {
+      "text": "Below 100%: enlarge the output or the NR difference. DLSS requires post-upscale DX12 processing.",
+      "source_hash": "ebbb0fce499fb87e733ccd23adbebf96bb7c831b828732c4800fd6e86e37a591"
+    },
+    "ui.auto.d20b4a6242f2": {
+      "text": "HDR mapping curve. Replace bypasses strength and highlight controls.",
+      "source_hash": "2ca1f9de8cf24d8e2e81fca31585c30a652d89241ce68edd68954c22a394e58a"
+    },
+    "ui.auto.c94fe8f819f7": {
+      "text": "Game exposure uses supplied data. Scanned exposure requires calibration and may select the wrong buffer.",
+      "source_hash": "96043b825672f34ada698d33dbb193035375d14bb672175aa197f779a55b78c0"
+    },
+    "ui.auto.4336677c35e0": {
+      "text": "Paper white (editing point %d)",
+      "source_hash": "673ac2de00bab9e925578c4463e8450475b1121feb0778fda6901fe80c1a1503"
+    },
+    "ui.auto.a54db9b25821": {
+      "text": "Adjust this point, then select Anchor here to save it.",
+      "source_hash": "ebcd49311d508597226e90236dd9ed4de6ef34dea708a8be45f7a8e0c7262e13"
+    },
+    "ui.auto.149574660f1d": {
+      "text": "Adjust calibrated brightness. Anchoring resets Trim to 1.",
+      "source_hash": "3db4538edbe60a445b7967ca7df3dca9c5698eebc53aa6fa1410d8f807fb158f"
+    },
+    "ui.auto.70c04adbd4af": {
+      "text": "Exposure multiplier. 1 = unchanged.",
+      "source_hash": "3ebb8cdbc3f40b308e73b09e0ea5e0d9960761ad4abf4a19fde6d5f8272a973b"
+    },
+    "ui.auto.a0e448d57ff7": {
+      "text": "Higher values darken the NR input; lower values brighten it.",
+      "source_hash": "6ec380208e3cc7fa88da94c6d61090da42df9ce5bbb664ba8ed72cc55b60b317"
+    },
+    "ui.auto.9197234169c7": {
+      "text": "Display the scanned value. Does not change the image.",
+      "source_hash": "e1e2f8b54c4e615575a283cc17057224f680f204ccd69e2f50464f0f631c24ac"
+    },
+    "ui.auto.9caef689b6dd": {
+      "text": "Save exposure and white point. Up to 8 calibration points.",
+      "source_hash": "21ab6befdbcb33df939e7d32dee2672cb5d62ca9000a5c3476b5d93c889d3acb"
+    },
+    "ui.auto.6410d0f7dcc8": {
+      "text": "%s scan %.4f  ->  white %.2f%s",
+      "source_hash": "b7aafd194d5d6c73ba1cdd9a120b4e36dbe981fcd27bfe3acd0f60e5d71b5dea"
+    },
+    "ui.auto.58d3136988fd": {
+      "text": "Reverse exposure response for single-point calibration.",
+      "source_hash": "bbadab1744dd3be54d8e6cd7afaf35615cabefbbb8166f3632de90efa04a9659"
+    },
+    "ui.auto.474897c37f67": {
+      "text": "Apply model",
+      "source_hash": "aaf04a8ca358de4753655dec963c28d006c08df89cacfdea1a4fed42ff2af75f"
+    },
+    "ui.auto.bed8f9383436": {
+      "text": "Generate model before upscale",
+      "source_hash": "3a14e1eecda653a8b9969d9d5e9582ca725db62031a6aeb29e2d2394e8433db6"
+    },
+    "ui.auto.70d508bd4c10": {
+      "text": "Generate before upscale, apply after upscale",
+      "source_hash": "059229e6a5edf6f0717510efda7d952ca8fa0f1b99fd71c9712c1c0296fe734d"
+    },
+    "ui.auto.60febdc61e23": {
+      "text": "Upscales only the NR edit, with or without game RR. FSR (FidelityFX) and XeSS need their runtimes.",
+      "source_hash": "d896e1aa0131314700edda613ae7c31a17f4fa91c834030c5bda7c72c82c7f00"
+    },
+    "ui.auto.0ad6e4483007": {
+      "text": "Intensity",
+      "source_hash": "a6d01dcff3bfd333edf90a50daac2104cefab98b85bdbba67c8209ab75eb6447"
+    },
+    "ui.auto.d3fc9e05adc2": {
+      "text": "Enhancement strength. 1 = default.",
+      "source_hash": "dceafb2ea11dfe8932f3fd9c8cc9af36e3e16bf47d696ab05e24c1a84a0c4139"
+    },
+    "ui.auto.c3a269fee466": {
+      "text": "Local structure",
+      "source_hash": "7a0e4aa521018f8f3f03e4db7d00cd2744a982bc7d14a9e1821c8412b634b01a"
+    },
+    "ui.auto.fa65c3d034f8": {
+      "text": "Fine detail and local contrast. 1 = default.",
+      "source_hash": "b95d563bedee1df108028caff5045afa87c493d861327b41393cef7add180677"
+    },
+    "ui.auto.61db2f76041c": {
+      "text": "Local tone",
+      "source_hash": "19f12062bf09a376325d8cba6debc53f0c6746b50d287821b3609235a2cd561c"
+    },
+    "ui.auto.2809c2de55df": {
+      "text": "Broad lighting changes. Later passes default to 0.",
+      "source_hash": "163ffe10a0147dd69359182dd7a3e6a0eb8a81afb49c427c4d18f90f8d544ca4"
+    },
+    "ui.auto.63eb0a41f4c8": {
+      "text": "Skin structure",
+      "source_hash": "4550add8a632c98ad162114c7ad43545b110ca0a2b2a7560ea0d96376cce682e"
+    },
+    "ui.auto.0903a3454c57": {
+      "text": "Skin detail. -1 follows Local structure.",
+      "source_hash": "deb9eb773350d7fa68f58fb04a2ef793fa109247124bf59014954d9a6f2c6468"
+    },
+    "ui.auto.c8d540bd22e0": {
+      "text": "Model-based skin selection.",
+      "source_hash": "5dd4172b4faa709bdf13790651f2fe7a81c2deb1f9861bfb7eb02a1f08a7e4d4"
+    },
+    "ui.auto.ce164cf52b41": {
+      "text": "Match early NR brightness changes to the finished HDR image. Adds GPU work; unreliable fits fall back.",
+      "source_hash": "640080d949e07c833e765d5f9731947e725e948fb957f4e9c3c7a60501e5156d"
+    },
+    "ui.auto.b3718948fafd": {
+      "text": "0 = no detail change. 1 = normal.",
+      "source_hash": "c3c293045fabf310109dee6d009599dd2ea1d408ca5281786f7f9538d198e27f"
+    },
+    "ui.auto.4eb5dab41d8a": {
+      "text": "0 = game colours. 1 = model colours. Above 1 boosts saturation.",
+      "source_hash": "d128628e456bdb4a5aa63a4624be9faf1a7210781d7043d059c849a7a0561453"
+    },
+    "ui.auto.c80e18e57ee0": {
+      "text": "Allow skin colour changes while retaining separate detail control.",
+      "source_hash": "0f02f468533969084ee0a7309b866880750482fe79fa1ceb3bfdf44102447aac"
+    },
+    "ui.auto.4a92ac1847a6": {
+      "text": "0 = unchanged. 1 = full effect.",
+      "source_hash": "bcbf92194f8b2f3421ac6c652fc054c07081ae3f968e5d103d1f9062336947b4"
+    },
+    "ui.auto.6d47024ee665": {
+      "text": "Skin detail / lighting",
+      "source_hash": "4606b0c577d5db54f9a5ba27e620d9df573299082dab9ae4a1ac172a83b4e7aa"
+    },
+    "ui.auto.45995842b538": {
+      "text": "Skin colour",
+      "source_hash": "569ec800ed70fabfa2bcfacff382bfb47a400ab509a94162bfb309f0af932322"
+    },
+    "ui.auto.b06ec3ce4db0": {
+      "text": "Environment detail / lighting",
+      "source_hash": "91fb7c0e07d89c339b7fb2cd71e48092bb284069c8f3aa58827766aa11344b9e"
+    },
+    "ui.auto.d8109e7e5a13": {
+      "text": "Environment colour",
+      "source_hash": "46b27ce2cb731f4a4b2cfc2733c1664a400c0a8b7e146436a7c933d991db8ac4"
+    },
+    "ui.auto.dc9d247c2357": {
+      "text": "Limit pixel brightening and darkening.",
+      "source_hash": "b0885008dc5636be1aa69e0a12e40ff29b518f03e0d50868ed663018e0709c3e"
+    },
+    "ui.auto.4f4067eb2a66": {
+      "text": "Freeze a frame for NR tuning. Later game effects may update; temporal behaviour is not representative.",
+      "source_hash": "01937a0a87a16526cc98962b4becc7287f97e5f63baa8ad882e55a00eba678d9"
+    },
+    "ui.auto.51e2ae3850a7": {
+      "text": "Compare the original and NR output.",
+      "source_hash": "f3e23d9cea12b7bcfb47906895483afde53a9d7ec6ad906a25cfe7cd9559435b"
+    },
+    "ui.auto.784a7da2f8e4": {
+      "text": "1 = fit. 2 = crop and enlarge.",
+      "source_hash": "938caaab751bd63cf370adf0ef2c154efdbe30e0f1a77e43087827487d0549fb"
+    },
+    "ui.auto.d8d985f12828": {
+      "text": "Move the comparison boundary.",
+      "source_hash": "57e83175e300275ab23d328cda1e5fd8524f36535d508e2f7cf099345f3e03dc"
+    },
+    "ui.auto.615d68b7abe3": {
+      "text": "Difference is amplified 20x. Grey means unchanged.",
+      "source_hash": "0d7f7dd0b7deddce2aabdf737e81c5d81dbac4d272495ea229b07a2d90822207"
+    },
+    "ui.auto.887daaeaa1c9": {
+      "text": "DLSS NR : ON",
+      "source_hash": "1d999cd63456bca550b6f07468517b34d6f89a600327c834d2555681aa1249c9"
+    },
+    "ui.auto.b75145897362": {
+      "text": "DLSS NR : OFF",
+      "source_hash": "f4edde52d7f0b961dd3d855c9d95c983a5977ce6ac6630acd812b742149a97a1"
+    },
+    "ui.auto.ab89d05c4b9c": {
+      "text": "Placement",
+      "source_hash": "4df9939944a7b324991dfbe49dcfc0813f1f474311eee2e207b53442495887e8"
+    },
+    "ui.auto.e4aef77b4acc": {
+      "text": "Apply NR edit",
+      "source_hash": "680b9c4243e32c705930546fc5ea68734478a44cf7c0d08d6922bcb97af9bbba"
+    },
+    "ui.auto.44ed616e6cdf": {
+      "text": "Prepare NR input",
+      "source_hash": "e0dd2e2c6f0d4bec4404ab33cb86793efb03206506d3945d2dfa327afc8c5642"
+    },
+    "ui.auto.7884bd6fcd38": {
+      "text": "HDR / exposure / ",
+      "source_hash": "7b67b9ff92d9cbf497bbf3922612ac3b0e8b963e42958bd6fe54dad5da911b41"
+    },
+    "ui.auto.023c2a7e1db0": {
+      "text": "NR model",
+      "source_hash": "274eb41964fd0689b8c967f44facaefb56dc2dab68d198a5792dd3795e9e3d99"
+    },
+    "ui.auto.b1e41da2c5fd": {
+      "text": " pass",
+      "source_hash": "f2752b292e1333b2d224a1f831e3ce866dbfc7a32da2af4d1092135f5a2c9383"
+    },
+    "ui.auto.2d71dd7caa6c": {
+      "text": " passes",
+      "source_hash": "494a60bca78dc28976a63ad2ba57dbc7543d5d624ec865f7028f5e661f37d695"
+    },
+    "ui.auto.2c15dc8b24e4": {
+      "text": "Strength / skin",
+      "source_hash": "aef89317fe8f2764305c8d2dd320170860ab7a6af4b068a4f8ed714dc55288f0"
+    },
+    "ui.auto.36e8de5cfb1d": {
+      "text": "Edit hidden; model runs",
+      "source_hash": "a0e0b87a5cd73a3b4b5d4843cc9902b3684798b189cb45c5d0c389450a356964"
+    },
+    "ui.auto.1d87893917cf": {
+      "text": "RR + Super Resolution",
+      "source_hash": "2fb743de0fa51946fabe53ff5534fc87e93ccc4068d96db3399ae70bc19f189a"
+    },
+    "ui.auto.95b6f67581cb": {
+      "text": "Super Resolution",
+      "source_hash": "706d3555857d1c9a7addabc0f9eed845e5fe450d1c847bf7b544f4cc730a90d0"
+    },
+    "ui.auto.01cfb95bc167": {
+      "text": "Clean game image",
+      "source_hash": "7dcf68125f6b4926edcb7fcd5906798d794c71ab261f1b906b0651f0cb874201"
+    },
+    "ui.auto.3246422dde0f": {
+      "text": "Game upscaler",
+      "source_hash": "eb4a9747f2410619c6e7e1f381c5dfed1f3737e7cdb1ba6d760b95dcd0a2710b"
+    },
+    "ui.auto.43501d72338f": {
+      "text": "Game effects + HUD",
+      "source_hash": "33693e482a509e3504112585762d9f41caf71cd737a7d240db58eded4f8725ff"
+    },
+    "ui.auto.648442b122d8": {
+      "text": "Game rendering",
+      "source_hash": "8ae8f6dc41bb1117811fceb361a2df95e469d3e7afc8c5264592123877805427"
+    },
+    "ui.auto.b8df771e03c3": {
+      "text": "Game input",
+      "source_hash": "e490c25ebb5c4f490c51ab8c7863a9bba90978891bb5e4e210ee5b7b02183db1"
+    },
+    "ui.auto.a7e88cc5c7b0": {
+      "text": "Placement / routing",
+      "source_hash": "e2712059a21504999a166a0542f101b195fc92f277cdd7b18dd5e084dcc350a7"
+    },
+    "ui.auto.23b5453d0b79": {
+      "text": "Upscale NR edit",
+      "source_hash": "19a7d5d92e490137ad129bad891e12ecd3aa9a5e07be8ff34039592a6534f9e7"
+    },
+    "ui.auto.70813a04d7b5": {
+      "text": "Separate ",
+      "source_hash": "be583207b353fc55011b825582617b7e6ce9d29ad620b24ac72237a2316e2769"
+    },
+    "ui.auto.8f5d15ad5adc": {
+      "text": " pass (no RR)",
+      "source_hash": "9e2c5105c010f50f69f88ee3d44ac8040ea1611fcd0f8728ed409f1fe96d9b94"
+    },
+    "ui.auto.546263ceed37": {
+      "text": "Game output",
+      "source_hash": "20ef3bc24bba4f87acd69c39b96cf9eee325dce45d2f65220512e81d70ac7cd0"
+    },
+    "ui.auto.27ddbd64b38e": {
+      "text": "FG / presentation",
+      "source_hash": "9693628385915cda7415993e5e2beab91c2f888326764001b2cac3c37e668e84"
+    },
+    "ui.auto.1668095b4d6c": {
+      "text": "Prepare input",
+      "source_hash": "446ac7cbf9a6d3838c152747f1908dad11120ce09e177d08aa595f83daaa264c"
+    },
+    "ui.auto.241d149fa5ef": {
+      "text": "Apply edit",
+      "source_hash": "d539998e9dda9ffc435fa99185e7507f8d80e375d79e18f63305eb96d102d315"
     }
   }
 }

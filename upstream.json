@@ -3,7 +3,7 @@
   "branch": "main",
   "commit": "v0.8.4",
   "stable_release": "v0.8.3",
-  "last_scanned_commit": "e237f895623742b761f9e5f00067cb3dc62619f4",
+  "last_scanned_commit": "1bd39091337cc07ba961c8e59ded57e21dc95b18",
   "last_released_upstream_tag": "v0.8.3",
   "distribution_name": "OptiScaler DLSSNR Pre-SR Multipass CN",
   "upstream_name": "wilsjo2/OptiScaler-DLSSNR-PreSR-Multipass",

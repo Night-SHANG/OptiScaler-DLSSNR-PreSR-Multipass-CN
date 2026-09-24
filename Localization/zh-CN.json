@@ -7553,6 +7553,630 @@
       "state": "reviewed",
       "source_hash": "04d8a1ce94b44dd67d879f627fc938aa44dd3c3b673669e3fd1f0143a1614b9b",
       "note": "v0.8.3 manually reviewed translation"
+    },
+    "ui.auto.dc6cf324fe7b": {
+      "text": "本次 Pass 的整体增强强度。1 = 默认值；实际效果取决于所选配置。\n高于 1 的数值属于实验性设置；运行时可能会限制或忽略这些数值。",
+      "state": "reviewed",
+      "source_hash": "9a5fe65f999e24df256c771fd21a72e3ac3f5f6a7504191aaa7f3f9ba69858b0",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.a0be8b06a8ae": {
+      "text": "模型请求的精细细节和局部对比度（高频结构）。\n1 = 默认值；高于 1 的数值属于实验性设置。",
+      "state": "reviewed",
+      "source_hash": "946d8a5e3e8567f4151e603a57a565304e3874b8185c9ac421dc0c34e77a4a3f",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.164e5a0b20ce": {
+      "text": "模型请求的大范围亮度和光照变化（低频色调）。\n后续 Pass 默认为 0。高于 1 的数值属于实验性设置。",
+      "state": "reviewed",
+      "source_hash": "7078c973371f029ebd95ea7ab96674aacdbbbb40e520c9a6872ffa53f9814919",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.4d535843e16d": {
+      "text": "模型判定为皮肤的像素所使用的细节强度。-1 跟随“局部结构”；0 会降低皮肤细节。\n肤色由单独选项控制。高于 1 的数值属于实验性设置。",
+      "state": "reviewed",
+      "source_hash": "88328e77f5a50376fe1e31103ab44cfb1e551f2e94c5bf5983cb0829f673c871",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.7ce1c6dc6541": {
+      "text": "使用 NR 模型增强光照和材质表现。处理位置可选择在升频前或升频后。\n需要 nvngx_dlssnr.dll 以及随附的 nvngx.dll_dlssnr.dll 辅助文件。",
+      "state": "reviewed",
+      "source_hash": "ee34a55bf6c63a6f8e7559a330e0774ac1540a585701d007c5977eb06bdf0f41",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.a2920be8e2f5": {
+      "text": "在游戏完成光照和特效后应用 NR。这可能有助于改善绿色噪点。\n在原生 DirectX 12 游戏中，无论帧生成开启或关闭均可工作，包括 SDR、HDR10 和 scRGB。\n它也可能改变 HUD 和菜单。启用“在超分辨率前运行模型”可更早生成这些变化。",
+      "state": "reviewed",
+      "source_hash": "3b77dfc846e27939abbb97d5e7e9f7a0e2346423756e947ee9102b02c8791adf",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.7646d65c57dc": {
+      "text": "仅在开启“超分辨率前应用”且游戏的光线重建处于活动状态时有效。\n模型会在 SR 前运行但保持颜色输入不变，然后将其编辑结果叠加回 RR+SR 输出，使其能保留在 RR 去噪之后。\n该编辑结果通过基于运动矢量重投影的时序累积器传递：逐帧光追噪点会被平均掉，同时保留增强效果。其他情况下不起作用。",
+      "state": "reviewed",
+      "source_hash": "218146267f33ded5444292d2b7db59b523bce6630208d34dd072c7a72313b813",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.4b21ccf41b72": {
+      "text": "控制所传递编辑结果的累积速度。数值越低越稳定，但显现越慢；1.0 = 不累积（每帧直接使用原始残差，因此会闪烁）。默认 0.08。",
+      "state": "reviewed",
+      "source_hash": "c8d2a0332d7831291526e75c8d75744b0b6954a616c3c8ec8e7425ec59df5e08",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.2d4a887308e8": {
+      "text": "NVIDIA：原始 FP8 模型（默认），部分敏感运算保持更高精度。\n实验性：本分支为 RTX 50 GPU 提供的 FP8+NVFP4 混合模式；输出可能略有不同。",
+      "state": "reviewed",
+      "source_hash": "0560a46ac063458d963fbd407efa5b2128e702895f3b207e49e0a1abc78622a8",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.547dad2ae781": {
+      "text": "以输入分辨率计算 NR，用 DLSS 升频其变化，再在 SR 后应用。\n实验性：可能闪烁并增加 GPU 开销。需要 DX12 上的 DLSS 或其桥接；不支持 RR。\n会覆盖“在超分辨率前应用”。请关闭“冻结帧”“对比”和“调试视图”。",
+      "state": "reviewed",
+      "source_hash": "0c2a96de227170a1a4f31e465324ec1b4a8a8dc43c6a348bbfb8ff8b1c12f64e",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.56ed36cf46f2": {
+      "text": "每隔一个渲染帧运行一次 NR，并使用 NVIDIA FG 插值其变化。\n需要启用上方选项。会增加一个渲染帧的延迟，并可能造成特效或 UI 错位。\n如果运动矢量不可用，每个 NR 结果会复用两帧。",
+      "state": "reviewed",
+      "source_hash": "3a626236c2beaedd2ea14cb1bd9bb328dc56e65689fab8046efe914cd894dc43",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.66ff23c8de7d": {
+      "text": "当游戏未提供相机数据时使用估算的相机数据。相机移动时可能产生伪影。",
+      "state": "reviewed",
+      "source_hash": "41d5dbcfb82595b3e69713aff8aaf34155e8e6ed367896a0f701e26d2731e038",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.37b0798e03d8": {
+      "text": "允许最多 30 次 Pass，而不是 3 次。更多 Pass 会占用更多 GPU 时间和显存；数值过高可能导致游戏崩溃。",
+      "state": "reviewed",
+      "source_hash": "61eddeb68baf76a6956300d3a42fabbb6a745a448e1a424c912fb22abe5c7ae1",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.a081415ea37f": {
+      "text": "重复处理图像。Pass 越多，效果越强，GPU 开销也越高。\n每个 Pass 都有独立设置和历史数据。建议从 1 开始。",
+      "state": "reviewed",
+      "source_hash": "49605d21fd70c9e4b0235262f9ceffd661d8356a0b813b5bb79df2113b9f6151",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.356588435bc1": {
+      "text": "NR 分辨率相对于其处理图像的比例。50% 会将宽高各减半；100% 使用完整尺寸。\n较低数值可降低开销和精细细节。高于 100% 会增加开销。游戏输出分辨率不变。",
+      "state": "reviewed",
+      "source_hash": "0a34e4b485ece5a5e6a424f7a86ce1d83f6ac8e6b07b3f4445b8ea3c3a831268",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.b10f1bb313e1": {
+      "text": "当模型分辨率高于 100% 时，用于缩小 NR 输出的滤镜。\n较锐利的滤镜可能在边缘产生振铃。",
+      "state": "reviewed",
+      "source_hash": "55958255f4a78bcb101092cf07c508ee2626de1399eb641d55ef4251eefb4391",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.1ed5a4b4e33c": {
+      "text": "模型分辨率低于 100% 时：“经典”会放大模型输出；“匹配残差”只放大其变化。\n“匹配残差”可减少模糊和色彩偏移。在 100% 或更高时无效果。",
+      "state": "reviewed",
+      "source_hash": "ca2f5dcf0d5ec4a4d8670b1fbec782202118c64855ccc47b1aaea32099112336",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.8e2bdcc273dd": {
+      "text": "NR 整体细节强度：0 = 无效果，1 = 正常，高于 1 = 夸张增强。",
+      "state": "reviewed",
+      "source_hash": "db9dd81a9de136d7dc36c8355f2cd5e68ebf5781560248e9f551bb24bd14cca4",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.4f1bc1edd661": {
+      "text": "NR 色彩强度：0 = 保留游戏色彩，1 = 模型色彩，高于 1 = 更强饱和度。",
+      "state": "reviewed",
+      "source_hash": "93ac4795b6862da82ec4c6093bc21592ea104d743e17894a2fe3988c614c984a",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.39c2902faff4": {
+      "text": "选择 HDR 亮度映射到 NR 的方式。\n“柔和拐点”压缩高光。“Neutwo”使用可逆曲线。“混合”保留中间调并压缩高光。\n“组合”使用强度和高光控制。“替换”会绕过这些控制，并可能闪烁。",
+      "state": "reviewed",
+      "source_hash": "81d9f19c735871768fcf6d8ec2bdb1a60bf06170ba45ef534c441f10920c14d4",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.c25348d1f3e5": {
+      "text": "选择外观配置：标准、自然或电影感。强度控制其效果强弱。",
+      "state": "reviewed",
+      "source_hash": "8a257548c154ead4f58cc71ea2f91623fed79dde42e8e1b5927de402b8e26a0f",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.8f3c09feb02c": {
+      "text": "使用模型学习到的皮肤区域选择，在没有人工遮罩的情况下应用“皮肤结构”。\n准确度会有所变化。它与下方基于颜色的遮罩相互独立。",
+      "state": "reviewed",
+      "source_hash": "591ca9714b4eef79942ef01cd7d258ef7bbf4c4088371efa224e8af9f6fd7673",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.657eacb22194": {
+      "text": "允许 NR 在选定皮肤区域改变颜色。关闭后保留其颜色；细节仍可变化。",
+      "state": "reviewed",
+      "source_hash": "0260fbcb9f445f5ab244cdc1c698d6560ceca95792f9e920762c8d8a4c86fd34",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.b0ea40c51a3d": {
+      "text": "该区域中的 NR 强度：0 = 无变化，1 = 完整效果。",
+      "state": "reviewed",
+      "source_hash": "644bfa0b16fe7ef84b17adba7c613dcb84fd196533ca6b0bba97573e58749a82",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.947a8f0824eb": {
+      "text": "手动：使用纸白亮度。游戏曝光：使用游戏提供的曝光值。\n扫描曝光：从游戏缓冲区估算；需要校准，并可能选错缓冲区。",
+      "state": "reviewed",
+      "source_hash": "2128ec9f1854163593e38d0a3244dcd2f6a9635b3c8c5545d321887780f4cc30",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.4336677c35e0": {
+      "text": "纸白亮度（正在编辑点 %d）",
+      "state": "reviewed",
+      "source_hash": "673ac2de00bab9e925578c4463e8450475b1121feb0778fda6901fe80c1a1503",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.a6bc0be434b6": {
+      "text": "调整选定的校准点，或为下一个点设置数值。\n使用“在此锚定”保存当前光照条件。",
+      "state": "reviewed",
+      "source_hash": "2ec7271113a4230e52430ae3245e8683c2ce46c8a5b417515e8e54cf38e64248",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.030761ce7013": {
+      "text": "乘以已校准的白点。“在此锚定”会保存调整后的值，并将此倍率重置为 1。",
+      "state": "reviewed",
+      "source_hash": "607319fbf843aec16332d0356857808671b1f17d95df8b49d46a38f6cfa74f06",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.16b71cb2c825": {
+      "text": "乘以来自游戏曝光的白点。1 = 不调整。",
+      "state": "reviewed",
+      "source_hash": "023ae74517a856d7f0edcebd49078f08ab63fbe950e53f29bf3f7e2574f7f7a9",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.ad4d285238b2": {
+      "text": "用于为 NR 准备 HDR 色彩的亮度基准。数值越高，模型输入越暗；数值越低，模型输入越亮。\n如果 NR 丢失细节或产生色彩偏移，请调整此项。",
+      "state": "reviewed",
+      "source_hash": "d4ee91f387bae79bdb836469901b893eed9fba34e2dd1d542b273f9f37ace778",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.e8922543a2fb": {
+      "text": "限制 NR 可将像素变亮或变暗的幅度。较低数值会限制高光变化；较高数值允许更多变化。",
+      "state": "reviewed",
+      "source_hash": "02bf4f75f389b05c2ec84dd1565153ef6a81318a3f2470e9b92fc76af6547422",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.3c4c514a074e": {
+      "text": "显示扫描到的曝光值和颜色指示。仅用于显示；不会改变图像。",
+      "state": "reviewed",
+      "source_hash": "0752f51878e57fe9dd72858845d05fb95d23c3a0d31500a7e3c59cc8752dc3d2",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.56fe6aad16d2": {
+      "text": "将当前曝光和白点保存为校准点。\n第一个点调整“纸白亮度”，后续光照条件使用“微调”。最多 8 个点。",
+      "state": "reviewed",
+      "source_hash": "b48fd265ba540ac2135d87ca08f0c5d7a1084cd69e0aa80d9b10beb31682e7aa",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.6410d0f7dcc8": {
+      "text": "%s 扫描 %.4f  ->  白点 %.2f%s",
+      "state": "reviewed",
+      "source_hash": "b7aafd194d5d6c73ba1cdd9a120b4e36dbe981fcd27bfe3acd0f60e5d71b5dea",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.f54f15264dda": {
+      "text": "反转扫描曝光对白点的影响方式。仅在只有一个校准点时需要。",
+      "state": "reviewed",
+      "source_hash": "32b1fb1642ff1bf2b3c9df46ab47b755997b31104ccbb8777c15a400df2b8707",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.7f82bcd4dd77": {
+      "text": "冻结 NR 的输入以对比其设置。游戏 HUD 和后续效果仍可能继续更新。\n不会重新运行 SR/RR，也不会显示其设置变化。关闭后恢复。",
+      "state": "reviewed",
+      "source_hash": "75fa69d96d5b5b46eb9fe7e9fd991b8ee1a9e0295287068ab756fd655dd4a6eb",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.f4b1894db040": {
+      "text": "对比原始画面与 NR 结果。并排模式会同时适配两幅图像；分割模式会用分界线显示一幅全尺寸图像。",
+      "state": "reviewed",
+      "source_hash": "d33a5ed23fc517ec9848039dd405d86f0b06225db7ab5c9069132df771dfa88f",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.273cade7ea26": {
+      "text": "交换原始画面与 NR 所在的两侧。",
+      "state": "reviewed",
+      "source_hash": "3c4dfcc0e82ab966cd67006dca708910fc02de71ab41a2a47a6eb5727925faf9",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.5bb951d63ad7": {
+      "text": "显示用于标识原始画面和 NR 画面的标签。",
+      "state": "reviewed",
+      "source_hash": "e4afb7b0a8cd0d24bb85e55c24280728665cc8cad4aa5450fa6c79918996561e",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.0f52e6ae5f87": {
+      "text": "并排缩放：1 = 适配完整图像，2 = 通过裁剪两侧让每一半填满。",
+      "state": "reviewed",
+      "source_hash": "04b2152e12e77deaa1b3b95198f76ef55da0bfae181ff61e42d889ad5221f696",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.6ee25a46defa": {
+      "text": "对比分界线的位置。“交换两侧”会反转分界线两侧显示的图像。",
+      "state": "reviewed",
+      "source_hash": "e819a2a5d783e44ac615ee087a14b3431a49343acd5f1ac526c4301f8f88d587",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.5a6fb3e787c0": {
+      "text": "显示模型输入、原始输出，或放大 20 倍的差异。“差异”中的灰色表示没有变化。",
+      "state": "reviewed",
+      "source_hash": "dc468f3b957e95637260b974e9121b44440af64cae3cd8fb657acd52c834561e",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.f6849bb6c451": {
+      "text": "50% 会将宽高各减半。100% 使用完整输入尺寸。",
+      "state": "reviewed",
+      "source_hash": "894e4b2cf5bce3489242e576ad713a89b0a98b1e187df6ae7375776cda3d2406",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.4281f1e14380": {
+      "text": "用于高于 100% 分辨率时的下采样滤镜。",
+      "state": "reviewed",
+      "source_hash": "6c383054ec58c51e8e3e2d70229f9a9968d9357bf08fdf24a9bba6d86bf388e6",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.6b10db3d4b9d": {
+      "text": "低于 100%：放大输出或 NR 差异。DLSS 需要在升频后进行 DX12 处理。",
+      "state": "reviewed",
+      "source_hash": "ebbb0fce499fb87e733ccd23adbebf96bb7c831b828732c4800fd6e86e37a591",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.d20b4a6242f2": {
+      "text": "HDR 映射曲线。“替换”会绕过强度和高光控制。",
+      "state": "reviewed",
+      "source_hash": "2ca1f9de8cf24d8e2e81fca31585c30a652d89241ce68edd68954c22a394e58a",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.c94fe8f819f7": {
+      "text": "游戏曝光使用游戏提供的数据。扫描曝光需要校准，并且可能选错缓冲区。",
+      "state": "reviewed",
+      "source_hash": "96043b825672f34ada698d33dbb193035375d14bb672175aa197f779a55b78c0",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.a54db9b25821": {
+      "text": "调整此点，然后在这里选择“锚定”以保存。",
+      "state": "reviewed",
+      "source_hash": "ebcd49311d508597226e90236dd9ed4de6ef34dea708a8be45f7a8e0c7262e13",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.149574660f1d": {
+      "text": "调整校准后的亮度。锚定后会将微调重置为 1。",
+      "state": "reviewed",
+      "source_hash": "3db4538edbe60a445b7967ca7df3dca9c5698eebc53aa6fa1410d8f807fb158f",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.70c04adbd4af": {
+      "text": "曝光倍率。1 = 不变。",
+      "state": "reviewed",
+      "source_hash": "3ebb8cdbc3f40b308e73b09e0ea5e0d9960761ad4abf4a19fde6d5f8272a973b",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.a0e448d57ff7": {
+      "text": "数值越高，NR 输入越暗；数值越低，NR 输入越亮。",
+      "state": "reviewed",
+      "source_hash": "6ec380208e3cc7fa88da94c6d61090da42df9ce5bbb664ba8ed72cc55b60b317",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.9197234169c7": {
+      "text": "显示扫描到的数值，不会改变画面。",
+      "state": "reviewed",
+      "source_hash": "e1e2f8b54c4e615575a283cc17057224f680f204ccd69e2f50464f0f631c24ac",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.9caef689b6dd": {
+      "text": "保存曝光和白点。最多可保存 8 个校准点。",
+      "state": "reviewed",
+      "source_hash": "21ab6befdbcb33df939e7d32dee2672cb5d62ca9000a5c3476b5d93c889d3acb",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.58d3136988fd": {
+      "text": "反转曝光响应，用于单点校准。",
+      "state": "reviewed",
+      "source_hash": "bbadab1744dd3be54d8e6cd7afaf35615cabefbbb8166f3632de90efa04a9659",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.474897c37f67": {
+      "text": "应用模型",
+      "state": "reviewed",
+      "source_hash": "aaf04a8ca358de4753655dec963c28d006c08df89cacfdea1a4fed42ff2af75f",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.bed8f9383436": {
+      "text": "在升频前生成模型结果",
+      "state": "reviewed",
+      "source_hash": "3a14e1eecda653a8b9969d9d5e9582ca725db62031a6aeb29e2d2394e8433db6",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.70d508bd4c10": {
+      "text": "升频前生成，升频后应用",
+      "state": "reviewed",
+      "source_hash": "059229e6a5edf6f0717510efda7d952ca8fa0f1b99fd71c9712c1c0296fe734d",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.60febdc61e23": {
+      "text": "仅升频 NR 编辑结果，无论游戏是否使用 RR。FSR（FidelityFX）和 XeSS 需要对应运行时。",
+      "state": "reviewed",
+      "source_hash": "d896e1aa0131314700edda613ae7c31a17f4fa91c834030c5bda7c72c82c7f00",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.d3fc9e05adc2": {
+      "text": "增强强度。1 = 默认值。",
+      "state": "reviewed",
+      "source_hash": "dceafb2ea11dfe8932f3fd9c8cc9af36e3e16bf47d696ab05e24c1a84a0c4139",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.fa65c3d034f8": {
+      "text": "细节和局部对比度。1 = 默认值。",
+      "state": "reviewed",
+      "source_hash": "b95d563bedee1df108028caff5045afa87c493d861327b41393cef7add180677",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.2809c2de55df": {
+      "text": "大范围光照变化。后续 Pass 默认为 0。",
+      "state": "reviewed",
+      "source_hash": "163ffe10a0147dd69359182dd7a3e6a0eb8a81afb49c427c4d18f90f8d544ca4",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.0903a3454c57": {
+      "text": "皮肤细节。-1 表示跟随“局部结构”。",
+      "state": "reviewed",
+      "source_hash": "deb9eb773350d7fa68f58fb04a2ef793fa109247124bf59014954d9a6f2c6468",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.c8d540bd22e0": {
+      "text": "基于模型的皮肤区域选择。",
+      "state": "reviewed",
+      "source_hash": "5dd4172b4faa709bdf13790651f2fe7a81c2deb1f9861bfb7eb02a1f08a7e4d4",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.ce164cf52b41": {
+      "text": "让早期 NR 的亮度变化匹配最终 HDR 画面。会增加 GPU 负载；拟合不可靠时将回退。",
+      "state": "reviewed",
+      "source_hash": "640080d949e07c833e765d5f9731947e725e948fb957f4e9c3c7a60501e5156d",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.b3718948fafd": {
+      "text": "0 = 不改变细节。1 = 正常。",
+      "state": "reviewed",
+      "source_hash": "c3c293045fabf310109dee6d009599dd2ea1d408ca5281786f7f9538d198e27f",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.4eb5dab41d8a": {
+      "text": "0 = 游戏色彩。1 = 模型色彩。高于 1 会增强饱和度。",
+      "state": "reviewed",
+      "source_hash": "d128628e456bdb4a5aa63a4624be9faf1a7210781d7043d059c849a7a0561453",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.c80e18e57ee0": {
+      "text": "允许改变肤色，同时保留独立的细节控制。",
+      "state": "reviewed",
+      "source_hash": "0f02f468533969084ee0a7309b866880750482fe79fa1ceb3bfdf44102447aac",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.4a92ac1847a6": {
+      "text": "0 = 不变。1 = 完整效果。",
+      "state": "reviewed",
+      "source_hash": "bcbf92194f8b2f3421ac6c652fc054c07081ae3f968e5d103d1f9062336947b4",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.6d47024ee665": {
+      "text": "皮肤细节 / 光照",
+      "state": "reviewed",
+      "source_hash": "4606b0c577d5db54f9a5ba27e620d9df573299082dab9ae4a1ac172a83b4e7aa",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.45995842b538": {
+      "text": "肤色",
+      "state": "reviewed",
+      "source_hash": "569ec800ed70fabfa2bcfacff382bfb47a400ab509a94162bfb309f0af932322",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.b06ec3ce4db0": {
+      "text": "环境细节 / 光照",
+      "state": "reviewed",
+      "source_hash": "91fb7c0e07d89c339b7fb2cd71e48092bb284069c8f3aa58827766aa11344b9e",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.d8109e7e5a13": {
+      "text": "环境色彩",
+      "state": "reviewed",
+      "source_hash": "46b27ce2cb731f4a4b2cfc2733c1664a400c0a8b7e146436a7c933d991db8ac4",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.dc9d247c2357": {
+      "text": "限制像素变亮和变暗的幅度。",
+      "state": "reviewed",
+      "source_hash": "b0885008dc5636be1aa69e0a12e40ff29b518f03e0d50868ed663018e0709c3e",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.4f4067eb2a66": {
+      "text": "冻结一帧用于 NR 调节。后续游戏效果仍可能更新；此时的时序表现不具代表性。",
+      "state": "reviewed",
+      "source_hash": "01937a0a87a16526cc98962b4becc7287f97e5f63baa8ad882e55a00eba678d9",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.51e2ae3850a7": {
+      "text": "对比原始画面与 NR 输出。",
+      "state": "reviewed",
+      "source_hash": "f3e23d9cea12b7bcfb47906895483afde53a9d7ec6ad906a25cfe7cd9559435b",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.784a7da2f8e4": {
+      "text": "1 = 适配。2 = 裁剪并放大。",
+      "state": "reviewed",
+      "source_hash": "938caaab751bd63cf370adf0ef2c154efdbe30e0f1a77e43087827487d0549fb",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.d8d985f12828": {
+      "text": "移动对比边界。",
+      "state": "reviewed",
+      "source_hash": "57e83175e300275ab23d328cda1e5fd8524f36535d508e2f7cf099345f3e03dc",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.615d68b7abe3": {
+      "text": "差异会放大 20 倍。灰色表示未变化。",
+      "state": "reviewed",
+      "source_hash": "0d7f7dd0b7deddce2aabdf737e81c5d81dbac4d272495ea229b07a2d90822207",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.887daaeaa1c9": {
+      "text": "DLSS NR：开启",
+      "state": "reviewed",
+      "source_hash": "1d999cd63456bca550b6f07468517b34d6f89a600327c834d2555681aa1249c9",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.b75145897362": {
+      "text": "DLSS NR：关闭",
+      "state": "reviewed",
+      "source_hash": "f4edde52d7f0b961dd3d855c9d95c983a5977ce6ac6630acd812b742149a97a1",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.ab89d05c4b9c": {
+      "text": "处理位置",
+      "state": "reviewed",
+      "source_hash": "4df9939944a7b324991dfbe49dcfc0813f1f474311eee2e207b53442495887e8",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.e4aef77b4acc": {
+      "text": "应用 NR 编辑结果",
+      "state": "reviewed",
+      "source_hash": "680b9c4243e32c705930546fc5ea68734478a44cf7c0d08d6922bcb97af9bbba",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.44ed616e6cdf": {
+      "text": "准备 NR 输入",
+      "state": "reviewed",
+      "source_hash": "e0dd2e2c6f0d4bec4404ab33cb86793efb03206506d3945d2dfa327afc8c5642",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.7884bd6fcd38": {
+      "text": "HDR / 曝光 / ",
+      "state": "reviewed",
+      "source_hash": "7b67b9ff92d9cbf497bbf3922612ac3b0e8b963e42958bd6fe54dad5da911b41",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.023c2a7e1db0": {
+      "text": "NR 模型",
+      "state": "reviewed",
+      "source_hash": "274eb41964fd0689b8c967f44facaefb56dc2dab68d198a5792dd3795e9e3d99",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.b1e41da2c5fd": {
+      "text": " 次 Pass",
+      "state": "reviewed",
+      "source_hash": "f2752b292e1333b2d224a1f831e3ce866dbfc7a32da2af4d1092135f5a2c9383",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.2d71dd7caa6c": {
+      "text": " 次 Pass",
+      "state": "reviewed",
+      "source_hash": "494a60bca78dc28976a63ad2ba57dbc7543d5d624ec865f7028f5e661f37d695",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.2c15dc8b24e4": {
+      "text": "强度 / 皮肤",
+      "state": "reviewed",
+      "source_hash": "aef89317fe8f2764305c8d2dd320170860ab7a6af4b068a4f8ed714dc55288f0",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.36e8de5cfb1d": {
+      "text": "编辑结果已隐藏；模型仍在运行",
+      "state": "reviewed",
+      "source_hash": "a0e0b87a5cd73a3b4b5d4843cc9902b3684798b189cb45c5d0c389450a356964",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.1d87893917cf": {
+      "text": "RR + 超分辨率",
+      "state": "reviewed",
+      "source_hash": "2fb743de0fa51946fabe53ff5534fc87e93ccc4068d96db3399ae70bc19f189a",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.95b6f67581cb": {
+      "text": "超分辨率",
+      "state": "reviewed",
+      "source_hash": "706d3555857d1c9a7addabc0f9eed845e5fe450d1c847bf7b544f4cc730a90d0",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.01cfb95bc167": {
+      "text": "干净的游戏画面",
+      "state": "reviewed",
+      "source_hash": "7dcf68125f6b4926edcb7fcd5906798d794c71ab261f1b906b0651f0cb874201",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.3246422dde0f": {
+      "text": "游戏升频器",
+      "state": "reviewed",
+      "source_hash": "eb4a9747f2410619c6e7e1f381c5dfed1f3737e7cdb1ba6d760b95dcd0a2710b",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.43501d72338f": {
+      "text": "游戏效果 + HUD",
+      "state": "reviewed",
+      "source_hash": "33693e482a509e3504112585762d9f41caf71cd737a7d240db58eded4f8725ff",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.648442b122d8": {
+      "text": "游戏渲染",
+      "state": "reviewed",
+      "source_hash": "8ae8f6dc41bb1117811fceb361a2df95e469d3e7afc8c5264592123877805427",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.b8df771e03c3": {
+      "text": "游戏输入",
+      "state": "reviewed",
+      "source_hash": "e490c25ebb5c4f490c51ab8c7863a9bba90978891bb5e4e210ee5b7b02183db1",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.a7e88cc5c7b0": {
+      "text": "处理位置 / 路由",
+      "state": "reviewed",
+      "source_hash": "e2712059a21504999a166a0542f101b195fc92f277cdd7b18dd5e084dcc350a7",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.23b5453d0b79": {
+      "text": "升频 NR 编辑结果",
+      "state": "reviewed",
+      "source_hash": "19a7d5d92e490137ad129bad891e12ecd3aa9a5e07be8ff34039592a6534f9e7",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.70813a04d7b5": {
+      "text": "独立 ",
+      "state": "reviewed",
+      "source_hash": "be583207b353fc55011b825582617b7e6ce9d29ad620b24ac72237a2316e2769",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.8f5d15ad5adc": {
+      "text": " 次 Pass（无 RR）",
+      "state": "reviewed",
+      "source_hash": "9e2c5105c010f50f69f88ee3d44ac8040ea1611fcd0f8728ed409f1fe96d9b94",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.546263ceed37": {
+      "text": "游戏输出",
+      "state": "reviewed",
+      "source_hash": "20ef3bc24bba4f87acd69c39b96cf9eee325dce45d2f65220512e81d70ac7cd0",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.27ddbd64b38e": {
+      "text": "帧生成 / 呈现",
+      "state": "reviewed",
+      "source_hash": "9693628385915cda7415993e5e2beab91c2f888326764001b2cac3c37e668e84",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.1668095b4d6c": {
+      "text": "准备输入",
+      "state": "reviewed",
+      "source_hash": "446ac7cbf9a6d3838c152747f1908dad11120ce09e177d08aa595f83daaa264c",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.241d149fa5ef": {
+      "text": "应用编辑结果",
+      "state": "reviewed",
+      "source_hash": "d539998e9dda9ffc435fa99185e7507f8d80e375d79e18f63305eb96d102d315",
+      "note": "seeded from maintained translation memory"
     }
   }
 }
