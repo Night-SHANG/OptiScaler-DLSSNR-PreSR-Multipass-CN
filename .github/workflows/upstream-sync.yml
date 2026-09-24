@@ -8,6 +8,7 @@ on:
     branches: [main, master]
     paths:
       - "Localization/stable/**"
+      - "Localization/translation-memory*.json"
       - ".github/workflows/upstream-sync.yml"
 
 concurrency:
