@@ -13,6 +13,25 @@ if (-not (Test-Path -LiteralPath $upstreamPackager)) {
     throw "Fork package_release.ps1 not found: $upstreamPackager"
 }
 
+# Some current upstream main revisions accidentally look for build outputs under
+# x64\Release\a even though MSBuild still writes them to x64\Release. Keep this
+# compatibility fix local to the ephemeral checkout and only apply it when the
+# real DLL proves that this exact mismatch is present. Stable tags such as v0.8.3
+# use a different packager contract and are left untouched.
+$packagerText = Get-Content -LiteralPath $upstreamPackager -Raw
+$actualReleaseDll = Join-Path $SourceRoot "x64\Release\OptiScaler.dll"
+$nestedReleaseDll = Join-Path $SourceRoot "x64\Release\a\OptiScaler.dll"
+if ($packagerText.Contains('\x64\Release\a') -and
+    (Test-Path -LiteralPath $actualReleaseDll -PathType Leaf) -and
+    -not (Test-Path -LiteralPath $nestedReleaseDll -PathType Leaf)) {
+    $patchedPackagerText = $packagerText.Replace('\x64\Release\a', '\x64\Release')
+    if ($patchedPackagerText -eq $packagerText) {
+        throw "Detected upstream Release\\a packaging mismatch but could not patch it safely"
+    }
+    [IO.File]::WriteAllText($upstreamPackager, $patchedPackagerText, [Text.UTF8Encoding]::new($false))
+    Write-Host "Applied compatibility fix for upstream x64\\Release\\a packaging path."
+}
+
 New-Item -ItemType Directory -Force -Path $OutputDir | Out-Null
 $releaseDir = Join-Path $SourceRoot "release"
 $packagerCommand = Get-Command $upstreamPackager
