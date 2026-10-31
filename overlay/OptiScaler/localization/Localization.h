@@ -21,6 +21,7 @@
 #include <vector>
 
 #include "generated/Strings.generated.h"
+#include "generated/Status.generated.h"
 
 namespace OptiScalerCN::Loc
 {
@@ -254,6 +255,24 @@ inline std::string TL(std::string_view english)
     if (detail::activeLanguage == "zh-CN")
         if (const auto* e = detail::BySource(english); e && detail::HasChineseTranslation(*e)) return e->zh;
     return std::string(english);
+}
+
+inline std::string DS(std::string_view english)
+{
+    Initialize();
+    const bool chinese = detail::activeLanguage == "zh-CN";
+    // Timing is appended by the upstream display accessor, never stored in logs.
+    const auto timing = english.find(" [1:1 pass ");
+    if (chinese && timing != std::string_view::npos)
+    {
+        const auto base = english.substr(0, timing);
+        const auto translated = Status::Translate(base, Generated::kStatusTranslations);
+        const auto suffix = english.substr(timing);
+        const auto translatedSuffix = Status::Translate(suffix, Generated::kStatusTranslations);
+        if (translated != base && translatedSuffix != suffix)
+            return translated + translatedSuffix;
+    }
+    return Status::Translate(english, Generated::kStatusTranslations, chinese);
 }
 
 template <typename... Args>

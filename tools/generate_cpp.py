@@ -59,12 +59,34 @@ def render_header(catalog: dict, zh: dict) -> str:
     lines += ['};','inline constexpr std::size_t kTranslationCount = sizeof(kTranslations) / sizeof(kTranslations[0]);','} // namespace OptiScalerCN::Generated','']
     return '\n'.join(lines)
 
+def render_status_header(data: dict) -> str:
+    rows = data.get('entries', [])
+    seen = set()
+    lines = ['// Generated display-only status translations.', '#pragma once',
+             '#include "../StatusLocalization.h"', 'namespace OptiScalerCN::Generated {',
+             'inline constexpr Status::Entry kStatusTranslations[] = {']
+    for row in rows:
+        source, text = row['source'], row['text']
+        if source in seen or not text:
+            raise ValueError('duplicate or empty status translation')
+        if row.get('source_hash') != sha(source) or row.get('state') not in ('reviewed', 'machine_translated'):
+            raise ValueError('stale or invalid status translation')
+        seen.add(source)
+        pattern = row.get('pattern', False)
+        if pattern and (source.count('{}') != text.count('{}') or source == '{}' or '{}{}' in source):
+            raise ValueError('unsafe status template placeholders')
+        lines.append('    {"%s", "%s", %s},' % (c_bytes(source), c_bytes(text), 'true' if pattern else 'false'))
+    lines += ['};', '} // namespace OptiScalerCN::Generated', '']
+    return '\n'.join(lines)
+
 def main():
     ap=argparse.ArgumentParser(); ap.add_argument('--out',type=Path,required=True); ap.add_argument('--channel',choices=CHANNELS,default='master'); args=ap.parse_args()
     paths=localization_channel_paths(args.channel)
     cat=load_json(paths['catalog'],{}); zh=load_json(LOC/'zh-CN.json',{})
     rendered=render_header(cat, zh)
     args.out.parent.mkdir(parents=True,exist_ok=True); args.out.write_text(rendered,encoding='ascii')
+    status = render_status_header(load_json(LOC/'status.zh-CN.json', {}))
+    (args.out.parent/'Status.generated.h').write_text(status, encoding='ascii')
     count=sum(1 for e in cat.get('entries',{}).values() if not e.get('obsolete'))
     print(f'generated {count} entries -> {args.out}')
 if __name__=='__main__': main()

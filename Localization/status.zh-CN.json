@@ -1,0 +1,2386 @@
+{
+  "schema": 1,
+  "upstream_commit": "6125a75b37f7e2a408e31934f4827e5660429203",
+  "entries": [
+    {
+      "source": "Off",
+      "text": "关闭",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Status.cpp:54"
+      ],
+      "source_hash": "ca7981b46ecf2c1787b6d76d81d9fd7fa0ca95842e2fcc2a452869891a9334d1"
+    },
+    {
+      "source": "This finished-picture route requires DirectX 12 or the DirectX 11 bridge.",
+      "text": "此最终画面路径需要 DirectX 12 或 DirectX 11 桥接。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Evaluate.cpp:41"
+      ],
+      "source_hash": "15196ceab47f80201c68c2482a7c0a3baf112d2f463f1a821439f617b0638077"
+    },
+    {
+      "source": "Disable Debug/Compare and enable Apply model.",
+      "text": "请关闭调试/对比并启用应用模型。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DeferredSr.cpp:123"
+      ],
+      "source_hash": "bef7ea299afdf25361befbc8ce76495aa8bafdfc9eae6473790fe9bd81d8d11a"
+    },
+    {
+      "source": "inactive: requires a direct command list with restorable game state",
+      "text": "未启用：需要可恢复游戏状态的直接命令列表",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DeferredSr.cpp:130",
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DenoiseFirst.cpp:190"
+      ],
+      "source_hash": "08120a993e2f6d001b883a2a1be4e688547ae4b64ca1dcfdae850095a2933138"
+    },
+    {
+      "source": "inactive: distinct Color/Output, depth and motion are required",
+      "text": "未启用：需要不同的 Color/Output，以及深度和运动数据",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DeferredSr.cpp:139",
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DenoiseFirst.cpp:199"
+      ],
+      "source_hash": "1bca02f75db316f08ca832f935c588603438104a379867e3f7597953e52abacb"
+    },
+    {
+      "source": "inactive: non-zero colour/guide/output offsets",
+      "text": "未启用：颜色/引导/输出偏移不为零",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DeferredSr.cpp:149",
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DenoiseFirst.cpp:209"
+      ],
+      "source_hash": "ddd41a4dbe7e434619edd7608b3809d24d56ce1802381e65c517ec332fe92d3d"
+    },
+    {
+      "source": "inactive: unsupported active input/output dimensions",
+      "text": "未启用：不支持当前有效输入/输出尺寸",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DeferredSr.cpp:159",
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DenoiseFirst.cpp:219"
+      ],
+      "source_hash": "3d3477026ba7ba3f383535d78d654f52416cceaf43bf2d3e04da86bb17c715c5"
+    },
+    {
+      "source": "waiting for a same-device direct queue identity",
+      "text": "正在等待同一设备的直接队列标识",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DeferredSr.cpp:173"
+      ],
+      "source_hash": "2d1a73877ca2b4c6fbaa87965e710572df4f77f7b1de1b3cd17d9719a729dd22"
+    },
+    {
+      "source": "waiting for retired GPU work; clean SR frame retained",
+      "text": "正在等待退役 GPU 工作完成；保留干净的 SR 帧",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DeferredSr.cpp:205"
+      ],
+      "source_hash": "4866acea289f1662d5eac9fc4a22a3c1f9f9b5f111abfb9cbe9b8a428720c5bc"
+    },
+    {
+      "source": "allocation failed; clean SR frame retained",
+      "text": "分配失败；保留干净的 SR 帧",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DeferredSr.cpp:229"
+      ],
+      "source_hash": "9a5e51c9d029fa962702ec1699e8c82db251c9769e164062ed711d8b17302403"
+    },
+    {
+      "source": "inactive: more than one upscale in a submission epoch",
+      "text": "未启用：一个提交周期内存在多次超分辨率处理",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DeferredSr.cpp:255"
+      ],
+      "source_hash": "269710e183743a31dc95397cfab18476ac5213e6367f6e060b50ae0d8b7695e1"
+    },
+    {
+      "source": "waiting for GPU completion slots; clean SR frame retained",
+      "text": "正在等待 GPU 完成槽位；保留干净的 SR 帧",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DeferredSr.cpp:265",
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DeferredSr.cpp:560"
+      ],
+      "source_hash": "6ebb99cabe8c07f59d2920dff18626ad2ee9a4cfd5741864b6b6b8962ae0445e"
+    },
+    {
+      "source": "private exposure initialization failed",
+      "text": "独立曝光初始化失败",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DeferredSr.cpp:302",
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DenoiseFirst.cpp:341"
+      ],
+      "source_hash": "7c610da1723dd28c48acb0a8b030f2ea285f27905b2b8b907be6499405491e23"
+    },
+    {
+      "source": "waiting for RR residual accumulation; clean game frame retained",
+      "text": "正在等待 RR 残差累积；保留干净的游戏帧",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DeferredSr.cpp:470"
+      ],
+      "source_hash": "b2491550cf7cdd9e4760e37b85af928364f7fd3014b736db4baa01e648bdaeb1"
+    },
+    {
+      "source": "waiting for NR evaluation; clean SR frame retained",
+      "text": "正在等待 NR 计算；保留干净的 SR 帧",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DeferredSr.cpp:528"
+      ],
+      "source_hash": "37d9c25d81e286666b34bdb2adfdce80fff97a6d8aa5f973663f01fa157521dc"
+    },
+    {
+      "source": "inactive: game state cannot be restored after SR",
+      "text": "未启用：SR 后无法恢复游戏状态",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DeferredSr.cpp:551"
+      ],
+      "source_hash": "6ad3cc9274ceac112e7ca2bd74479b4eafe07a315230e51dcdb393c014ed1eb1"
+    },
+    {
+      "source": "waiting to save the upscaled changes for the finished picture",
+      "text": "正在等待为最终画面保存超分辨率后的修改",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DeferredSr.cpp:586"
+      ],
+      "source_hash": "3fe50830a9d011563e9f4276f9519b10e4590aae63cde35eba1bb45a274ac708"
+    },
+    {
+      "source": "composition failed; clean frame retained",
+      "text": "合成失败；保留干净帧",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DeferredSr.cpp:621"
+      ],
+      "source_hash": "476ef7da226ed59a827f59484c26579309c7921babe4a264e8aa2032afca523b"
+    },
+    {
+      "source": "pre-SR active colour staging texture could not be allocated",
+      "text": "无法分配超分前有效颜色暂存纹理",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Models.cpp:74"
+      ],
+      "source_hash": "774f638b5f8674efa1a46cba83abc858453d0c1ddca3cb8e3dcbfeebd7d76da1"
+    },
+    {
+      "source": "the pre-SR active colour staging texture could not be allocated",
+      "text": "无法分配超分前有效颜色暂存纹理",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Models.cpp:80"
+      ],
+      "source_hash": "a10c4a811e360ba559a12202ce59ddcbb11f4e2b59be989cecc1bddd8220a084"
+    },
+    {
+      "source": "packed model staging textures could not be allocated",
+      "text": "无法分配打包模型的暂存纹理",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Models.cpp:124"
+      ],
+      "source_hash": "c1c5a5e6ac235fcefad6b0e1f65557bbec88da119708cedde9ecfd0e18ac9212"
+    },
+    {
+      "source": "the Neural Rendering staging textures could not be allocated",
+      "text": "无法分配神经渲染暂存纹理",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Models.cpp:134"
+      ],
+      "source_hash": "d2a73245e944e85e1857f5680b7dbbf38b9addb4de22b77ad3c513ed7ee8922f"
+    },
+    {
+      "source": "NGX rejected the packed model extent",
+      "text": "NGX 拒绝了打包模型的尺寸",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Models.cpp:159"
+      ],
+      "source_hash": "0087dc1773e29e785455b7ad9e869ebf42ca75224a8ad67e69eece3874265bc1"
+    },
+    {
+      "source": "the NVIDIA NGX driver could not create Neural Rendering",
+      "text": "NVIDIA NGX 驱动无法创建神经渲染",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Models.cpp:173"
+      ],
+      "source_hash": "280dba89ce0dc03ee82e4cdd86b8dcfa2c7b28d5fb2a58974c1ec4696aa4dc37"
+    },
+    {
+      "source": "Waiting for the DirectX 12 bridge commands.",
+      "text": "正在等待 DirectX 12 桥接命令。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Late.cpp:59"
+      ],
+      "source_hash": "19b5f937285d091bd1b42e0255a0e121e9a6fee7192472baac4203224292cff3"
+    },
+    {
+      "source": "The graphics device changed. Restart the game to use this option.",
+      "text": "图形设备已改变。请重启游戏以使用此选项。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Late.cpp:67"
+      ],
+      "source_hash": "6fb5ac550aed4cf98c5d8dfb9d39163d35ce1c0ee408298c7f66871ce4446e04"
+    },
+    {
+      "source": "Waiting for the previous picture to finish.",
+      "text": "正在等待上一幅画面完成。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Late.cpp:83"
+      ],
+      "source_hash": "5bf17a48d19fc7554c72421264e1adce4ad6ca5c6cc29b23fbe433e8377ad3ac"
+    },
+    {
+      "source": "Could not prepare the finished-picture option.",
+      "text": "无法准备最终画面选项。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Late.cpp:106"
+      ],
+      "source_hash": "a729301587cd62e5bf8d21a6e157a2eec2181485fa933fc4686d755ec232cc81"
+    },
+    {
+      "source": "Waiting for the game's depth and movement data.",
+      "text": "正在等待游戏的深度和运动数据。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Late.cpp:138"
+      ],
+      "source_hash": "863a056484c894b2769aa99351bfe103a89401ec551e84b0c330537d5bb6bdae"
+    },
+    {
+      "source": "The game's depth or movement data is not supported.",
+      "text": "不支持游戏的深度或运动数据。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Late.cpp:147"
+      ],
+      "source_hash": "e0626bbb257e2191dd5147fc4b762bc9c401616cd97596ffc5bf4b2cc0670bca"
+    },
+    {
+      "source": "The upscaled changes could not be saved.",
+      "text": "无法保存超分辨率后的修改。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Late.cpp:205"
+      ],
+      "source_hash": "65b77a5200135d5618155a0f3575e480f3e5a5066ca8879dec1e9f81a51f5b1a"
+    },
+    {
+      "source": "The graphics queue stopped. Restart the game to retry.",
+      "text": "图形队列已停止。请重启游戏以重试。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_FinishedQueue.cpp:141",
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_FinishedCompose.cpp:316"
+      ],
+      "source_hash": "1a86266fe1775519a700b245cb199c6d125402fa917319657c72620a5fec8be2"
+    },
+    {
+      "source": "The DirectX 11 finished-picture bridge is unavailable for this device or screen format.",
+      "text": "此设备或屏幕格式不支持 DirectX 11 最终画面桥接。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_FinishedQueue.cpp:183"
+      ],
+      "source_hash": "e058a75a81e30610da1f531e34a9a37932449d66058ef7ff31f35ec19b9493fa"
+    },
+    {
+      "source": "The DirectX 11 finished-picture transfer failed. Restart the game to retry.",
+      "text": "DirectX 11 最终画面传输失败。请重启游戏以重试。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_FinishedQueue.cpp:189"
+      ],
+      "source_hash": "c9e4c601c5ca2bd4b94fabf0327618feb6aece70ec6205a4327d4ee214a32ece"
+    },
+    {
+      "source": "the NVIDIA NGX driver does not provide Neural Rendering",
+      "text": "NVIDIA NGX 驱动未提供神经渲染",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Run.cpp:120"
+      ],
+      "source_hash": "13ecdf0491bf5ef48ee77fea511c65691867412f4017293156b95eb0e9f7212b"
+    },
+    {
+      "source": "the spatial shader or textures could not be created",
+      "text": "无法创建空间着色器或纹理",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Run.cpp:164"
+      ],
+      "source_hash": "2e127603067e07aba481888b99f9fa28ff78187cc49567d716c7d52e567f6fbd"
+    },
+    {
+      "source": "the colour codec would not compile",
+      "text": "颜色编解码器无法编译",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Run.cpp:191"
+      ],
+      "source_hash": "7471902e8993377786ffb458f2f3fd0ee96407a20b0c8f997a0d36e1d6c682bb"
+    },
+    {
+      "source": "the spatial frame's colour encode dispatch failed",
+      "text": "空间帧的颜色编码调度失败",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Run.cpp:260"
+      ],
+      "source_hash": "2488577d55b7a31c7aed1362110ce2f8a6dd11213bb669bb6dc280a76e02e383"
+    },
+    {
+      "source": "a spatial packing dispatch failed",
+      "text": "空间打包调度失败",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Run.cpp:310"
+      ],
+      "source_hash": "bec9e2152b3578f47c7c46667655a4d5b63b9e6bed8895b7338f6c4c58ee2ce9"
+    },
+    {
+      "source": "a spatial unpacking dispatch failed",
+      "text": "空间解包调度失败",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Run.cpp:590"
+      ],
+      "source_hash": "f827c9bdf29388037cd5ce41289b7849a8f190d9917ee2c0b1dac3f246338324"
+    },
+    {
+      "source": "a spatial supersample downsampling dispatch failed",
+      "text": "空间超采样降采样调度失败",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Run.cpp:654"
+      ],
+      "source_hash": "fbfbf2d712194860e17875d50963ac71f17af64987cc7d47d5dfeff1dcc47829"
+    },
+    {
+      "source": "NGX rejected the packed model input",
+      "text": "NGX 拒绝了打包模型输入",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Run.cpp:779"
+      ],
+      "source_hash": "70ce920d51cb37049ebaf23e0993911e484059b64909126c97ff929b23377c9b"
+    },
+    {
+      "source": "the model refused to run",
+      "text": "模型拒绝运行",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Run.cpp:790"
+      ],
+      "source_hash": "6a5859c30c931bf18e554b4cf50f8fd2dac0f2a17a8d8562978824f449bb14d3"
+    },
+    {
+      "source": "This screen colour format is not supported.",
+      "text": "不支持此屏幕颜色格式。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_FinishedCompose.cpp:27"
+      ],
+      "source_hash": "ac168fd3aa26e1c16bb75a43031445bef7905968c6b528879efe94dcdf05d5a8"
+    },
+    {
+      "source": "Could not hold the finished frame.",
+      "text": "无法保留最终帧。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_FinishedCompose.cpp:97"
+      ],
+      "source_hash": "978e0a7a4f1338a1194cdace14aa37db97eca4a4f4a24f8684fa8d075c7b773c"
+    },
+    {
+      "source": "Could not prepare the finished picture.",
+      "text": "无法准备最终画面。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_FinishedCompose.cpp:109"
+      ],
+      "source_hash": "e507e659d3edb4c07a1a7b50f295c233da81df429660d12470f205356a7dafcc"
+    },
+    {
+      "source": "Could not finish the picture. Restart the game to retry.",
+      "text": "无法完成画面。请重启游戏以重试。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_FinishedCompose.cpp:305"
+      ],
+      "source_hash": "50ea09d6fb192deaf4a7dfd45e332353eb7aed75ed104075d727911c1a51fea8"
+    },
+    {
+      "source": "off",
+      "text": "关闭",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DenoiseFirst.cpp:100"
+      ],
+      "source_hash": "b4dc66dde806261bdda8607d8707aa727d308cd80272381a5583f63899918467"
+    },
+    {
+      "source": "Disable the Debug view, Compare and Show skin mask first.",
+      "text": "请先关闭调试视图、对比和显示皮肤遮罩。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DenoiseFirst.cpp:183"
+      ],
+      "source_hash": "4c133e8e23a8bec69039148b89232cf6b504d71d007d292c31d24ba902dad5a0"
+    },
+    {
+      "source": "inactive: this game supplies display-resolution motion vectors; the 1:1 pass needs render-resolution ones",
+      "text": "未启用：游戏提供显示分辨率运动矢量，而 1:1 Pass 需要渲染分辨率运动矢量",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DenoiseFirst.cpp:233"
+      ],
+      "source_hash": "72fb05c996273f6954ec5ed03ebabfbec50fd0c5d18084c419b1fea4d68d17a5"
+    },
+    {
+      "source": "waiting for retired GPU work",
+      "text": "正在等待退役 GPU 工作完成",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DenoiseFirst.cpp:256"
+      ],
+      "source_hash": "c4169c310b7e06d5ff655209c51913298824eee0b758b24f22f55ac183701db7"
+    },
+    {
+      "source": "allocation failed",
+      "text": "分配失败",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DenoiseFirst.cpp:276",
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DenoiseFirst.cpp:366",
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DenoiseFirst.cpp:378"
+      ],
+      "source_hash": "b5a8c13026e1f50899d603e257acd1c5391a2a2768b119edba30e9898338637d"
+    },
+    {
+      "source": "private DLSS SR created; waiting for a later submission epoch",
+      "text": "独立 DLSS SR 已创建；正在等待后续提交周期",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DenoiseFirst.cpp:406"
+      ],
+      "source_hash": "94459e97fcfc8145f04445d385cbc24ea3b00a57c5e7a0264f0cfe8fbdcba201"
+    },
+    {
+      "source": "waiting for NR evaluation; the game's upscale keeps its raw input",
+      "text": "正在等待 NR 计算；游戏超分辨率器保留原始输入",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DenoiseFirst.cpp:521"
+      ],
+      "source_hash": "22c541a699bb7ed2386d8d66efd9e91d080dab4061956cac2129d76a0cfdc917"
+    },
+    {
+      "source": "edit composition failed; the game's upscale keeps its raw input",
+      "text": "修改合成失败；游戏超分辨率器保留原始输入",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DenoiseFirst.cpp:604"
+      ],
+      "source_hash": "5261dfb16debb0b77e32c3f01a3805483bdfcc8ecc9207cfdfcca51274d7b39a"
+    },
+    {
+      "source": "inactive: game state cannot be restored after the upscale",
+      "text": "未启用：超分辨率后无法恢复游戏状态",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DenoiseFirst.cpp:656"
+      ],
+      "source_hash": "47b86d18e42158ee39d1d6d3648b00aeefd94cf0e3bcd34e88e40ccbe441cdf4"
+    },
+    {
+      "source": "inactive: the upscaler output changed shape under the private upscale",
+      "text": "未启用：独立超分辨率处理期间，超分辨率器输出形状发生变化",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DenoiseFirst.cpp:663"
+      ],
+      "source_hash": "29413ff6dcb0349141827e85ac1cbf132d60de175ab12db120c10ac2165d66c0"
+    },
+    {
+      "source": "Spatial compression unavailable: could not allocate packed surfaces",
+      "text": "空间压缩不可用：无法分配打包表面",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFeature_Vk_Model.cpp:352"
+      ],
+      "source_hash": "1520cc0a1eb04a1d5e18258114d06d2c40addfd677e9323e150e195a38a5c40a"
+    },
+    {
+      "source": "Spatial compression unavailable: the driver rejected the packed model",
+      "text": "空间压缩不可用：驱动拒绝了打包模型",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFeature_Vk_Model.cpp:389"
+      ],
+      "source_hash": "d3f2f4dc7157fcbef7733d8f65e0b4b37f193f53e9cbde18859ddb0cca7fef27"
+    },
+    {
+      "source": "Enable NR before creating the Vulkan swapchain; restart the game if NR was enabled during play.",
+      "text": "请在创建 Vulkan 交换链之前启用 NR；若在游戏过程中启用，请重启游戏。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFinished_Vk.cpp:127"
+      ],
+      "source_hash": "4d29d8aaff2a929a64efc1568014cc70984143cdbce7ed854c5e6a86c4e1e0e2"
+    },
+    {
+      "source": "Native Vulkan finished-picture NR runs at presentation; disable Generate model before upscale and Generate before SR, apply after SR.",
+      "text": "原生 Vulkan 最终画面 NR 在呈现阶段运行；请关闭在超分辨率前生成模型，以及在 SR 前生成、SR 后应用。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFinished_Vk.cpp:133"
+      ],
+      "source_hash": "070f43431b33c5e349ee5fcda173e6222e84dd56ad7990ab2ae6a516f41ad17e"
+    },
+    {
+      "source": "Waiting for Vulkan depth and movement data.",
+      "text": "正在等待 Vulkan 深度和运动数据。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFinished_Vk.cpp:139"
+      ],
+      "source_hash": "55d7df9e89c7b7f5ec3c80a4c068e879038615222f77bf0bfdc4abd3b3d08015"
+    },
+    {
+      "source": "Waiting for a tracked primary Vulkan command buffer.",
+      "text": "正在等待已跟踪的 Vulkan 主命令缓冲区。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFinished_Vk.cpp:146"
+      ],
+      "source_hash": "1a9e852f1b8c66988a4fd14d5ac20a016216f6eecce23335450313406407106d"
+    },
+    {
+      "source": "The Vulkan swapchain does not support finished-picture transfers.",
+      "text": "Vulkan 交换链不支持最终画面传输。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFinished_Vk.cpp:242"
+      ],
+      "source_hash": "1747a9b4735084f6d57a0b1d2faa3adfa9e34fb0b10568bce852f96533f5f03a"
+    },
+    {
+      "source": "This Vulkan screen colour space is not supported.",
+      "text": "不支持此 Vulkan 屏幕色彩空间。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFinished_Vk.cpp:251"
+      ],
+      "source_hash": "c3d73bd01abdac81f2e493d5d365b6d7c075a9d69321a072f248346250eb520b"
+    },
+    {
+      "source": "Vulkan finished-picture submission failed.",
+      "text": "Vulkan 最终画面提交失败。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFinished_Vk.cpp:359"
+      ],
+      "source_hash": "9b802a759a9b19a0c277940de8c32a44efe5e05324273aa23805aa4fd717abce"
+    },
+    {
+      "source": "Waiting for a finished Vulkan picture.",
+      "text": "正在等待最终 Vulkan 画面。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFinished_Vk.cpp:27"
+      ],
+      "source_hash": "278510a8ba97e619eeb7124e654277b13820fb6affdd9e6468a862fff0b0f8fa"
+    },
+    {
+      "source": "Spatial compression unavailable: Vulkan shader pipeline failed",
+      "text": "空间压缩不可用：Vulkan 着色器管线失败",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFeature_Vk.cpp:169"
+      ],
+      "source_hash": "b9ac133d3cc74f8c9102b8508ba73dd0174dd0271f1a227f8c6976153b006a74"
+    },
+    {
+      "source": "Spatial compression unavailable: colour packing failed",
+      "text": "空间压缩不可用：颜色打包失败",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFeature_Vk.cpp:344"
+      ],
+      "source_hash": "788733566017cef04ec0bb5fc0f28c7de6a8939acd01ef76fae4da31fa822d11"
+    },
+    {
+      "source": "Spatial compression unavailable: guide packing failed",
+      "text": "空间压缩不可用：引导数据打包失败",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFeature_Vk.cpp:359"
+      ],
+      "source_hash": "94dafcdb2824c2eae7accdcdb40007dea1cf50bea9ed758511f0165543e3e34e"
+    },
+    {
+      "source": "Spatial compression unavailable: the driver rejected the packed evaluation",
+      "text": "空间压缩不可用：驱动拒绝了打包计算",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFeature_Vk.cpp:557"
+      ],
+      "source_hash": "d78e6cf1f2d5198898214ad577fc9153775766441c5ddf2d910eb8d8e7ff000e"
+    },
+    {
+      "source": "Spatial compression unavailable: answer unpacking failed",
+      "text": "空间压缩不可用：结果解包失败",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFeature_Vk.cpp:608"
+      ],
+      "source_hash": "e567063d42bd301076bc3dc75033cca652190b1c787d5ef913ac5f26bc9d4d4c"
+    },
+    {
+      "source": "Spatial compression unavailable: downsampling filter failed",
+      "text": "空间压缩不可用：降采样滤波失败",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFeature_Vk.cpp:621"
+      ],
+      "source_hash": "3520210add58d37393b2100eb4d8470eaa592ebdcd60c1d6eed9d4c87c54ca28"
+    },
+    {
+      "source": "Spatial compression unavailable: matched downsampling failed",
+      "text": "空间压缩不可用：匹配降采样失败",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFeature_Vk.cpp:632"
+      ],
+      "source_hash": "ca2e135835e4affa83141d6ff25607d59c00434bb170e816d5035da80f19c610"
+    },
+    {
+      "source": "not started",
+      "text": "尚未启动",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "7a7400f466699598334c05b36a21691ad254b552c78b90606c9177efc22fd652"
+    },
+    {
+      "source": "Waiting for a finished picture.",
+      "text": "正在等待最终画面。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "88260008e5037e6cffa36133f5740a099844c3540b34d3b0ac96f1d4c2c8cb55"
+    },
+    {
+      "source": "Applying NR to the finished Vulkan picture.",
+      "text": "正在将 NR 应用到最终 Vulkan 画面。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "7c5f921c61e7c72a75099c8d8ab343f5212257876bb674174fb08b7e5555208d"
+    },
+    {
+      "source": "Preparing NR for the finished Vulkan picture.",
+      "text": "正在为最终 Vulkan 画面准备 NR。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "f9b8c93b42569d55c4b7aac6d4291caf8235135644f8048f22d5045d3e55b4eb"
+    },
+    {
+      "source": "DLSS enlargement initialization was discarded; use Retry.",
+      "text": "DLSS 放大初始化已被丢弃；请使用重试。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "3c6b9d6b4feaad7e5b8ca4803b67aaa39a5e13feac76f937f3584cf2c5d8f29b"
+    },
+    {
+      "source": "disabled",
+      "text": "已禁用",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "17eb3c0168d0d7b21ede5481150f17233427d89833ec121b4dbc4fb96cfab71e"
+    },
+    {
+      "source": "Unavailable: disabled",
+      "text": "不可用：已禁用",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "c63a0dff520d5520cf295fa42ec87fa6ec543364cf197d3babdc96f5ffbc10b4"
+    },
+    {
+      "source": "invalid frame or global scale",
+      "text": "帧或全局缩放无效",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "cea54ce4b3ef3350e76b0ec94ab4386ec914a4b07e5f83f409bc501dc614c1b9"
+    },
+    {
+      "source": "Unavailable: invalid frame or global scale",
+      "text": "不可用：帧或全局缩放无效",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "42462fffe73968c28c36c78c03109bbf7fdde26941833fa047b4dcb44c87d4e9"
+    },
+    {
+      "source": "invalid centre, work, offset or shift",
+      "text": "中央、工作区或偏移参数无效",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "3a3041a258b6df67622fd613df5c70a28fd6de5eb26e9672df597a2e4f0f7b87"
+    },
+    {
+      "source": "Unavailable: invalid centre, work, offset or shift",
+      "text": "不可用：中央、工作区或偏移参数无效",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "c0bdbd96cde6c79dd518405ddf8274d55c9e14a2100c9bfbdbf09765e2135175"
+    },
+    {
+      "source": "effective model extent below 25% or centre outside work",
+      "text": "有效模型尺寸低于 25%，或中央超出工作区",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "c9f52f64e2749cc7e2eab59e670355772d06c87394fdcdb3e6d6b9fdb9747375"
+    },
+    {
+      "source": "Unavailable: effective model extent below 25% or centre outside work",
+      "text": "不可用：有效模型尺寸低于 25%，或中央超出工作区",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "d08e04dd75e9ed808a7b62b7b738701bfa77d18804e45cff95d49b98044cebab"
+    },
+    {
+      "source": "work is 100% on both axes",
+      "text": "工作区在两个轴上均为 100%",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "52e31cd4ea96d6a6fafc93f7a5b212225ef5311cfab8008f0cadd907417c3add"
+    },
+    {
+      "source": "Unavailable: work is 100% on both axes",
+      "text": "不可用：工作区在两个轴上均为 100%",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "c96e836487e0aaae975ce948017d381b5109ef6bb84f12fcc4f763739bd4205a"
+    },
+    {
+      "source": "work shift leaves less than one work pixel on one side",
+      "text": "工作区偏移使一侧不足一个工作像素",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "197d60d83bfa11e3baf23f52ddddb2865fbaea7a0ee75efdafbe4e201c0aa2cd"
+    },
+    {
+      "source": "Unavailable: work shift leaves less than one work pixel on one side",
+      "text": "不可用：工作区偏移使一侧不足一个工作像素",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "ce70260d0339805acc610b03828e685e5ac4f446d785e0946e44ec91af0c58a7"
+    },
+    {
+      "source": "active",
+      "text": "已启用",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "96879611650f80a81392a52e0db9b0237669087c4518e1c130e541a505e0eeef"
+    },
+    {
+      "source": "Unavailable: active",
+      "text": "不可用：已启用",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "b3e94bab1ed7c3524222e6ddb8496357474b8c6dda590ae6a12ad1dae1c3236f"
+    },
+    {
+      "source": "Fallback to ordinary NR: pre-SR active colour staging texture could not be allocated",
+      "text": "回退到常规 NR：无法分配超分前有效颜色暂存纹理",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "2189d1502fa8c3aa1dcffc4c773f4c144343d808039b977871bfea42a267cd65"
+    },
+    {
+      "source": "Fallback to ordinary NR: the pre-SR active colour staging texture could not be allocated",
+      "text": "回退到常规 NR：无法分配超分前有效颜色暂存纹理",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "bbf5c60f548584c3441ad71211eb90d23c52dc87e6ecfa4dacf911823365729e"
+    },
+    {
+      "source": "Fallback to ordinary NR: packed model staging textures could not be allocated",
+      "text": "回退到常规 NR：无法分配打包模型的暂存纹理",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "e6d617c736cc1b46fcc73a7ea58a01f8f60bddc0eb42988ab1f635704c35ff5f"
+    },
+    {
+      "source": "Fallback to ordinary NR: the Neural Rendering staging textures could not be allocated",
+      "text": "回退到常规 NR：无法分配神经渲染暂存纹理",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "9679ad174a1446797b3f0f2c6d0333488ec2a4c9f35e6a0f2e80bc4a77d0553c"
+    },
+    {
+      "source": "Fallback to ordinary NR: NGX rejected the packed model extent",
+      "text": "回退到常规 NR：NGX 拒绝了打包模型的尺寸",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "e2f1953430d42b57699d030ca715f3543bce3e35763028b69d673ca89fbb5147"
+    },
+    {
+      "source": "Fallback to ordinary NR: the NVIDIA NGX driver could not create Neural Rendering",
+      "text": "回退到常规 NR：NVIDIA NGX 驱动无法创建神经渲染",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "955a0fb6d8f6c952e6d98bb0defcaa74ff7929904c1c92b83759b5e2601be107"
+    },
+    {
+      "source": "Fallback to ordinary NR: the NVIDIA NGX driver does not provide Neural Rendering",
+      "text": "回退到常规 NR：NVIDIA NGX 驱动未提供神经渲染",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "efbd7ba160cbf592fdb0c7bae071b5ae9c06e32dfb5a5342396cf9d6522f0414"
+    },
+    {
+      "source": "Fallback to ordinary NR: the spatial shader or textures could not be created",
+      "text": "回退到常规 NR：无法创建空间着色器或纹理",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "18210282af8df98c83d410823468849e61696a93b6b68f9c1bdafcb6f3e9bcdb"
+    },
+    {
+      "source": "Fallback to ordinary NR: the spatial frame's colour encode dispatch failed",
+      "text": "回退到常规 NR：空间帧的颜色编码调度失败",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "c00ad4719fe7ce0b1572892f537253e2b60e9f0d44fdc7d81b9ca7855c673e92"
+    },
+    {
+      "source": "Fallback to ordinary NR: a spatial packing dispatch failed",
+      "text": "回退到常规 NR：空间打包调度失败",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "b8942ed4466d62e9a1876f5d80a4d520f181b3847c1b9ac7eb943effbd7d27e9"
+    },
+    {
+      "source": "Fallback to ordinary NR: a spatial unpacking dispatch failed",
+      "text": "回退到常规 NR：空间解包调度失败",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "27bc42ed5c4ee3b8f2a0a8a2743305f93912d5440e87d9a0c6c5e7f358d543e4"
+    },
+    {
+      "source": "Fallback to ordinary NR: a spatial supersample downsampling dispatch failed",
+      "text": "回退到常规 NR：空间超采样降采样调度失败",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "ba1efce8b6b0bb8b2bfe5f55ad06b979d72c8fa2986771db1d2827dcc01da200"
+    },
+    {
+      "source": "Fallback to ordinary NR: NGX rejected the packed model input",
+      "text": "回退到常规 NR：NGX 拒绝了打包模型输入",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "7df93340e21069a939633cbc3cc8ad216cf61f8d4e152e2de6e18e8a8af66216"
+    },
+    {
+      "source": "Fallback to ordinary NR: Spatial compression unavailable: could not allocate packed surfaces",
+      "text": "回退到常规 NR：空间压缩不可用：无法分配打包表面",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "27d8498bb9062fa80b7503d1ccf01c0c8d73367edf52a0ad9ab9182f2d12bba5"
+    },
+    {
+      "source": "Fallback to ordinary NR: Spatial compression unavailable: the driver rejected the packed model",
+      "text": "回退到常规 NR：空间压缩不可用：驱动拒绝了打包模型",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "db28b48e518104829b4bdfae391479328a2414292e5fbe74de316f18cae23247"
+    },
+    {
+      "source": "Fallback to ordinary NR: Spatial compression unavailable: the driver rejected the packed evaluation",
+      "text": "回退到常规 NR：空间压缩不可用：驱动拒绝了打包计算",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "6afe5f64325acad1c227fdb22fa6993c7837eca5ed05b0d176661c636837ec0c"
+    },
+    {
+      "source": "DX12 peripheral compression: {}x{} -> {}x{}",
+      "text": "DX12 外围压缩：{}x{} -> {}x{}",
+      "pattern": true,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "c778ba5fe829a5c7a17b877034390df7bcf3dcbd7c7c56e295f7e93746470247"
+    },
+    {
+      "source": "Spatial compression {}x{} → {}x{} ({}% pixels)",
+      "text": "空间压缩 {}x{} → {}x{}（{}% 像素）",
+      "pattern": true,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "f50baae805cd80092471019d3b1006b45efc449af4009d7d14d91d1712e186b9"
+    },
+    {
+      "source": "1:1 {} creation failed: {}",
+      "text": "1:1 {} 创建失败：{}",
+      "pattern": true,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "2385f82faea47b982b6dec7bee03fab94c57afbb96d4e2ded80246277c176a91"
+    },
+    {
+      "source": "1:1 {} evaluation failed: {}",
+      "text": "1:1 {} 计算失败：{}",
+      "pattern": true,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "c4ea777990e3f63904308262297052db67905f66d31173ce6fdefb7b351faea4"
+    },
+    {
+      "source": "1:1 {} created; waiting for a later submission epoch",
+      "text": "1:1 {} 已创建；正在等待后续提交周期",
+      "pattern": true,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "9d696c54ebfde6efc5cb754bbf234bc0de7e148b3113cd0d448bb8d12822b2bf"
+    },
+    {
+      "source": "private DLSS SR creation failed: {}",
+      "text": "独立 DLSS SR 创建失败：{}",
+      "pattern": true,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "aefb99af48172b2d38f7e0f7a816c9d57975b2aa8cdbd49a6cfaf724851f75b6"
+    },
+    {
+      "source": "private DLSS SR evaluation failed: {}",
+      "text": "独立 DLSS SR 计算失败：{}",
+      "pattern": true,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "441e28a2d493e941fe9a4a7af993e81c1c3e909b8228ade95189d490896b1c1e"
+    },
+    {
+      "source": "private {} creation failed: {}; clean SR frame retained",
+      "text": "独立 {} 创建失败：{}；保留干净的 SR 帧",
+      "pattern": true,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "d1c121f683927181875a3cd182e45d48e1d37c16de77b0a0a10f9c0d9404e624"
+    },
+    {
+      "source": "private {} evaluation failed: {}; clean SR frame retained",
+      "text": "独立 {} 计算失败：{}；保留干净的 SR 帧",
+      "pattern": true,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "27df0da7a46feb7d8ccc0db1392f299664d893d9c067df4cfa057d5111c10f31"
+    },
+    {
+      "source": "private {} created; waiting for a later submission epoch",
+      "text": "独立 {} 已创建；正在等待后续提交周期",
+      "pattern": true,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "0068224733895d3732b35d64f5acae2405229e65793ada07b85fada5014cbe20"
+    },
+    {
+      "source": "running: model -> private {}; changes saved for the finished picture",
+      "text": "运行中：模型 -> 独立 {}；已保存用于最终画面的修改",
+      "pattern": true,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "b5b2e464def39bb3cc6838035a5cfd1ed155343178b70655dcb51f6cf0c1e6d2"
+    },
+    {
+      "source": "running: {}x{} contribution -> private {} -> {}x{}; applied after SR",
+      "text": "运行中：{}x{} 修改贡献 -> 独立 {} -> {}x{}；在 SR 后应用",
+      "pattern": true,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "6def9b7b8aa61cd78695efb6d40af15768853b86ce04b3fee8c84ef6ad98b827"
+    },
+    {
+      "source": " [1:1 pass {} ms, private SR {} ms]",
+      "text": " [1:1 Pass {} ms，独立 SR {} ms]",
+      "pattern": true,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "8060722f95444a4d3884ccd5f0407dec3570c897b0f8d0694ef17c6fa5b1e487"
+    },
+    {
+      "source": " [1:1 pass {} ms]",
+      "text": " [1:1 Pass {} ms]",
+      "pattern": true,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "9b14c6652cd2340f7c01f1ac3ed8559a0400b15b849e6180d261c3e9eb41dd74"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> NR'd clean image -> game upscaler (jitter 0)",
+      "text": "运行中：RR 1:1 -> NR -> NR 处理后的干净图像 -> 游戏超分辨率器（抖动 0）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "1d96f86181243cb464732e1e119aaf747ddcfdc0eada1119a836305c396de28b"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> NR'd clean image -> private DLSS SR (jitter 0)",
+      "text": "运行中：RR 1:1 -> NR -> NR 处理后的干净图像 -> 独立 DLSS SR（抖动 0）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "824337f74cc2215ff1d3b4da93efcf319e87207bdd9f25d9befe29aecffd600c"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "6ece4c8d5ddbaf19a0d340abd2f5ca9681a671ba991dd2f506a08c94cdeeba3f"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (bilinear, ratio, jitter shift on, flipped)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（双线性，比例，抖动偏移开启，反向）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "af8768a9b4d806741a92d52dd1e8c8b680fdd6418eb8311d41e4cd5afc70e5fe"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (bilinear, ratio, jitter shift on, flipped, clamped)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（双线性，比例，抖动偏移开启，反向，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "418977c5a10d03192d3b094efaeeb1d2dbbe35dd301d9e7ff0aa85efff4a8030"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (bilinear, ratio, jitter shift on)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（双线性，比例，抖动偏移开启）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "b9eb9ecef2792365396908119a0f476786db38c841547009286d8b49824e9132"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (bilinear, ratio, jitter shift on, clamped)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（双线性，比例，抖动偏移开启，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "f864860caa87306067e0953843a0951815660a612c9083bf838d32c4e8d6c1c1"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (bilinear, ratio, jitter shift off)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（双线性，比例，抖动偏移关闭）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "543aff5d8ba0ca456abb2306c0ec43c41b1cb8517d37495f9fa3d65f813f9832"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (bilinear, ratio, jitter shift off, clamped)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（双线性，比例，抖动偏移关闭，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "6d948ccc935873c829f64b37b31811e03f49ebb0cf865fefb96c576f2dba5f58"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (bilinear, difference, jitter shift on, flipped)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（双线性，差值，抖动偏移开启，反向）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "329cab782e95a6de7e1bbf32a3558801659af613fca89cd2a7f95fde6bc8258b"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (bilinear, difference, jitter shift on, flipped, clamped)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（双线性，差值，抖动偏移开启，反向，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "c1657780c31c8ebdd3486a921257a030e7602d66fceb4ba65ef040a26fad29c2"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (bilinear, difference, jitter shift on)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（双线性，差值，抖动偏移开启）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "ade64389f52da4fb68d717c5708b160773ad41f077a6ea667ce993c89cd44d30"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (bilinear, difference, jitter shift on, clamped)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（双线性，差值，抖动偏移开启，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "88d51d39809718c79bbbfca0ce68b40418e6bb63ab5b53c8021d9dd86021dfbc"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (bilinear, difference, jitter shift off)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（双线性，差值，抖动偏移关闭）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "ddc5ddf6dbb5b178f8dbecb425be3534cfb85d00d109a9fde9e4dde77dedd36f"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (bilinear, difference, jitter shift off, clamped)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（双线性，差值，抖动偏移关闭，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "4a88309eb3409f5cac08dd0d991aa7f8663ea9ee8bcda102d421a2ae90de36e8"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (Lanczos 2, ratio, jitter shift on, flipped)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Lanczos 2，比例，抖动偏移开启，反向）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "51b4172aa144af1c98a8f29c6df4a3939c1e454e9ba5a51191ade900b0cd5037"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (Lanczos 2, ratio, jitter shift on, flipped, clamped)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Lanczos 2，比例，抖动偏移开启，反向，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "ee4d97daff3a56c04ca9bef86ea59ff92737dd26ef7348cb8200913b946a8ea4"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (Lanczos 2, ratio, jitter shift on)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Lanczos 2，比例，抖动偏移开启）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "0918d72ed397a2243e186823b4a26ee29d9b60d25c800f2a937a331f9197ecdd"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (Lanczos 2, ratio, jitter shift on, clamped)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Lanczos 2，比例，抖动偏移开启，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "ab0d3b15d282b8f4de51bbfebd01b836f6de738782a7f73977240d0521a9320f"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (Lanczos 2, ratio, jitter shift off)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Lanczos 2，比例，抖动偏移关闭）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "68aa8e4a51c6341687b8b61740fe3d84a18a61c876ff1e06fbc254cc6ea0f07a"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (Lanczos 2, ratio, jitter shift off, clamped)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Lanczos 2，比例，抖动偏移关闭，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "9cbf638db5e760f893570a07af43680ac73dd82bd6a8bcc3d24079b3fb4bf203"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (Lanczos 2, difference, jitter shift on, flipped)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Lanczos 2，差值，抖动偏移开启，反向）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "79109d60b8ad3d703bc46757fff2415de7ad4a35bd0de8d7f6b4e612b4752590"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (Lanczos 2, difference, jitter shift on, flipped, clamped)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Lanczos 2，差值，抖动偏移开启，反向，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "c686ab9d56a8ef2dca18077f56c636b7b8cdc159f935b11f90fba52826626a8f"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (Lanczos 2, difference, jitter shift on)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Lanczos 2，差值，抖动偏移开启）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "05aa1d342e322821f0b9080013a71a2eabdd4e3d9f9b014b35cc884e13f75d4f"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (Lanczos 2, difference, jitter shift on, clamped)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Lanczos 2，差值，抖动偏移开启，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "e07eef9219f37f5800f64f2c64e044af29035c09d2e05d6bcbe9547ff433a604"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (Lanczos 2, difference, jitter shift off)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Lanczos 2，差值，抖动偏移关闭）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "4eedeb5f039c77a61f5b45e13445e931d880f496774541ab5f5a1a3bf9e35a1b"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (Lanczos 2, difference, jitter shift off, clamped)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Lanczos 2，差值，抖动偏移关闭，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "1d4071e747321fcdabdf8d7c419a4d644a7ff1a3843aedb912b579b46b118022"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (Catmull-Rom, ratio, jitter shift on, flipped)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Catmull-Rom，比例，抖动偏移开启，反向）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "c1092d34aad32c29d186fd69c48555854deef61257880419d98e6b6825169113"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (Catmull-Rom, ratio, jitter shift on, flipped, clamped)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Catmull-Rom，比例，抖动偏移开启，反向，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "6286e4e2d9acc4c664d9706f557295bc546d5e6186ea03d44eb4b48dbf091901"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (Catmull-Rom, ratio, jitter shift on)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Catmull-Rom，比例，抖动偏移开启）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "a5358cb77d3406052713925e46d25d3a8904f8f6ab107b19d7237f9fafffb500"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (Catmull-Rom, ratio, jitter shift on, clamped)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Catmull-Rom，比例，抖动偏移开启，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "14eb507e7a938be24a180a540e2c7a811de9e2f6010ca2792f25011e0dc37481"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (Catmull-Rom, ratio, jitter shift off)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Catmull-Rom，比例，抖动偏移关闭）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "fa74463ad8bdf6f1fb31a6478730e8b7381259f42b16500de36ab7de0363bc4b"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (Catmull-Rom, ratio, jitter shift off, clamped)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Catmull-Rom，比例，抖动偏移关闭，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "3a287d55a0ee65c5de5e1aee605c0a966a83944689163ddca515ed27e6319d83"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (Catmull-Rom, difference, jitter shift on, flipped)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Catmull-Rom，差值，抖动偏移开启，反向）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "5154986aad1a93ba966432daac9efbb9a28612288aad95a95c4bb2dfd8e13b71"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (Catmull-Rom, difference, jitter shift on, flipped, clamped)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Catmull-Rom，差值，抖动偏移开启，反向，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "c4ffe2dea0f6c7c1dc88469246a45fe490827d066045c94b786b8c6ac2aeb1ee"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (Catmull-Rom, difference, jitter shift on)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Catmull-Rom，差值，抖动偏移开启）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "7a8406aaa6ed16924b62a58074b758a3fc3529b14995f9fa0f3cfd7acc63e31a"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (Catmull-Rom, difference, jitter shift on, clamped)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Catmull-Rom，差值，抖动偏移开启，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "c8f8c3224255ecb5b4eb825ce1b5a342d117a6961dc1c03d92ff35a2c4d652f5"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (Catmull-Rom, difference, jitter shift off)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Catmull-Rom，差值，抖动偏移关闭）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "e86e4de282666b5c6da411242bdcd4fb7a1e9c061711778279e1e5b1bbc2e96c"
+    },
+    {
+      "source": "running: RR 1:1 -> NR -> edit onto raw render -> game upscaler (Catmull-Rom, difference, jitter shift off, clamped)",
+      "text": "运行中：RR 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Catmull-Rom，差值，抖动偏移关闭，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "d245b761173188d18d6dfebba6ddd052688f352df407bb0eb2ce11c3ecb0a4d3"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> NR'd clean image -> game upscaler (jitter 0)",
+      "text": "运行中：DLSS 1:1 -> NR -> NR 处理后的干净图像 -> 游戏超分辨率器（抖动 0）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "74122b7b52dcc59dd95de8d2218a6963ed44db9ee274a07bbfe238e861d08457"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> NR'd clean image -> private DLSS SR (jitter 0)",
+      "text": "运行中：DLSS 1:1 -> NR -> NR 处理后的干净图像 -> 独立 DLSS SR（抖动 0）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "cc382c1879483a22b63b8fa8c4389919be5bbca33d996607bda5b7a1cb3a1583"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "110650966517cc420a6935c26934687dee3db28f41dfe36c7586d0e8c4f568e6"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (bilinear, ratio, jitter shift on, flipped)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（双线性，比例，抖动偏移开启，反向）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "e46df4c9a7d951dd08cc6fd05a85e9b347bdbc3ce378be87b79b98ca7b70d301"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (bilinear, ratio, jitter shift on, flipped, clamped)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（双线性，比例，抖动偏移开启，反向，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "f76798504395e8abfb14b41bbf5fd9e9e9d3196b4bf4c346a5b1a279e41ac6b0"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (bilinear, ratio, jitter shift on)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（双线性，比例，抖动偏移开启）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "a8c396c4995460b89afd3c6a4c29ffaba5a0c1de1cd38578954ddb6a635b02c6"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (bilinear, ratio, jitter shift on, clamped)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（双线性，比例，抖动偏移开启，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "fcc4cf6848803bc970fb143c9c7459e8941fb949c36969cd0cce9df46de3ed22"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (bilinear, ratio, jitter shift off)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（双线性，比例，抖动偏移关闭）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "f8169564b83335a801b129dd26e2b7e1e37b0e2559fed756a29b1fe6f3e5c470"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (bilinear, ratio, jitter shift off, clamped)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（双线性，比例，抖动偏移关闭，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "7d328179a048dab5658f9f1545060a7f393db01c3bb7ccf96bd0ae6096e4fccf"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (bilinear, difference, jitter shift on, flipped)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（双线性，差值，抖动偏移开启，反向）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "466a4db3f61a55de8ae5505b6003556268b7088ea3ca8408d73a2d60376593fa"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (bilinear, difference, jitter shift on, flipped, clamped)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（双线性，差值，抖动偏移开启，反向，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "54f86f81643e17c921bf8b54a079664f119164edc0226a8bb78ce801a005c84c"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (bilinear, difference, jitter shift on)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（双线性，差值，抖动偏移开启）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "04df2c2468fe9a4e0118b38b8d94886bce13d1b267f913bfdfe96f742c25889a"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (bilinear, difference, jitter shift on, clamped)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（双线性，差值，抖动偏移开启，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "49bdfcc435ce567e0a06fb3b69e05c6eaa3b1d4135f822405dcd901551fa20c4"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (bilinear, difference, jitter shift off)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（双线性，差值，抖动偏移关闭）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "5e89e77ecf6d52f1941e70bc1b5141ac5bbf4ff4e419b712736e804e57f6b33e"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (bilinear, difference, jitter shift off, clamped)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（双线性，差值，抖动偏移关闭，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "6209ba4c3822b00a5522f9072a6bb23a7a354b59db0a83b788c0cd86945abc21"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (Lanczos 2, ratio, jitter shift on, flipped)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Lanczos 2，比例，抖动偏移开启，反向）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "86be5f7c6f08c68188c916b85c859d42547e51d51a1dc3e9a9afc98d4d07b5fe"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (Lanczos 2, ratio, jitter shift on, flipped, clamped)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Lanczos 2，比例，抖动偏移开启，反向，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "abbe89775fa6da90e150eadd120dd035c6bc7cb39f3114d132381c8947ffd712"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (Lanczos 2, ratio, jitter shift on)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Lanczos 2，比例，抖动偏移开启）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "5af9213c7e1fc81800505d5d7e4d832732d6bd070b4e9ff239fa4f9f4b2d3d68"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (Lanczos 2, ratio, jitter shift on, clamped)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Lanczos 2，比例，抖动偏移开启，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "434c68b6698c6550508bcc210f875957e70da24339b4eae7ac1c689f5ba9de9c"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (Lanczos 2, ratio, jitter shift off)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Lanczos 2，比例，抖动偏移关闭）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "f5cda5da178c176ba035947d1c7c80afa2251e5d4e0cae1677429ade4b425d1b"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (Lanczos 2, ratio, jitter shift off, clamped)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Lanczos 2，比例，抖动偏移关闭，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "08a30f74f4fe6943c5c28adc8f306071bd71836d247b998727a7971f06fc8aad"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (Lanczos 2, difference, jitter shift on, flipped)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Lanczos 2，差值，抖动偏移开启，反向）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "30f5beab7c8658e41f1bcc3744fb505f2ecba2417129bb3aae24e7cdcaad783f"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (Lanczos 2, difference, jitter shift on, flipped, clamped)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Lanczos 2，差值，抖动偏移开启，反向，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "2cdd7ec153bff00a43a1c27bfd40a5d2e89b25fdf8454f99c341e92c69c39f35"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (Lanczos 2, difference, jitter shift on)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Lanczos 2，差值，抖动偏移开启）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "761c78f96239798f79ada1b82c937d113d193af4997df7eaf04b866adb63485a"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (Lanczos 2, difference, jitter shift on, clamped)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Lanczos 2，差值，抖动偏移开启，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "c9054031f81fc873d882f3e7a81d7e57cf4355e8abcc78f5521e9d702a07ad75"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (Lanczos 2, difference, jitter shift off)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Lanczos 2，差值，抖动偏移关闭）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "997fd641222a786c6508323d38da33b8b12b77645202a6ca20152686f473d72d"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (Lanczos 2, difference, jitter shift off, clamped)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Lanczos 2，差值，抖动偏移关闭，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "1c0fbc4557056564955992c50f983aa02f485c57bb7aac222bf53c0de941b2b8"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (Catmull-Rom, ratio, jitter shift on, flipped)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Catmull-Rom，比例，抖动偏移开启，反向）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "2a961cde9984903a58ae287b1e3109356cffd25cbac623542b53f20d5a4256a3"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (Catmull-Rom, ratio, jitter shift on, flipped, clamped)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Catmull-Rom，比例，抖动偏移开启，反向，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "f6e0f64e25bd8dfbb048187db3b0714aa5a570ac9f5630766a8f9ec6c12894f6"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (Catmull-Rom, ratio, jitter shift on)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Catmull-Rom，比例，抖动偏移开启）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "497750682146db035be5b73a16bd47a9a17961fd3355d3293f1be4276269fd21"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (Catmull-Rom, ratio, jitter shift on, clamped)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Catmull-Rom，比例，抖动偏移开启，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "fd3ba2b000d74b39fc0a9a6c297669b1c87f3a3db623e8e96b50fb593d6d9422"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (Catmull-Rom, ratio, jitter shift off)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Catmull-Rom，比例，抖动偏移关闭）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "faa1cc09bc44235b0f92facfc9b0748eab7c371695d5471b4b8a3c57e6132b5b"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (Catmull-Rom, ratio, jitter shift off, clamped)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Catmull-Rom，比例，抖动偏移关闭，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "bdb1775f976c223a4556eb995c157e48c05aa02007831bdfddb0d187d4048d8a"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (Catmull-Rom, difference, jitter shift on, flipped)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Catmull-Rom，差值，抖动偏移开启，反向）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "074bde1ce54e217e7c291c8999075f2e332b7fbdede809e0ed1dfe73730e5ba2"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (Catmull-Rom, difference, jitter shift on, flipped, clamped)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Catmull-Rom，差值，抖动偏移开启，反向，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "d1973756fabf1b3c3bf3ed7926f9d1a2091dbd05f748cc1f330f68cdc72021d3"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (Catmull-Rom, difference, jitter shift on)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Catmull-Rom，差值，抖动偏移开启）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "9076c03bd024f580b21825096612f19577e5bceb3b4644b362e21dffe2945644"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (Catmull-Rom, difference, jitter shift on, clamped)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Catmull-Rom，差值，抖动偏移开启，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "36b0994676d3620019b6097b0768ce2e89397cfacb8182283a04038a78b65fec"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (Catmull-Rom, difference, jitter shift off)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Catmull-Rom，差值，抖动偏移关闭）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "76721ee771d34aab81dc02a6ef9115850810390846833a297d97cb9ee243da30"
+    },
+    {
+      "source": "running: DLSS 1:1 -> NR -> edit onto raw render -> game upscaler (Catmull-Rom, difference, jitter shift off, clamped)",
+      "text": "运行中：DLSS 1:1 -> NR -> 修改原始渲染 -> 游戏超分辨率器（Catmull-Rom，差值，抖动偏移关闭，已限制范围）",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "audited Pre-SR status display composition"
+      ],
+      "source_hash": "9e256985719ad3f116a061f66609c3d6907a64f580753a1e6bc0c87a00a30959"
+    },
+    {
+      "source": "DLSS enlargement requires NR after the game upscaler.",
+      "text": "DLSS 放大要求在游戏超分辨率器之后运行 NR。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Enlarge.cpp:43"
+      ],
+      "source_hash": "6a52c2d2e3297860c47e5de0d4736a39d9ee03bcee81e5c7e132d7e3e86c7549"
+    },
+    {
+      "source": "Waiting for the NR direct command queue.",
+      "text": "正在等待 NR 直接命令队列。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Enlarge.cpp:55"
+      ],
+      "source_hash": "6cba1c3b43268dc1dccb322859bd7adb2e87d547e63aa6f0585b46ef46376db4"
+    },
+    {
+      "source": "NR DLSS enlargement queue/device mismatch.",
+      "text": "NR DLSS 放大的队列与设备不匹配。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Enlarge.cpp:58"
+      ],
+      "source_hash": "08fdace7ae76b0f5df8a94d91695e308f06ef5d68c1e9b902ae69b89595e1786"
+    },
+    {
+      "source": "Waiting for retired DLSS enlargement work.",
+      "text": "正在等待退役 DLSS 放大工作完成。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Enlarge.cpp:70"
+      ],
+      "source_hash": "1f5221e0e6b86ea8a13a71a179d31c1cc7d56be70282fed10a16ccb1e53efddc"
+    },
+    {
+      "source": "DLSS enlargement resource allocation failed; use Retry.",
+      "text": "DLSS 放大资源分配失败；请重试。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Enlarge.cpp:87"
+      ],
+      "source_hash": "39283dbf19d36dde7cede13b47becfcdce191d3b1c35f446e7e6d9c9ea2a2be0"
+    },
+    {
+      "source": "DLSS enlargement exposure initialization failed; use Retry.",
+      "text": "DLSS 放大曝光初始化失败；请重试。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Enlarge.cpp:94"
+      ],
+      "source_hash": "e486d21770099ce0be3272c1cc95c0d0dee265b7b9857851f46673ec3f52f8df"
+    },
+    {
+      "source": "Waiting for DLSS enlargement initialization submission.",
+      "text": "正在等待 DLSS 放大初始化提交。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Enlarge.cpp:112",
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Enlarge.cpp:118"
+      ],
+      "source_hash": "b18d16797457447d6383c733d9b6ad298e91209e9f6be816572922d7e013d07c"
+    },
+    {
+      "source": "DLSS enlargement needs valid depth and motion.",
+      "text": "DLSS 放大需要有效的深度和运动数据。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Enlarge.cpp:126"
+      ],
+      "source_hash": "66ff431be2e1dfb30351a5e274c72ea5ae26728826c06f66d1c611dcd689c83f"
+    },
+    {
+      "source": "DLSS enlargement guide/carrier preparation failed.",
+      "text": "DLSS 放大引导/载体准备失败。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Enlarge.cpp:157"
+      ],
+      "source_hash": "acfaadce07c72da721dfee29e21d8adb9a722cab4e2f9dfd82548642c1a98bbe"
+    },
+    {
+      "source": "the NVIDIA NGX Vulkan driver could not initialize",
+      "text": "NVIDIA NGX Vulkan 驱动无法初始化",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFeature_Vk_Model.cpp:42"
+      ],
+      "source_hash": "9a27bd04930540f9ddd0e5200ed96d057c62f86b4af36ffbc236bd91c190902f"
+    },
+    {
+      "source": "the NVIDIA NGX Vulkan driver interface is incomplete",
+      "text": "NVIDIA NGX Vulkan 驱动接口不完整",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFeature_Vk_Model.cpp:49"
+      ],
+      "source_hash": "b8294a05421b495d42d6509cdecff9b1523d1fc2cd387297097b839f9ffa54a3"
+    },
+    {
+      "source": "the NVIDIA NGX driver could not allocate capability parameters",
+      "text": "NVIDIA NGX 驱动无法分配能力参数",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFeature_Vk_Model.cpp:84"
+      ],
+      "source_hash": "c668516fa00a2adf74f98ebae564f5c8e2c95f58c69967a330af673963b750a6"
+    },
+    {
+      "source": "the NVIDIA NGX driver reused a feature instead of creating an independent NR pass",
+      "text": "NVIDIA NGX 驱动复用了已有特征，而未创建独立的 NR Pass",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFeature_Vk_Model.cpp:110"
+      ],
+      "source_hash": "bb49b5a82a508aa2cba48bb2d66e5116baafce6b45f6d28ffb2447b7984ea048"
+    },
+    {
+      "source": "the NVIDIA NGX driver could not create an independent Neural Rendering feature",
+      "text": "NVIDIA NGX 驱动无法创建独立的神经渲染特征",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFeature_Vk_Model.cpp:119"
+      ],
+      "source_hash": "ad673cc2fb91d34bfc7a09f172b807a057cfd2b63fe1f8d11e7488e0fa066e3d"
+    },
+    {
+      "source": "the Vulkan device could not retire previous model resources",
+      "text": "Vulkan 设备无法退役之前的模型资源",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFeature_Vk_Model.cpp:300"
+      ],
+      "source_hash": "8b65774f6659ead4fdfbe9b34cf9d97834878c9f459e588f3bb3d7d53d873414"
+    },
+    {
+      "source": "the pass could not allocate its own surfaces",
+      "text": "此 Pass 无法分配自身的表面",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFeature_Vk_Model.cpp:339"
+      ],
+      "source_hash": "832b36f592370393aec33c9ecfab7591723fef9955117e885cf45399e5799786"
+    },
+    {
+      "source": "the halo filter could not allocate its working image",
+      "text": "光晕滤波器无法分配工作图像",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFeature_Vk_Model.cpp:375"
+      ],
+      "source_hash": "45a6336537d772ed9e676913ab765534e885ef37101564a3ef15413d1fa6f416"
+    },
+    {
+      "source": "could not allocate the model creation marker",
+      "text": "无法分配模型创建标记",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFeature_Vk_Model.cpp:410"
+      ],
+      "source_hash": "3f4f68ac3fe1d5f55543b9670bb9a6009b642b1deb0af51d1e13c266a51ad1b7"
+    },
+    {
+      "source": "the Vulkan device could not retire work for retry",
+      "text": "Vulkan 设备无法退役工作以便重试",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFeature_Vk.cpp:92"
+      ],
+      "source_hash": "ced36c92b870296ee5b657d3784ce4a80f798791cca4ea4e919c4f962ba4f2f9"
+    },
+    {
+      "source": "a Vulkan model was dispatched on a different device",
+      "text": "Vulkan 模型被调度到了不同设备",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFeature_Vk.cpp:198"
+      ],
+      "source_hash": "b5c5511454921567abe22cb238aa41de1cce8b8b420797c58f436ea75fd0db54"
+    },
+    {
+      "source": "the Vulkan device could not retire the supersampling filter",
+      "text": "Vulkan 设备无法退役超采样滤波器",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFeature_Vk.cpp:213"
+      ],
+      "source_hash": "b07b4b3c8ce162e143d3dab3a3b6d827f84255f328b9e9ae948a51c253c1462c"
+    },
+    {
+      "source": "the encode dispatch failed",
+      "text": "编码调度失败",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFeature_Vk.cpp:326"
+      ],
+      "source_hash": "9794986333c70ddfc51d78a50d1cc60ca8282d9a8a0670a5c6040850044205c9"
+    },
+    {
+      "source": "the Vulkan device could not retire the supersampling filters",
+      "text": "Vulkan 设备无法退役超采样滤波器",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFeature_Vk.cpp:383"
+      ],
+      "source_hash": "6e597ddc136d8cc6e4f087797923424136cfb4d0acf92a1d36fcf5336e3c22fe"
+    },
+    {
+      "source": "the downsample dispatch failed",
+      "text": "降采样调度失败",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFeature_Vk.cpp:431"
+      ],
+      "source_hash": "eb452b71af3eb1a1cf7bfabf0248b0df713b588a00e9cbccd693bab79ed86836"
+    },
+    {
+      "source": "the model refused to evaluate",
+      "text": "模型拒绝计算",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFeature_Vk.cpp:561"
+      ],
+      "source_hash": "21d753291361f5c96d52b58e2ec9ae89d7aeadda368621a25e1b9536ebcac8bb"
+    },
+    {
+      "source": "the resolve dispatch failed",
+      "text": "结果解析调度失败",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/dlssnr/DlssNrFeature_Vk.cpp:667"
+      ],
+      "source_hash": "ee7fd2a27717928494fe9bfebbfdd7c4e637b5b3cb885863683d95dc580ba3c1"
+    },
+    {
+      "source": "NR changes are hidden.",
+      "text": "NR 修改已隐藏。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_FinishedCompose.cpp:329"
+      ],
+      "source_hash": "b3be43df0757ba97aab471d2792164eedb24960420b9acf174b0cea25f6ec6cf"
+    },
+    {
+      "source": "Applying pre-SR changes with HDR brightness matching (local fallback enabled).",
+      "text": "正在应用超分前修改及 HDR 亮度匹配（已启用局部回退）。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_FinishedCompose.cpp:329"
+      ],
+      "source_hash": "6602729aaffc6c397c39864f4083e565d170f4c66b2ca4f3fc3a2d0a987978bb"
+    },
+    {
+      "source": "Applying the pre-SR changes to the finished picture.",
+      "text": "正在将超分前修改应用到最终画面。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_FinishedCompose.cpp:329"
+      ],
+      "source_hash": "e7ea8651e8e339fc31100e9ba9ac03c26a569f911d4cba4f2c456a6b043e206c"
+    },
+    {
+      "source": "Applying NR to the finished picture.",
+      "text": "正在将 NR 应用到最终画面。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_FinishedCompose.cpp:329"
+      ],
+      "source_hash": "cd535670d1b2c59d8df1af2550b5424a16fe49576a93bf9db2c02aa2b8f4b194"
+    },
+    {
+      "source": "Preparing NR for the finished picture.",
+      "text": "正在为最终画面准备 NR。",
+      "pattern": false,
+      "state": "machine_translated",
+      "occurrences": [
+        "OptiScaler/shaders/dlssnr/DlssNr_Dx12_FinishedCompose.cpp:329"
+      ],
+      "source_hash": "51d4080dd274e122e820725c8efb491c3a630557da4cdd14f46481eb791c3585"
+    },
+    {
+      "source": "Private DLSS SR: {}",
+      "text": "独立 DLSS SR：{}",
+      "pattern": true,
+      "state": "machine_translated",
+      "source_hash": "52b74f5a6e363f0ba97369874de859e5fca0892d2b68c18da289c189ee1181a3",
+      "occurrences": [
+        "audited producer DLSS NR upscaler status"
+      ]
+    },
+    {
+      "source": "DLSS enlargement requires the DX12 processing path.",
+      "text": "DLSS 放大需要 DX12 处理路径。",
+      "pattern": false,
+      "state": "machine_translated",
+      "source_hash": "d7706ba6d1c2e351d56afe367ae3e7bbc155dc0a6ae8ef5ac934fade0603f745",
+      "occurrences": [
+        "audited producer DLSS NR upscaler status"
+      ]
+    },
+    {
+      "source": "Matched residual + DLSS requires NR after the game upscaler.",
+      "text": "匹配残差 + DLSS 要求在游戏超分辨率器之后运行 NR。",
+      "pattern": false,
+      "state": "machine_translated",
+      "source_hash": "6cc8011958bfc7299ac75c080bf655ec34fc157665a3428e2946d419a949325e",
+      "occurrences": [
+        "stable v0.8.3 status-source audit"
+      ]
+    },
+    {
+      "source": "could not allocate the readback buffers",
+      "text": "无法分配回读缓冲区",
+      "pattern": false,
+      "state": "machine_translated",
+      "source_hash": "23373589752bcb8b21a1024a74fbf1be49bd564190ad1729468bff93ce94d8e7",
+      "occurrences": [
+        "stable v0.8.3 status-source audit"
+      ]
+    },
+    {
+      "source": "no buffer in this game is shaped like an exposure",
+      "text": "此游戏中没有形状符合曝光数据的缓冲区",
+      "pattern": false,
+      "state": "machine_translated",
+      "source_hash": "731f5ab67f16a0830178d084044957f0659beabb37f51e59892aa8f53f8f66a7",
+      "occurrences": [
+        "stable v0.8.3 status-source audit"
+      ]
+    }
+  ]
+}

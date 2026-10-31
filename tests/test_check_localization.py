@@ -31,4 +31,14 @@ class CheckLocalizationTests(unittest.TestCase):
         self.assertTrue(check_localization.should_fail(stale, strict=True))
         self.assertFalse(check_localization.should_fail(missing, strict=False))
 
+    def test_combo_nul_separators_must_be_preserved(self):
+        source = 'First\0Second\0'
+        cat={'entries':{'k':{'source':source,'source_hash':sha(source)}}}
+        en={'locale':'en-US','entries':{'k':{'text':source}}}
+        for translation in ('第一 第二', '第一\0第二', '第一\0\0'):
+            zh={'locale':'zh-CN','entries':{'k':{'text':translation,'state':'machine_translated','source_hash':sha(source)}}}
+            self.assertTrue(check_localization.analyze(cat,en,zh)['errors'])
+        zh['entries']['k']['text']='第一\0第二\0'
+        self.assertEqual([],check_localization.analyze(cat,en,zh)['errors'])
+
 if __name__=='__main__': unittest.main()

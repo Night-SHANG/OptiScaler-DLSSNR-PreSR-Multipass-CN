@@ -9,6 +9,7 @@ from loclib import (
     _string_literals_in_region,
     extract_string_expression,
     find_candidates,
+    find_container_candidates,
     find_matching,
     mask_cpp,
     should_exclude,
@@ -154,6 +155,27 @@ def find_assignment_literal_candidates(text: str, rel: str, rules: dict) -> list
     return out
 
 
+def find_scoped_format_candidates(text: str, rel: str, rules: dict) -> list[Candidate]:
+    """Capture deferred UI format expressions as whole calls for Loc::F."""
+    out = []
+    for spec in rules.get("scoped_format_calls", []):
+        if not _scoped(rel, spec):
+            continue
+        for name in spec.get("calls", []):
+            for masked, p, q, args in _call_matches(text, name):
+                if not args:
+                    continue
+                a, b = args[0]
+                source = extract_string_expression(text[a:b].strip())
+                if source is None or should_exclude(source, rules):
+                    continue
+                # The masked prefix preserves whitespace and identifiers.
+                start = masked.rfind(name, 0, p)
+                out.append(Candidate(rel, f"nested:{name}", 0, source, start, q + 1,
+                                     text.count("\n", 0, start) + 1, text[start:q + 1], True))
+    return out
+
+
 def find_ui_candidates(text: str, rel: str, rules: dict) -> list[Candidate]:
     """Return every known user-visible UI candidate for one source file.
 
@@ -165,6 +187,12 @@ def find_ui_candidates(text: str, rel: str, rules: dict) -> list[Candidate]:
     results.extend(find_scoped_literal_call_candidates(text, rel, rules))
     results.extend(find_return_literal_candidates(text, rel, rules))
     results.extend(find_assignment_literal_candidates(text, rel, rules))
+    results.extend(find_scoped_format_candidates(text, rel, rules))
+    for spec in rules.get("scoped_rewrite_containers", []):
+        if _scoped(rel, spec):
+            for candidate in find_container_candidates(text, rel, {**rules, "scan_containers": spec["anchors"]}):
+                candidate.rewrite = True
+                results.append(candidate)
 
     uniq: dict[tuple[int, int], Candidate] = {}
     for candidate in results:

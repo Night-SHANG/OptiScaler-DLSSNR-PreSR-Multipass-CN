@@ -97,12 +97,12 @@ def patch_dynamic_helpers(path: Path):
     replacements={
         'preview = opt.label;':'preview = OptiScalerCN::Loc::TL(opt.label);',
         'ImGui::Selectable(opt.label.c_str(), isSelected)':'ImGui::Selectable(OptiScalerCN::Loc::TL(opt.label).c_str(), isSelected)',
-        'ImGui::SetTooltip("%s", opt.tooltip.c_str())':'ImGui::SetTooltip("%s", OptiScalerCN::Loc::TL(opt.tooltip).c_str())',
+        ', opt.tooltip.c_str())':', OptiScalerCN::Loc::TL(opt.tooltip).c_str())',
         'return it->label;':'return OptiScalerCN::Loc::TL(it->label);',
         'splashMessage.c_str());':'OptiScalerCN::Loc::TL(splashMessage).c_str());',
         'ImGui::Selectable(q[n], (_mipmapUpscalerQuality == n))':'ImGui::Selectable(OptiScalerCN::Loc::TL(q[n]).c_str(), (_mipmapUpscalerQuality == n))',
         'ImGui::CheckboxFlags(flag.name.c_str(), &temp_flags, flag.mask)':'ImGui::CheckboxFlags(OptiScalerCN::Loc::TL(flag.name).c_str(), &temp_flags, flag.mask)',
-        'ImGui::SetTooltip("%s", flag.description.c_str())':'ImGui::SetTooltip("%s", OptiScalerCN::Loc::TL(flag.description).c_str())',
+        ', flag.description.c_str())':', OptiScalerCN::Loc::TL(flag.description).c_str())',
     }
     for a,b in replacements.items():
         if a in text and b not in text:
@@ -147,12 +147,37 @@ def instrument_file(path: Path, rel: str, rules: dict, source_to_key: dict):
         changes.append((c.start,c.end,repl))
     if not changes: return 0
     for a,b,repl in reversed(changes): text=text[:a]+repl+text[b:]
+    # Localized lookup arrays require runtime initialization, not constexpr.
+    # Restrict this change to arrays whose initializer actually contains Loc::T.
+    pattern = r'\bconstexpr(?=\s+const\s+char\s*\*[^;]*OptiScalerCN::Loc::T\()'
+    text = re.sub(pattern, '', text)
     if INCLUDE_LINE.strip() not in text:
         pch='#include "pch.h"\n'
         if pch in text: text=text.replace(pch,pch+INCLUDE_LINE,1)
         else: text=INCLUDE_LINE+text
     write_source_text(path, text, source_encoding)
     return len(changes)
+
+
+def patch_status_display(path: Path):
+    """Only wrap already-rendered status values at audited menu call sites."""
+    text, encoding = read_source_text(path)
+    expressions = {
+        'DlssNr_Menu.cpp': ['DlssNr::FinishedVkStatus()', 'DlssNr::FinishedPictureStatus()',
+                           'DlssNr::DeferredDlssStatus()', 'DlssNr::DenoiseFirstStatus()', 'reason'],
+        'DlssNr_MenuControls.cpp': ['status.spatialStatus'],
+        'DlssNr_MenuPlacement.cpp': ['DlssNr::FinishedVkStatus()', 'DlssNr::FinishedPictureStatus()', 'DlssNr::DeferredDlssStatus()'],
+    }.get(path.name, [])
+    for expr in expressions:
+        original = expr + '.c_str()'
+        replacement = 'OptiScalerCN::Loc::DS(' + expr + ').c_str()'
+        # Do not modify producers, identifiers, stored status or log arguments.
+        text = text.replace(original, replacement)
+    if path.name == 'DlssNr_MenuPlacement.cpp':
+        text = text.replace(', reason);', ', OptiScalerCN::Loc::DS(reason).c_str());')
+    if path.name == 'DlssNr_MenuInput.cpp':
+        text = text.replace('? why :', '? OptiScalerCN::Loc::DS(why).c_str() :')
+    write_source_text(path, text, encoding)
 
 
 def main():
@@ -164,6 +189,7 @@ def main():
     generated=args.source/'OptiScaler'/'localization'/'generated'/'Strings.generated.h'
     dst=args.source/'OptiScaler'/'localization'; dst.mkdir(parents=True,exist_ok=True)
     shutil.copy2(ROOT/'overlay'/'OptiScaler'/'localization'/'Localization.h',dst/'Localization.h')
+    shutil.copy2(ROOT/'overlay'/'OptiScaler'/'localization'/'StatusLocalization.h',dst/'StatusLocalization.h')
     subprocess.run([sys.executable,str(ROOT/'tools'/'generate_cpp.py'),'--channel',args.channel,'--out',str(generated)],check=True)
 
     pch=args.source/'OptiScaler'/'pch.h'
@@ -174,6 +200,10 @@ def main():
     for p in iter_source_files(args.source,rules):
         rel=p.relative_to(args.source).as_posix()
         total += instrument_file(p,rel,rules,source_to_key)
+
+    for name in ('DlssNr_Menu.cpp', 'DlssNr_MenuControls.cpp', 'DlssNr_MenuPlacement.cpp', 'DlssNr_MenuInput.cpp'):
+        status_menu = args.source/'OptiScaler'/'dlssnr'/name
+        if status_menu.exists(): patch_status_display(status_menu)
 
     menu=args.source/'OptiScaler'/'menu'/'menu_common.cpp'
     if not menu.exists(): raise RuntimeError('integration conflict: OptiScaler/menu/menu_common.cpp missing')

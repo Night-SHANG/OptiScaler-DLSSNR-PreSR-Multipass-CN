@@ -224,6 +224,20 @@ def should_exclude(source: str, rules: dict) -> bool:
 
 
 def _string_literals_in_region(text: str, start: int, end: int):
+    """Keep adjacent C++ literals together: separate runtime calls cannot concatenate."""
+    pending = None
+    for left, right, source, expr in _individual_string_literals_in_region(text, start, end):
+        if pending is not None and not mask_cpp(text[pending[1]:left]).strip():
+            pending = (pending[0], right, pending[2] + source, text[pending[0]:right])
+        else:
+            if pending is not None:
+                yield pending
+            pending = (left, right, source, expr)
+    if pending is not None:
+        yield pending
+
+
+def _individual_string_literals_in_region(text: str, start: int, end: int):
     """Yield string literals in a C++ region, excluding comments/chars."""
     i=start; state='code'
     while i < end:
@@ -410,7 +424,8 @@ def find_conditional_arg_literal_candidates(text: str, rel: str, rules: dict) ->
     """
     masked=mask_cpp(text); out=[]
     for name in rules.get('conditional_literal_calls', []):
-        pattern=re.compile(r'(?<![\w:])'+re.escape(name)+r'\s*\(')
+        prefix = '' if name.startswith('.') else r'(?<![\w:])'
+        pattern=re.compile(prefix+re.escape(name)+r'\s*\(')
         for m in pattern.finditer(masked):
             p=masked.find('(',m.start(),m.end()+2)
             if p < 0: continue
@@ -427,6 +442,42 @@ def find_conditional_arg_literal_candidates(text: str, rel: str, rules: dict) ->
                     out.append(Candidate(rel,f'{name}:conditional',idx,source,left,right,
                                          text.count('\n',0,left)+1,expr,True))
     return out
+
+def find_toast_candidates(text: str, rel: str, rules: dict) -> list[Candidate]:
+    """ImGuiToast's third aggregate field is display content, not a log/API value."""
+    if not rules.get('scan_imgui_toasts', False):
+        return []
+    masked=mask_cpp(text); out=[]
+    pattern=re.compile(r'\b(?:ImGui::InsertNotification\s*\(\s*|ImGuiToast\s+\w+\s*(?:\(\s*)?)\{')
+    for match in pattern.finditer(masked):
+        brace=match.end()-1
+        end=find_matching(text,brace,'{','}')
+        if end < 0: continue
+        args=split_args(text,brace+1,end)
+        if len(args)<3: continue
+        a,b=args[2]
+        # std::format requires its entire call to become Loc::F; wrapping only
+        # its literal in Loc::T would break compile-time format validation.
+        fmt=re.search(r'\bstd::format\s*\(',masked[a:b])
+        if fmt:
+            start=a+fmt.start(); p=masked.find('(',start)
+            q=find_matching(text,p)
+            if q < 0 or q>b: continue
+            fargs=split_args(text,p+1,q)
+            if not fargs: continue
+            fa,fb=fargs[0]; source=extract_string_expression(text[fa:fb].strip())
+            if source is None or should_exclude(source,rules): continue
+            out.append(Candidate(rel,'nested:std::format',0,source,start,q+1,
+                                 text.count('\n',0,start)+1,text[start:q+1],True))
+        else:
+            source=extract_string_expression(text[a:b].strip())
+            if source is None or should_exclude(source,rules): continue
+            left=a+len(text[a:b])-len(text[a:b].lstrip())
+            right=b-len(text[a:b])+len(text[a:b].rstrip())
+            out.append(Candidate(rel,'ImGuiToast:content',2,source,left,right,
+                                 text.count('\n',0,left)+1,text[left:right],True))
+    return out
+
 
 def find_candidates(text: str, rel: str, rules: dict) -> list[Candidate]:
     masked=mask_cpp(text)
@@ -468,6 +519,7 @@ def find_candidates(text: str, rel: str, rules: dict) -> list[Candidate]:
     results.extend(find_nested_ui_call_candidates(text, rel, rules))
     results.extend(find_scoped_c_string_array_candidates(text, rel, rules))
     results.extend(find_conditional_arg_literal_candidates(text, rel, rules))
+    results.extend(find_toast_candidates(text, rel, rules))
     # De-duplicate overlaps; prefer a rewritable call-site candidate.
     uniq={}
     for c in results:

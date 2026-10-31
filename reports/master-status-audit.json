@@ -1,0 +1,59 @@
+{
+  "static_sources": 117,
+  "missing_static": {},
+  "dynamic_compositions_for_manual_audit": [
+    {
+      "location": "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DeferredSr.cpp:292",
+      "expression": "std::string(\"private \") + g.upscaler->Name() + \" creation failed: \" + g.upscaler->Error() +\n                \"; clean SR frame retained\""
+    },
+    {
+      "location": "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DeferredSr.cpp:308",
+      "expression": "std::string(\"private \") + g.upscaler->Name() + \" created; waiting for a later submission epoch\""
+    },
+    {
+      "location": "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DeferredSr.cpp:567",
+      "expression": "std::string(\"private \") + g.upscaler->Name() + \" evaluation failed: \" + g.upscaler->Error() +\n            \"; clean SR frame retained\""
+    },
+    {
+      "location": "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DeferredSr.cpp:581",
+      "expression": "std::string(\"running: model -> private \") + g.upscaler->Name() +\n                \"; changes saved for the finished picture\""
+    },
+    {
+      "location": "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DeferredSr.cpp:614",
+      "expression": "\"running: \" + std::to_string(g.w) + \"x\" + std::to_string(g.h) + \" contribution -> private \" +\n            g.upscaler->Name() + \" -> \" + std::to_string(g.outW) + \"x\" + std::to_string(g.outH) + \"; applied after SR\""
+    },
+    {
+      "location": "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DenoiseFirst.cpp:332",
+      "expression": "std::string(\"1:1 \") + (g.privateRr ? \"RR\" : \"DLSS\") + \" creation failed: \" + g.denoiser->Error()"
+    },
+    {
+      "location": "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DenoiseFirst.cpp:351",
+      "expression": "std::string(\"1:1 \") + (g.privateRr ? \"RR\" : \"DLSS\") + \" created; waiting for a later submission epoch\""
+    },
+    {
+      "location": "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DenoiseFirst.cpp:402",
+      "expression": "\"private DLSS SR creation failed: \" + g.enlarger->Error()"
+    },
+    {
+      "location": "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DenoiseFirst.cpp:463",
+      "expression": "std::string(\"1:1 \") + (g.privateRr ? \"RR\" : \"DLSS\") + \" evaluation failed: \" + g.denoiser->Error()"
+    },
+    {
+      "location": "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DenoiseFirst.cpp:569",
+      "expression": "\"private DLSS SR evaluation failed: \" + g.enlarger->Error()"
+    },
+    {
+      "location": "OptiScaler/shaders/dlssnr/DlssNr_Dx12_DenoiseFirst.cpp:624",
+      "expression": "std::string(\"running: \") + (g.privateRr ? \"RR\" : \"DLSS\") + \" 1:1 -> NR -> \" + StepName(g.step) + detail"
+    },
+    {
+      "location": "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Enlarge.cpp:107",
+      "expression": "\"Private DLSS SR: \" + g.dlss->Error()"
+    },
+    {
+      "location": "OptiScaler/shaders/dlssnr/DlssNr_Dx12_Enlarge.cpp:193",
+      "expression": "\"Private DLSS SR: \" + g.dlss->Error()"
+    }
+  ],
+  "note": "Vendor/runtime error payloads and unrecognized future text intentionally fall back to English; this audit does not claim game-tested coverage."
+}
