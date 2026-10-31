@@ -91,6 +91,11 @@ def patch_font_and_init(path: Path):
 
 def patch_dynamic_helpers(path: Path):
     text, source_encoding = read_source_text(path)
+    # Only the button's visible prefix is localized; keep the ID delimiter
+    # and the existing dynamic suffix byte-for-byte intact.
+    if path.name in ('DlssNr_MenuControls.cpp', 'DlssNr_MenuModel.cpp'):
+        text = text.replace('std::string("Reset##") + label',
+                            'OptiScalerCN::Loc::TL("Reset") + "##" + label')
     # Central translation for labels/tooltips stored in MenuOption vectors and
     # for the rotating splash string container. These are not direct literal
     # arguments, so the literal scanner cannot rewrite their call sites itself.
@@ -204,6 +209,10 @@ def main():
     for name in ('DlssNr_Menu.cpp', 'DlssNr_MenuControls.cpp', 'DlssNr_MenuPlacement.cpp', 'DlssNr_MenuInput.cpp'):
         status_menu = args.source/'OptiScaler'/'dlssnr'/name
         if status_menu.exists(): patch_status_display(status_menu)
+
+    for name in ('DlssNr_MenuControls.cpp', 'DlssNr_MenuModel.cpp'):
+        controls = args.source/'OptiScaler'/'dlssnr'/name
+        if controls.exists(): patch_dynamic_helpers(controls)
 
     menu=args.source/'OptiScaler'/'menu'/'menu_common.cpp'
     if not menu.exists(): raise RuntimeError('integration conflict: OptiScaler/menu/menu_common.cpp missing')

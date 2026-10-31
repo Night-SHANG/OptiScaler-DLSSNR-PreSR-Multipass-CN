@@ -70,3 +70,20 @@ class PreSrCoverageTests(unittest.TestCase):
             patch_dynamic_helpers(p)
             self.assertIn('Loc::TL(opt.tooltip).c_str()',p.read_text())
             self.assertIn('Loc::TL(flag.description).c_str()',p.read_text())
+    def test_dynamic_reset_button_translates_prefix_and_preserves_id(self):
+        import tempfile
+        from localize_source import patch_dynamic_helpers
+        code = 'const std::string resetId = std::string("Reset##") + label;\nif (ImGui::SmallButton(resetId.c_str())) {}'
+        with tempfile.TemporaryDirectory() as td:
+            for name in ('DlssNr_MenuControls.cpp', 'DlssNr_MenuModel.cpp'):
+                p = Path(td) / name
+                p.write_text(code)
+                patch_dynamic_helpers(p)
+                self.assertIn('OptiScalerCN::Loc::TL("Reset") + "##" + label', p.read_text())
+                first = p.read_text()
+                patch_dynamic_helpers(p)
+                self.assertEqual(first, p.read_text())
+            p = Path(td) / 'Engine.cpp'
+            p.write_text(code)
+            patch_dynamic_helpers(p)
+            self.assertEqual(code, p.read_text())
