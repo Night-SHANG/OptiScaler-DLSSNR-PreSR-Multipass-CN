@@ -38,6 +38,9 @@ def analyze(cat: dict, en: dict, zh: dict) -> dict:
         reviewed += state=='reviewed'; machine += state=='machine_translated'
         if printf_tokens(src)!=printf_tokens(z['text']): errors.append(f'{k}: printf placeholders differ')
         if format_tokens(src)!=format_tokens(z['text']): errors.append(f'{k}: std::format placeholders differ')
+        if '\0' in src:
+            if [bool(part) for part in src.split('\0')] != [bool(part) for part in z['text'].split('\0')]:
+                errors.append(f'{k}: ImGui combo NUL separators changed or missing')
         if '##' in src:
             if '##' not in z['text'] or src.split('##',1)[1] != z['text'].split('##',1)[1]:
                 errors.append(f'{k}: ImGui ## id suffix changed or missing')

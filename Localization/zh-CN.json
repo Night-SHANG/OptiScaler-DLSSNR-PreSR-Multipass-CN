@@ -8177,6 +8177,846 @@
       "state": "reviewed",
       "source_hash": "d539998e9dda9ffc435fa99185e7507f8d80e375d79e18f63305eb96d102d315",
       "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.c7fc978fd6e7": {
+      "text": "解锁最多 10 次 Pass",
+      "state": "reviewed",
+      "source_hash": "d4b9e8860020dd739d17b6aae679990ac73e22c083e2cfb2dec8c92958fd2a4b",
+      "note": "seeded from maintained translation memory"
+    },
+    "ui.auto.b5225a154132": {
+      "text": "先以原生分辨率降噪，再进行 NR，最后超分辨率",
+      "state": "machine_translated",
+      "source_hash": "c7afa16101b37591399ddeba24f2459c4a19f34965760dc3bbcc2ee2512ad588",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.472249ab3261": {
+      "text": "第二步",
+      "state": "machine_translated",
+      "source_hash": "ef270b63fec720135673e0e81fc566158abdb3145cd9ef4b9a18c7d00a4a6a88",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.105f6e071651": {
+      "text": "再次运行游戏超分辨率器：游戏的超分辨率器接收经 NR 处理的干净图像。方式简单，但第二次处理没有真实的子像素采样，因此可能比原生画面更柔和。\n\n独立 DLSS SR：处理方式相同，但使用单独的常规 DLSS Pass 完成超分辨率并替换输出，避免运行两次光线重建。\n\n将修改应用到原始渲染：只提取 NR 对干净图像的修改，将其与原始渲染的抖动对齐后叠加。游戏超分辨率器因此能够接收带有修改的真实采样。理论上最清晰，但光线重建可能会柔化部分修改。",
+      "state": "machine_translated",
+      "source_hash": "29379bb4b2d331b6a8c041d6ff9ce13af3950c44df70017fa3418d76d173d199",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.32e7f632bd8a": {
+      "text": "修改方式",
+      "state": "machine_translated",
+      "source_hash": "0ea26364820b87a896172b5c9f9f9ee72a6fa490cf8efcf549ecd9e547bdd781",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.20311c4f4ac5": {
+      "text": "比例：将每个原始像素乘以 NR / 干净图像的比值，使每个含噪采样保留自身的色相，仅改变亮度与色调。推荐使用。\n差值：将 NR - 干净图像作为绝对量相加。对于较暗的采样，该数值可能超过采样本身，导致颜色改变，并使传入超分辨率器的颜色噪声大致翻倍。",
+      "state": "machine_translated",
+      "source_hash": "881c6cafb9ecda84eac4be07ae82211978e81fd083b1833ac10a3ef269a84961",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.e7f88f98f938": {
+      "text": "不放大萤火虫噪点",
+      "state": "machine_translated",
+      "source_hash": "df620b839e048bd0aae66439230b16fd0973ba3a1f85215bfcddc43c57dfc97b",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.7063746198d7": {
+      "text": "远亮于干净图像对应值的原始采样是路径追踪产生的萤火虫噪点，而非受光像素。乘以比例会让它更亮；当镜头静止时，游戏的光线重建可能会在阴影中保留这些亮点。启用后，这些采样改为接受对应像素本应获得的绝对改变量。可关闭以比较效果。",
+      "state": "machine_translated",
+      "source_hash": "b431c27b4f0fac381642141d4640b59c5e65eee1ae3cfff760c11d4b9134e750",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.73cecba4cac7": {
+      "text": "按当前帧的抖动偏移修改",
+      "state": "machine_translated",
+      "source_hash": "dd381ba026b9a69dcaf1224e4c5e70d5de19f13f4dde0eb84605d782982d0f53",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.e79f1bede16b": {
+      "text": "干净图像位于稳定的像素网格上；原始渲染则有逐帧变化的子像素抖动偏移。按该抖动偏移修改可将两者对齐。仅在比较效果时关闭。",
+      "state": "machine_translated",
+      "source_hash": "446a49d7ce9ea3a8101fd67f918011db7998182425d3965a982e1f2305cee9d8",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.496bc4f67e77": {
+      "text": "反转抖动方向",
+      "state": "machine_translated",
+      "source_hash": "71970a41d3f48f67ffcdaab4e1d53d278cc4eceaf678a46dac6e90139a4695a9",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.e8855dffc546": {
+      "text": "不同引擎对抖动值的方向定义不同。方向错误会让错位加倍，而非消除错位。如果启用偏移后边缘比关闭时更差，请反转方向。",
+      "state": "machine_translated",
+      "source_hash": "9f57a20f064b2e39ef1c99a5965084ce78f2241b70b1ffc0763ed3f6437fb8cb",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.d9a1363834a4": {
+      "text": "修改重采样",
+      "state": "machine_translated",
+      "source_hash": "033520f8d552767b94f7e9f65d3f92f5950f3a53030a47715fb27996224d7dcb",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.35d1b11e2439": {
+      "text": "控制在偏移位置如何插值修改。双线性较柔和且不会过冲；Catmull-Rom 较锐利，过冲较小；Lanczos 2 最锐利，但可能在硬边缘周围产生振铃。",
+      "state": "machine_translated",
+      "source_hash": "2ecfa830481683b75bed6e3f8a54e92581d664201c6f82e0edd15917fbb1d758",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.244e1a822615": {
+      "text": "将修改限制在相邻像素范围内",
+      "state": "machine_translated",
+      "source_hash": "e2ac74ed88e7b34a88007339c51d59317173a83dff805564b73ea08683f6a1c2",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.6ce6d32eacf3": {
+      "text": "将插值后的修改限制在最近四个源像素的取值范围内。可消除较锐利滤波核产生的振铃，代价是少量清晰度损失。",
+      "state": "machine_translated",
+      "source_hash": "f55ef52e802f46564690c4f53e91ff421e0ebc179415f7c3f94cb2a2b20378ac",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.337c4cb397dc": {
+      "text": "优先降噪：%s",
+      "state": "machine_translated",
+      "source_hash": "39a78afcc6cf59b91dda50db7c6060d9c29e32204efe9bab396e439196312710",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.684bfba8a6de": {
+      "text": "在中央保留更多模型细节，并压缩边缘。模型分辨率仍对整幅图像进行缩放。",
+      "state": "machine_translated",
+      "source_hash": "5e8724be1ee1184d92d98dfa2b7d8b802ed87877df88c64368962194597aec9d",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.f1fbb2b43dca": {
+      "text": "预览",
+      "state": "machine_translated",
+      "source_hash": "324b134f57c70c729ae3dc4d298bb451656717d70523e942c1ce667b8024ea07",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.8e00066f3a0e": {
+      "text": "显示空间解包前的打包模型输入，并缩放至全屏。与“压缩模型输入”调试视图相同。未启用压缩时显示普通模型输入。必须启用“应用模型”。",
+      "state": "machine_translated",
+      "source_hash": "44ddadcdc1300940b39c9b92a27f4118dadbc8aa59f49d399bcf087c675952f0",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.1ea8121211dc": {
+      "text": "极端偏移可能使边缘不足一个有效像素。此时压缩会回退到常规 NR；上方状态会说明原因。",
+      "state": "machine_translated",
+      "source_hash": "8510b42a3d712e8dd5cfc35a3f97b8ac73cf75afeb096ee4e4701461911ba3f4",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.f6b99fbdc8c9": {
+      "text": "重置压缩布局",
+      "state": "machine_translated",
+      "source_hash": "b84676f8f290d2f67d57a24b77bff1fd7066e4880ca17e6d3d50a54af1b6cba7",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.f78ccddf9eaa": {
+      "text": "中央细节随模型分辨率变化。强烈的边缘压缩可能柔化细节，或在运动时产生闪烁。",
+      "state": "machine_translated",
+      "source_hash": "df83cb63a6a33f82d9c5f87edf171ad060636d9175e9db73635f5cd535df2235",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.06cc1d58da02": {
+      "text": "低于 100%：光照 + 颜色模式分别缩放光照增益与颜色变化，再以完整分辨率应用，可减少缩放光晕；纯黑像素保持黑色。边缘感知模式利用原始画面的亮度，将修改限制在边缘的正确一侧。DLSS 模式需要在 DX12 超分辨率之后处理。",
+      "state": "machine_translated",
+      "source_hash": "53e05c89072c77963d1b78310cc09366b5f9cec734235218b417e9744b0246ad",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.5786d9cc103d": {
+      "text": "微调锚点",
+      "state": "machine_translated",
+      "source_hash": "f417887f6721a68e602121098d3c3ad6970236a97148dbc86884f09db2dbff38",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.6cb207e3f498": {
+      "text": "最多八组基础白点:微调值，例如 1:5 100:2。微调值采用对数插值。清空则使用固定微调值。",
+      "state": "machine_translated",
+      "source_hash": "73231e666da441212d3db81b6cc78e38cee9afe340103461b2383e6fdde3278f",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.0aaa06f1a2e5": {
+      "text": "继承第 1 Pass",
+      "state": "machine_translated",
+      "source_hash": "b1812c3147e6e9f286a47ea788e11c09901a02aeb18bcad3043539d525f58cb9",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.7da9387e72b0": {
+      "text": "自动：使用已安装 NR 运行库的默认模型。\n原始：使用原始模型（预设 1）。\n优化：使用较小的 FP8 模型（预设 2），包含于 NR 310.9.16.0。\n旧运行库在模型不可用时回退到其默认模型。\n更换模型会重建此 Pass 并重置其历史。",
+      "state": "machine_translated",
+      "source_hash": "15900e4f9e005ffa1f419f7fc4ee3bedc2b1a136fb667dda4b985f18a7a6635f",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.5a01722c19b7": {
+      "text": "编辑 Pass",
+      "state": "machine_translated",
+      "source_hash": "bdbefdd9d3103210eabaec2fc561f84aa6b4991d77f8193bf8e70c7cdf503afc",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.9c8d2fd12192": {
+      "text": "此 Pass 未启用。设置将在启用此 Pass 时生效。",
+      "state": "machine_translated",
+      "source_hash": "648e50a63a997f38002cc166c4bfc722e6f982aed2886c79465cfd95d4fbaaef",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.afd5d600dc7a": {
+      "text": "NR 模型：继承第 1 Pass",
+      "state": "machine_translated",
+      "source_hash": "ffa046a2570eb4f1ccfa673d7c198821a2918daad0be3d9b53e91d076abcc896",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.bfecca96e16e": {
+      "text": "RR 残差路径：当输入变化时拒绝旧修改，并将其限制在当前邻近修改的范围内，可减少拖影。关闭则保留原有历史滤波。",
+      "state": "machine_translated",
+      "source_hash": "53ab5b2cbcf0c278e22e37b1c24636792590f2fe9e012c27f541be7881170ed8",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.692374927e04": {
+      "text": "光晕抑制（实验性）",
+      "state": "machine_translated",
+      "source_hash": "ae421fff81500b21f1823a2f6635dc83b35cf2ce12e342df87d924b92d1a314f",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.0ef1e05db4d0": {
+      "text": "提亮细小暗边，同时保留大范围光照。两项强度均为零时禁用此 Pass。可能会提亮真实阴影；请比较效果后再决定是否启用。",
+      "state": "machine_translated",
+      "source_hash": "3f2a64e55f57a27707a16d95a4d7828e38c66ea2ac42fd18a211a23ceb9fcb41",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.ad8715e1c15a": {
+      "text": "对比、调试视图与皮肤遮罩检查会暂停独立的修改超分辨率路径。",
+      "state": "machine_translated",
+      "source_hash": "d39824dbc4ee03100fb2258ee26ee6986d2c7344fde4a37d7024297a76b585ee",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.53f42d934d19": {
+      "text": "差异放大 20 倍。灰色表示没有变化。代理图像与原始模型输出使用解包后的几何。压缩模型输入显示解包前的输入，并缩放至全屏。",
+      "state": "machine_translated",
+      "source_hash": "8e794715ff01393b02f972314a0c1badc54aa6bf445faeacef7e6b24d95c79b8",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.6eedceeaba8b": {
+      "text": "RTX 40（Ada）MFG 解锁选项",
+      "state": "machine_translated",
+      "source_hash": "017998ee25a4302225d0ee0345b555d87162bcb03cfd5d23bcac2f51387b387c",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.b0a4979b0895": {
+      "text": "自动（复用 Blackwell 内核）",
+      "state": "machine_translated",
+      "source_hash": "48839eec67250b69fcf654da080db34d3061d794bd0a960de61f4d630bc028a8",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.77a86749fdd3": {
+      "text": "复用 Blackwell 内核",
+      "state": "machine_translated",
+      "source_hash": "e5148973e1373924206ce5cf4a2f7c7b998ca18ea16a5b3e5e66b3fb578eaf73",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.48b363f2d26f": {
+      "text": "重写混合权重（PTX）",
+      "state": "machine_translated",
+      "source_hash": "ac2d384d69dbd937b1593a8f2748bbff4f6dada9996ec736a4e13d5fbf449ae4",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.7ac0a3c281ce": {
+      "text": "帧时序修复##ada",
+      "state": "machine_translated",
+      "source_hash": "eb1d186592143dd7a3bc454fe1f56cf5e95cc3d1a0708bd354eaf38fd5d7534b",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.af7293504996": {
+      "text": "重定向",
+      "state": "machine_translated",
+      "source_hash": "e6c0d040b8f863294d21f03dfd6a272c544fbf536bf5d41ac07fbc0c3f05240f",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.77251bbc9d5e": {
+      "text": "PTX",
+      "state": "machine_translated",
+      "source_hash": "ec18e3e1e80dfc7ddb47fe2edba2b17c0e9fdb9d8892860ee0b4ea4dc0b02be2",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.83d4c9653fe4": {
+      "text": "尚未应用：DLSSG 尚未加载。",
+      "state": "machine_translated",
+      "source_hash": "34d310099d4ebca0d1af813a0b44590ab54a84fec109f2d5216b05ef628f432c",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.42c41417cfff": {
+      "text": "已应用：%s，%u 个%s",
+      "state": "machine_translated",
+      "source_hash": "9be904acfcfea847f03c77cfb054ed5c911a534789dd53f4bd8631da23fb459d",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.fd5a47a7aa82": {
+      "text": "重写混合权重",
+      "state": "machine_translated",
+      "source_hash": "79914afea7d9d71ee04eb478603444fb95fb1dd94bb8fd57b5e35a7d551883a8",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.0f49fcb90615": {
+      "text": "复用 Blackwell 内核",
+      "state": "machine_translated",
+      "source_hash": "da6f306d57c8a68f346ce55d0c41e58a74a6389ea494c010f8938c71f8842df2",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.e25c572da4a2": {
+      "text": "描述符",
+      "state": "machine_translated",
+      "source_hash": "cf80ee7204770cf71e22e5f7d7f49fb1be0f7365509cdafcffe355204ab9ae44",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.2c8de202b6ab": {
+      "text": "内核组",
+      "state": "machine_translated",
+      "source_hash": "4dd4aaf1efec76fedce8b4a0ddc6391333febaac17a58fa83ebbbce82ff99e34",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.cba0e2b05b44": {
+      "text": "未应用：%s。",
+      "state": "machine_translated",
+      "source_hash": "2fb46c20d4e88fb93228afb7a3328748cdc71f883a1436fba098a302df7f2547",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.0cc090ddd162": {
+      "text": "未记录原因",
+      "state": "machine_translated",
+      "source_hash": "41e2687b3a09debf3541914457219de61d45233b7213930674eaf56ba4475302",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.90faa92c876d": {
+      "text": "保存设置并重启以应用。",
+      "state": "machine_translated",
+      "source_hash": "9d3dea1fe84aef60ea3e557575c9fe05e026d8b38206f75aabba68a6c321696b",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.96f546ceab63": {
+      "text": "软件帧节奏控制（仅在 3X+ 冻结时使用）##ada",
+      "state": "machine_translated",
+      "source_hash": "54d6dc5f1a69aee17e75b566616cf98f39d686dad7297d1d996238355baf78d4",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.5dad81869a2c": {
+      "text": "尚未应用：Streamline DLSS-G 插件尚未加载。",
+      "state": "machine_translated",
+      "source_hash": "0baf36bf7c9e484a66806099491fca15eb36d520a6b2d01af317088df0c6cb2a",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.66c7a729f86e": {
+      "text": "已在 %u 处应用。",
+      "state": "machine_translated",
+      "source_hash": "5d571b8eaced444e8b94b6949c336e2c10b0a4ae0210d427e31e9607e5d83668",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.184067685e4c": {
+      "text": "DLSSG：正在等待 Streamline 状态……",
+      "state": "machine_translated",
+      "source_hash": "c0b1aa2bfdff9179b18ee541ad5e4d967d543e6ba0d7773d6d0ba094dd66c39b",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.760a1a24c30b": {
+      "text": "游戏请求 %uX，已发送 %uX，Streamline 已呈现 %u（历史最大值 %u）",
+      "state": "machine_translated",
+      "source_hash": "817e969c7651e2dadf3ac858b76489f1cbe9fb8a9c7597228d56e7d2877ebc19",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.6b8fc8dc729b": {
+      "text": "slDLSSGSetOptions 对该请求返回 sl::Result %u。",
+      "state": "machine_translated",
+      "source_hash": "abe57bc27027d7dfab7687c0806f4f6a59f72812259560abb548dfab91f7b3a1",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.ccdc97d52b60": {
+      "text": "如果画面冻结：尝试启用 RTX 40（Ada）MFG 解锁选项下的软件帧节奏控制。",
+      "state": "machine_translated",
+      "source_hash": "296a5898ec9f429b95523f78fde41b33e952f21885ea403a13d3db12237b40ca",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.cc23539ac198": {
+      "text": "Streamline 插件上限：%s。",
+      "state": "machine_translated",
+      "source_hash": "494a488ebdcb5a65f786ce3d77819d44a803bf42530cebe86275bdd948ad5cc0",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.0c2a93009914": {
+      "text": "配置方案",
+      "state": "machine_translated",
+      "source_hash": "535e52e4a2616ebec7326877d6e50887ce0005cb8de9d77c05ef31dabe8806d3",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.709a23220f2c": {
+      "text": "名称",
+      "state": "machine_translated",
+      "source_hash": "dcd1d5223f73b3a965c07e3ff5dbee3eedcfedb806686a05b9b3868a2c3d6d50",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.f597c0e8201d": {
+      "text": "保存配置方案",
+      "state": "machine_translated",
+      "source_hash": "0c8209e72ec87d9d0b456224c042220820ef51fc5fc31a716159491806aa443e",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.3a4843b2c4cb": {
+      "text": "加载配置方案",
+      "state": "machine_translated",
+      "source_hash": "186b373fff174558be9bba4084b921103b42532aff5945082004cb276f7ebc2a",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.7c2a7c672a67": {
+      "text": "配置方案保存所有设置。仅启动时生效的修改需要重启游戏。",
+      "state": "machine_translated",
+      "source_hash": "c1b6a0ee378e258aba1d7c92ae8645246dae0c8555a23df784de1b37b6295fd2",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.36fc5eba2b45": {
+      "text": "再次运行游戏超分辨率器，抖动归零\u0000独立 DLSS SR，抖动归零\u0000先修改原始渲染，再运行游戏超分辨率器\u0000",
+      "state": "machine_translated",
+      "source_hash": "090554abcc4653c0041562cad9a8ed6cc78d2d2951756538e48a263cb2d85561",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.7f54156ada47": {
+      "text": "差值（相加）\u0000比例（相乘）\u0000",
+      "state": "machine_translated",
+      "source_hash": "27596111301be5e7ca10a1b2b27cc15fa65ab954db93f4a207920293fa5afadc",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.d1dc9d6d8286": {
+      "text": "双线性\u0000Catmull-Rom\u0000Lanczos 2\u0000",
+      "state": "machine_translated",
+      "source_hash": "1f2657d30f5633d76a0deb1316e7e7fe5e9900364b871a33c4ea57f5c443ebae",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.e5febaad7265": {
+      "text": "DLSS\u0000FSR 2.2\u0000FSR (FidelityFX)\u0000XeSS\u0000",
+      "state": "machine_translated",
+      "source_hash": "4df08c09a1cb66d49c909e1535ad2a4d03561a77956bc27e3cab0390d6c65a0a",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.be7fd0d816f8": {
+      "text": "外围压缩",
+      "state": "machine_translated",
+      "source_hash": "4da2f84017a879b6b0c3c660c5b151477c3905ab0adc6f3c67afc1bee99e45e9",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.2adcfb6ef06d": {
+      "text": "中央宽度",
+      "state": "machine_translated",
+      "source_hash": "9fde55458286c36c758a6d5a9d5bc8a854b74c68d3989ead4b789aaf55aa69b6",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.7faa67dc6d5a": {
+      "text": "中央高度",
+      "state": "machine_translated",
+      "source_hash": "64134904da744830a9dfa919959220202be29931928064745ae07b1783f9d16c",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.7123866cc63b": {
+      "text": "工作区宽度",
+      "state": "machine_translated",
+      "source_hash": "2a99ba2298ca84758ae9fca7a6eab3b724451e62d9210ad6df9682e33a2c63fa",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.0b34f606997d": {
+      "text": "工作区高度",
+      "state": "machine_translated",
+      "source_hash": "ff3e0b96c548f37957d2e5ee96eb7c390bd416788ac153ebe8fae34a4b6acebe",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.e57bc0db8af7": {
+      "text": "中央水平偏移",
+      "state": "machine_translated",
+      "source_hash": "f9a2b61e32c079da493e16ba7d3288f8ee9c99de83f876d0bd4c9d8592695443",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.f25ec911cf80": {
+      "text": "中央垂直偏移",
+      "state": "machine_translated",
+      "source_hash": "16c5a9c96d553c140a4ab7e09d7c3ee04afcbefefd849c3e37372f4a85df83c8",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.fa824a00fdce": {
+      "text": "工作区域水平偏移",
+      "state": "machine_translated",
+      "source_hash": "0b7c3c62d16a87329e26b55901117763d155f827dd6741df8fed0f54e29210de",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.617234a41a6c": {
+      "text": "工作区域垂直偏移",
+      "state": "machine_translated",
+      "source_hash": "50172633d6545819fa977f28a23e55a260712e0d95b7fb848c5648ae00dbab80",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.be9046cf1b26": {
+      "text": "显示中央轮廓",
+      "state": "machine_translated",
+      "source_hash": "6af9b7cef87e2fccad9b43d45dc797c10e5b3f975744bc180c0d7fea5d006b9c",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.5d86086b3249": {
+      "text": "显示工作区域轮廓",
+      "state": "machine_translated",
+      "source_hash": "48af819b7f2e5d28145350f5824f7f33750f7187cfaa40ebcefebe4084054f7a",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.130cd7fe3334": {
+      "text": "经典",
+      "state": "machine_translated",
+      "source_hash": "ae25d6481fc1741ffee4a95cd05de7b6375f7e1b0c63c006640b366094f2c4a9",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.e80364e60301": {
+      "text": "匹配残差",
+      "state": "machine_translated",
+      "source_hash": "ed8e25f3f6957dc5fb38444dbd858ffd366f26463cc1d3774bb0cd7a1775cec6",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.3c2acec19ca7": {
+      "text": "匹配残差 + DLSS",
+      "state": "machine_translated",
+      "source_hash": "8ba04facb2d1fb167012215c85e142fea479ede613582d427d6456faac72d017",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.f1eeaccd5be3": {
+      "text": "光照 + 颜色",
+      "state": "machine_translated",
+      "source_hash": "e5fc7cc04e13243bd1bcea068104600fc87cd145e0482167cde79eda39b5dc5b",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.7230b2c03d72": {
+      "text": "光照 + 颜色 + DLSS",
+      "state": "machine_translated",
+      "source_hash": "dd9d7c7432bd585fecf538603a4357c379dd2975b805415c124f730fe4664b66",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.0ce693d319fc": {
+      "text": "边缘感知",
+      "state": "machine_translated",
+      "source_hash": "136345331483bebde0e6541b246eaf0e8c459d08aeaba4ab4d9d77d477c85779",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.30158df4c8fe": {
+      "text": "关闭（软拐点）",
+      "state": "machine_translated",
+      "source_hash": "4e9772fad51c2e6f4d15131e962af20648944f1e6ff7502d39c56b2ae7b3a724",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.efee9d9fe7cb": {
+      "text": "恢复清晰度",
+      "state": "machine_translated",
+      "source_hash": "c9aacb2175f75362cae6f1f541d8ca2dd40531bf4c38365996ac1ce55f29e9f4",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.4e836fdc2572": {
+      "text": "手动",
+      "state": "machine_translated",
+      "source_hash": "b0b9fe24ffa9629125bdc59b122f80d605ab604eb1b74485c2f2ecfde26576ae",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.e76a0e23ca2c": {
+      "text": "游戏曝光",
+      "state": "machine_translated",
+      "source_hash": "b5954cec121a9215f3b7ce27ef765c570eecd5c6122013f39aa21c39ca87f7a5",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.9a5b716251fe": {
+      "text": "自动 HDR 曝光",
+      "state": "machine_translated",
+      "source_hash": "3b0137964ef3288a6115a4382d96bedb1de608759249073f09117d382671611d",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.5b93d619b887": {
+      "text": "曝光微调",
+      "state": "machine_translated",
+      "source_hash": "379edc4f6157988deb057c802b45793025e3c00d90d8b2d5d1915359e60ff6c0",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.165341c8cb80": {
+      "text": "高光保护",
+      "state": "machine_translated",
+      "source_hash": "18b98480d3ed4e197130496f743d3578bc565df5a1b28cd89f1c80ac37c9eca8",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.ac9041e76816": {
+      "text": "自动",
+      "state": "machine_translated",
+      "source_hash": "d461a493a3753877c9486cffa3444265a33370af8a7fff242fb119b71750839c",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.c0a8060f3b11": {
+      "text": "原始",
+      "state": "machine_translated",
+      "source_hash": "88d759ea02cef4b82885c6c620473162757c75522805707c20e2be76a40a2825",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.5e115f013a23": {
+      "text": "优化",
+      "state": "machine_translated",
+      "source_hash": "a0348c11ea886849db4cac2cbf3b3974eef0535258b950c30b0ab646602b9ec5",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.83796dee6221": {
+      "text": "预设不可用",
+      "state": "machine_translated",
+      "source_hash": "f2004e336c6569168a2aaa198bd1378f379c03fb519e1d0a62653693d4082f62",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.2dfa66079d9b": {
+      "text": "标准",
+      "state": "machine_translated",
+      "source_hash": "ef6691545d2c5523efed00424407cb261aeb0037d165ca5792f7f8bac3381362",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.ea26876daa9a": {
+      "text": "自然",
+      "state": "machine_translated",
+      "source_hash": "d6acb6d51cfc574936fc79bc06b8a3716f4a33ee69efb70dd7f59720d434ccd9",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.bf9d43402f3d": {
+      "text": "电影",
+      "state": "machine_translated",
+      "source_hash": "912d0988b06550601e2fd95360ea72f9bb25f0c7dd54bc741a20dc24f28242c9",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.73756e08fec2": {
+      "text": "拒绝过时历史",
+      "state": "machine_translated",
+      "source_hash": "a7cfb8ce2c3e71578e781605fca010295fe69c4a217be95b7bb10099150370d3",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.d8efb6004f88": {
+      "text": "历史置信度阈值",
+      "state": "machine_translated",
+      "source_hash": "228dd7be4c91fdd9287fc4b0637748e40a75999bf00d68ccfec1ad89924dd7dc",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.fdef48fdf3a3": {
+      "text": "明亮物体周围的暗边",
+      "state": "machine_translated",
+      "source_hash": "104fda3fa599bb9dda8de5068545a7a6764b31519192e97d95d267a39c9205bd",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.da7615e2a433": {
+      "text": "暗色物体周围的暗边",
+      "state": "machine_translated",
+      "source_hash": "7e4cfe7c9c94d7efb75e729964d8755caf7d05254a9dfb9f1f7c57a7635713b5",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.5ba5fba45345": {
+      "text": "光晕半径（NR 像素）",
+      "state": "machine_translated",
+      "source_hash": "4901f0f3a3111583ffbf14d765c960ba20e937536db83625ea509a0800da72bc",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.5f65cb44b228": {
+      "text": "并排对比",
+      "state": "machine_translated",
+      "source_hash": "a3d7b387c34df52c5a611045b53215ebba668ddb9026a813b5aff0d50599fb3e",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.a0e0273a78ad": {
+      "text": "擦除对比",
+      "state": "machine_translated",
+      "source_hash": "3404644e01177ee996b69247aa3967e7a3f66702c5ff0f7270591e8d9622183b",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.79f49544d53e": {
+      "text": "代理图像（模型所见）",
+      "state": "machine_translated",
+      "source_hash": "84ff9d56b310f7ee68eeec1416d6109e0a7718901630aa53b215721a42c2508e",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.e19243d70b4e": {
+      "text": "模型输出（原始）",
+      "state": "machine_translated",
+      "source_hash": "dec2b63a81d8da6bb1dbebe7e6f33964706fbc18b2bafba0dd378f7581809469",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.56d9f58358cc": {
+      "text": "差异（放大）",
+      "state": "machine_translated",
+      "source_hash": "e90b56703c2611e7635b01262f7027dbe624eca4594618299be67f40e7710454",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.81cbe6b662a4": {
+      "text": "压缩模型输入",
+      "state": "machine_translated",
+      "source_hash": "19d0f2233f7922e44c8357f0c1189c31682ac40a0dca62fdb689967b81fc7409",
+      "note": "AI translation, pending human review; upstream 6125a75b"
+    },
+    "ui.auto.fdb965a33f33": {
+      "text": "  （模型运行中，修改已隐藏）",
+      "state": "machine_translated",
+      "source_hash": "0c88a0aa16d52eaf71089cdf9cd3ac68a19a9ca6b86c11233d6cc095d9d497f8",
+      "note": "AI translation, pending human review; Pre-SR maintenance"
+    },
+    "ui.auto.a6359ee7b948": {
+      "text": "独立修改路径始终在超分辨率之前生成。",
+      "state": "machine_translated",
+      "source_hash": "ee6f0e0eae37553265e89d40162bd756b30eb3b09f0721ca00c720c7e5a95354",
+      "note": "AI translation, pending human review; Pre-SR maintenance"
+    },
+    "ui.auto.bf5cbb084a7a": {
+      "text": "启用优先降噪时，由该功能决定处理位置。",
+      "state": "machine_translated",
+      "source_hash": "009368330570939f0896470a684646f54c2ae26cd3b5d09cd082a74d1ada4f33",
+      "note": "AI translation, pending human review; Pre-SR maintenance"
+    },
+    "ui.auto.5fecf807419d": {
+      "text": "在游戏的超分辨率器（包括 RR）之前运行 NR。",
+      "state": "machine_translated",
+      "source_hash": "64378afa85abb6fdbd377bbb73786045843d40d62580d603e1400e359653715a",
+      "note": "AI translation, pending human review; Pre-SR maintenance"
+    },
+    "ui.auto.055da343f3eb": {
+      "text": "请先关闭独立修改和最终画面选项。",
+      "state": "machine_translated",
+      "source_hash": "eed07c55dd609ecfe4e547abd7840d920f978f24887bdd05042e425e018a7df6",
+      "note": "AI translation, pending human review; Pre-SR maintenance"
+    },
+    "ui.auto.d1c95bdf9b39": {
+      "text": "游戏通过 SR/RR 和游戏特效处理干净输入。独立超分辨率后的 NR 修改会应用到最终画面。",
+      "state": "machine_translated",
+      "source_hash": "93a566c6bfaaf5d70862568adbb78b2e5fc6d1b4a911874f420c68135bc2c284",
+      "note": "AI translation, pending human review; Pre-SR maintenance"
+    },
+    "ui.auto.37d8398ae779": {
+      "text": "游戏通过 SR/RR 处理干净输入。独立超分辨率后的 NR 修改会在超分辨率后应用。",
+      "state": "machine_translated",
+      "source_hash": "381946793d54d8789f97f9f74bb7f18f47eba0e066754f5b9d995ce5d800fb85",
+      "note": "AI translation, pending human review; Pre-SR maintenance"
+    },
+    "ui.auto.db6560ee0218": {
+      "text": "以渲染分辨率额外运行一次游戏自身的超分辨率器（游戏使用光线重建时运行光线重建，否则运行 DLSS），让 NR 接收干净、已降噪且稳定的图像，而非带噪声和抖动的图像。\nNR 修改该图像；下方的第二步决定如何将修改呈现到屏幕。\n仅支持原生 DirectX 12。每帧会额外执行一次超分辨率 Pass。",
+      "state": "machine_translated",
+      "source_hash": "411667a467a644afcda3dc63bbd11d1dea91e49c920a4cbb4b1e11b3957ebf0d",
+      "note": "AI translation, pending human review; Pre-SR maintenance"
+    },
+    "ui.auto.cf7167f7e8c2": {
+      "text": "可用时效果最佳，部分游戏不兼容（例如 Cyberpunk）\n将回退到激进模式",
+      "state": "machine_translated",
+      "source_hash": "f9e917e4b67a8f5d3ab550d0fba01bb791232ed84eb3fcad2bcf7f3d43906083",
+      "note": "AI translation, pending human review; Pre-SR maintenance"
+    },
+    "ui.auto.660aea5705c0": {
+      "text": "HDR / 纸白亮度 / ",
+      "state": "machine_translated",
+      "source_hash": "fa1c8709456ab007b07fc5614e5ad530302fc55fc7ad102ed2130719c124b5f6",
+      "note": "AI translation, pending human review; Pre-SR maintenance"
+    },
+    "ui.auto.2763c2e63a34": {
+      "text": "手动纸白亮度",
+      "state": "machine_translated",
+      "source_hash": "3018182621acbcc6e712bc9422c418aae1f3efb3a1c44f22b07a7c3a45e9c5f1",
+      "note": "AI translation, pending human review; Pre-SR maintenance"
+    },
+    "ui.auto.528f9a192c93": {
+      "text": "扫描曝光（实验性）",
+      "state": "machine_translated",
+      "source_hash": "791f89394b0da093867ed9d71b81748be703941a5130bf3a20c70e0030e1a6a1",
+      "note": "AI translation, pending human review; Pre-SR maintenance"
+    },
+    "ui.auto.e0049a66519c": {
+      "text": "开启",
+      "state": "machine_translated",
+      "source_hash": "130011756125313c72f2cab730db4347e2841526d236a89cb25f38789fa49229",
+      "note": "AI translation, pending human review; conditional NR toast"
+    },
+    "ui.auto.9c74c2e5830d": {
+      "text": "这可能并非预期行为，并会使 OptiScaler.log 变得很大\n请关闭文件日志并删除 OptiScaler.log",
+      "state": "machine_translated",
+      "source_hash": "ab98b926407fdc0dd34c04cf5cb2883b573a92100e63d70e2536140ec8005de7",
+      "note": "AI translation, pending human review; toast coverage audit"
+    },
+    "ui.auto.5553c187b667": {
+      "text": "编译着色器时出错！",
+      "state": "machine_translated",
+      "source_hash": "5b5c53d9fc417c11f4f2489f8cf161a9c76caaf24a2d35bad46bf0cf70d4ae28",
+      "note": "AI translation, pending human review; toast coverage audit"
+    },
+    "ui.auto.3a6d1a65cef0": {
+      "text": "无法初始化 FSR 帧生成\n是否缺少所需的 DLL？",
+      "state": "machine_translated",
+      "source_hash": "e84ed7ba32112810c5597bf4fa45f8680caeb922081e91d4fede00089c0b54f6",
+      "note": "AI translation, pending human review; toast coverage audit"
+    },
+    "ui.auto.78247856dac9": {
+      "text": "无法初始化 XeFG\n是否缺少所需的 DLL？",
+      "state": "machine_translated",
+      "source_hash": "66e5a7124d268a816fa6a2599a63b5c9eed2f348db2579b85a6201c66db52f29",
+      "note": "AI translation, pending human review; toast coverage audit"
+    },
+    "ui.auto.b81959bf086c": {
+      "text": "无法初始化 DLSSG 输出\n是否缺少 streamline 文件夹？",
+      "state": "machine_translated",
+      "source_hash": "6e79609f89dd9ecf10e4f842f201a90973a5823122703964609e2e34043c4991",
+      "note": "AI translation, pending human review; toast coverage audit"
+    },
+    "ui.auto.4856ea8afba7": {
+      "text": "回退到 FSR 2.2",
+      "state": "machine_translated",
+      "source_hash": "e7506ec26d4fa59a4663ecc621cdd4486562d7f75191eecb83f66b70ad7c8d09",
+      "note": "AI translation, pending human review; toast coverage audit"
+    },
+    "ui.auto.50c4c35ac3a9": {
+      "text": "回退到 XeSS",
+      "state": "machine_translated",
+      "source_hash": "a3566816ed445488413d4fdfeb4deebfda34362dee2f215b2703cbd71c3aeec4",
+      "note": "AI translation, pending human review; toast coverage audit"
+    },
+    "ui.auto.1351bb9361ee": {
+      "text": "回退到 FSR 2.1.2",
+      "state": "machine_translated",
+      "source_hash": "4ddf7f344713aa0787bffa255dbe8f457b51f6340b81414e05e849a32e149c01",
+      "note": "AI translation, pending human review; toast coverage audit"
+    },
+    "ui.auto.00aa84c10b99": {
+      "text": "创建共享纹理失败\n请确保使用 Wine/Proton 11 或更高版本",
+      "state": "machine_translated",
+      "source_hash": "14f897eb855e83a5c64b951b95be47fc76650baeed2376172dfb2c64ca5d5ce9",
+      "note": "AI translation, pending human review; toast coverage audit"
+    },
+    "ui.auto.2fedcaaa860e": {
+      "text": "超分辨率器运行失败！",
+      "state": "machine_translated",
+      "source_hash": "b56065ec389295dd66a8793b9e8ffe23010f6918996c5de5867a6a5eb0c6cd3e",
+      "note": "AI translation, pending human review; toast coverage audit"
+    },
+    "ui.auto.9c24f2b186a5": {
+      "text": "{} 不可用。\n回退到 {}。",
+      "state": "machine_translated",
+      "source_hash": "1f7664cf90cd5ead402f90fb23e121fa766714a828fc6760e92fe3fa9936dd29",
+      "note": "AI translation, pending human review; toast coverage audit"
+    },
+    "ui.auto.589b9087814e": {
+      "text": "{} 不可用，且无法回退",
+      "state": "machine_translated",
+      "source_hash": "944347b8b4d667297700a16f1855c51ede7d1e919583e3586a8d720e9529a690",
+      "note": "AI translation, pending human review; toast coverage audit"
+    },
+    "ui.auto.8b8cbadb6131": {
+      "text": "无法加载 libxess.dll\n请检查该 DLL 是否存在",
+      "state": "machine_translated",
+      "source_hash": "8137ed6de522f8d13e0efa13496d9f086d09ef2c0e83cb117e9b88481687a776",
+      "note": "AI translation, pending human review; toast coverage audit"
+    },
+    "ui.auto.58be238dd555": {
+      "text": "无法创建 XeSS 上下文\n{}",
+      "state": "machine_translated",
+      "source_hash": "7304a1c7fde13ea43eb2554a6f5c45230f85ebdc4ff55b34ad1587ee89bfd075",
+      "note": "AI translation, pending human review; toast coverage audit"
+    },
+    "ui.auto.b4e9232d42ef": {
+      "text": "无法加载 libxess_dx11.dll\n请检查该 DLL 是否存在",
+      "state": "machine_translated",
+      "source_hash": "c3976b861e4aae80cf5d3b7ff5cb616f10d3a31aa85e3911afbb95b32bc3e2c7",
+      "note": "AI translation, pending human review; toast coverage audit"
+    },
+    "ui.auto.fa0bfebd7847": {
+      "text": "无法加载 amd_fidelityfx_dx12\n是否忘记解压该 DLL？",
+      "state": "machine_translated",
+      "source_hash": "d7242fcf690bf26f8a8281badd1a2ac3b2d95f9a57eaa7f706087ee06bb8660a",
+      "note": "AI translation, pending human review; toast coverage audit"
     }
   }
 }

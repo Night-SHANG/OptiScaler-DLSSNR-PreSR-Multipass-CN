@@ -95,7 +95,9 @@
     "HDR10",
     "DLAA"
   ],
-  "exclude_prefixes": ["##"],
+  "exclude_prefixes": [
+    "##"
+  ],
   "technical_regex": [
     "^[A-Za-z]:\\\\",
     "^(dxgi|winmm|version|dbghelp|d3d12|wininet|winhttp)\\.dll$",
@@ -104,11 +106,15 @@
   "scoped_calls": [
     {
       "glob": "OptiScaler/menu/*.cpp",
-      "calls": {"StrFmt": [0]}
+      "calls": {
+        "StrFmt": [0]
+      }
     },
     {
       "glob": "OptiScaler/dlssnr/**/*.cpp",
-      "calls": {"StrFmt": [0]}
+      "calls": {
+        "StrFmt": [0]
+      }
     },
     {
       "glob": "OptiScaler/dlssnr/DlssNr_MenuModel.cpp",
@@ -120,11 +126,15 @@
     },
     {
       "glob": "OptiScaler/dlssnr/DlssNr_MenuBlend.cpp",
-      "calls": {"slider": [0]}
+      "calls": {
+        "slider": [0]
+      }
     },
     {
       "glob": "OptiScaler/dlssnr/DlssNr_Menu*.cpp",
-      "calls": {"snprintf": [2]}
+      "calls": {
+        "snprintf": [2]
+      }
     },
     {
       "glob": "OptiScaler/dlssnr/DlssNr_PipelineUi.h",
@@ -132,24 +142,59 @@
         "tool": [0],
         "add": [2, 3]
       }
+    },
+    {
+      "glob": "OptiScaler/dlssnr/DlssNr_MenuControls.cpp",
+      "calls": {
+        "DeferredSlider": [0],
+        "Slider": [0],
+        "slider": [0],
+        "Checkbox": [0],
+        "std::strcmp": [1]
+      }
+    },
+    {
+      "glob": "OptiScaler/dlssnr/DlssNr_Menu.cpp",
+      "calls": {
+        "ImGui::Combo": [0, 2]
+      }
     }
   ],
   "scoped_literal_calls": [
     {
       "glob": "OptiScaler/dlssnr/DlssNr_PipelineUi.h",
-      "calls": {"add": 2}
+      "calls": {
+        "add": 2
+      }
     }
   ],
   "return_literal_functions": [
     {
       "glob": "OptiScaler/dlssnr/DlssNr_PipelineUi.h",
-      "functions": ["SectionName"]
+      "functions": [
+        "SectionName"
+      ]
     }
   ],
   "literal_assignments": [
     {
       "glob": "OptiScaler/dlssnr/DlssNr_MenuOverlay.cpp",
-      "names": ["leftText", "rightText"]
+      "names": [
+        "leftText",
+        "rightText"
+      ]
+    },
+    {
+      "glob": "OptiScaler/dlssnr/DlssNr_MenuControls.cpp",
+      "names": [
+        "preview"
+      ]
+    },
+    {
+      "glob": "OptiScaler/dlssnr/DlssNr_Menu.cpp",
+      "names": [
+        "runSuffix"
+      ]
     }
   ],
   "vararg_literal_calls": {
@@ -161,14 +206,44 @@
     "ImGui::LabelText": 2,
     "ImGui::SetTooltip": 1
   },
-  "member_assignments": ["label", "tooltip"],
-  "nested_ui_calls": {"std::format": [0]},
+  "member_assignments": [
+    "label",
+    "tooltip"
+  ],
+  "nested_ui_calls": {
+    "std::format": [0]
+  },
   "c_string_array_globs": [
     "OptiScaler/menu/*.cpp",
-    "OptiScaler/dlssnr/**/*.cpp"
+    "OptiScaler/dlssnr/**/*.cpp",
+    "OptiScaler/dlssnr/DlssNr_Menu*.cpp",
+    "OptiScaler/dlssnr/DlssNr_PipelineUi.h"
   ],
-  "conditional_literal_calls": ["ScopedCollapsingHeader"],
+  "conditional_literal_calls": [
+    "ScopedCollapsingHeader",
+    "HelpMarker",
+    "ImGui::TextWrapped",
+    "ImGui::SetTooltip",
+    ".setContent"
+  ],
   "c_string_array_exclude_regex": [
     "^[A-Z][A-Z0-9]+(?:_[A-Z0-9]+)+$"
-  ]
+  ],
+  "scoped_format_calls": [
+    {
+      "glob": "OptiScaler/dlssnr/DlssNr_MenuControls.cpp",
+      "calls": [
+        "std::format"
+      ]
+    }
+  ],
+  "scoped_rewrite_containers": [
+    {
+      "glob": "OptiScaler/dlssnr/DlssNr_PipelineUi.h",
+      "anchors": [
+        "const Label labels[]"
+      ]
+    }
+  ],
+  "scan_imgui_toasts": true
 }

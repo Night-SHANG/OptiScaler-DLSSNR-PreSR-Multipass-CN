@@ -1622,14 +1622,6 @@
       "text": "Reflex ID",
       "source_hash": "1c668f754d1b1c4c99b15823605ab2abba2235ff28ba6722112c03699b7aecca"
     },
-    "ui.auto.af60e2fad244": {
-      "text": "Best when can be used, some games are not compatible (e.g. Cyberpunk)\n",
-      "source_hash": "b411dd450cc73b57edd7e1087ee6fc87cfe2dddfb62f7ea7b3d90e1f178f5fb6"
-    },
-    "ui.auto.3cfc7e4a4be5": {
-      "text": "and will fallback to Aggressive",
-      "source_hash": "a562e5d3532f3d08a4ad7cf5f3e437624ee9e1974613f2b91f24e94b3a959f5b"
-    },
     "ui.auto.370e518fc5e1": {
       "text": "LatencyFlex mode",
       "source_hash": "732fa42b820bf93e4cb72beb0dea957f4b40ab4faf49219c639ab4533aeee9cd"
@@ -3010,6 +3002,10 @@
       "text": "FG Nvngx Replacement",
       "source_hash": "0893bcec1994c0604251dcdf55ef4a6e507a5edcab675d3608feffafde0d5b79"
     },
+    "ui.auto.e3de5ab0ca4c": {
+      "text": "Off",
+      "source_hash": "ca7981b46ecf2c1787b6d76d81d9fd7fa0ca95842e2fcc2a452869891a9334d1"
+    },
     "ui.auto.6e23184d03ec": {
       "text": "Override DLSSG Ratio",
       "source_hash": "b247aadd5c25a57b25478e9e9853b239a59368b8989e317911989533b1141f28"
@@ -3881,6 +3877,174 @@
     "ui.auto.241d149fa5ef": {
       "text": "Apply edit",
       "source_hash": "d539998e9dda9ffc435fa99185e7507f8d80e375d79e18f63305eb96d102d315"
+    },
+    "ui.auto.a6359ee7b948": {
+      "text": "The separate-edit path always generates before upscale.",
+      "source_hash": "ee6f0e0eae37553265e89d40162bd756b30eb3b09f0721ca00c720c7e5a95354"
+    },
+    "ui.auto.5fecf807419d": {
+      "text": "Run NR before the game's upscaler, including RR.",
+      "source_hash": "64378afa85abb6fdbd377bbb73786045843d40d62580d603e1400e359653715a"
+    },
+    "ui.auto.e5febaad7265": {
+      "text": "DLSS\u0000FSR 2.2\u0000FSR (FidelityFX)\u0000XeSS\u0000",
+      "source_hash": "4df08c09a1cb66d49c909e1535ad2a4d03561a77956bc27e3cab0390d6c65a0a"
+    },
+    "ui.auto.2dfa66079d9b": {
+      "text": "Standard",
+      "source_hash": "ef6691545d2c5523efed00424407cb261aeb0037d165ca5792f7f8bac3381362"
+    },
+    "ui.auto.ea26876daa9a": {
+      "text": "Natural",
+      "source_hash": "d6acb6d51cfc574936fc79bc06b8a3716f4a33ee69efb70dd7f59720d434ccd9"
+    },
+    "ui.auto.bf9d43402f3d": {
+      "text": "Cinematic",
+      "source_hash": "912d0988b06550601e2fd95360ea72f9bb25f0c7dd54bc741a20dc24f28242c9"
+    },
+    "ui.auto.5f65cb44b228": {
+      "text": "Side by side",
+      "source_hash": "a3d7b387c34df52c5a611045b53215ebba668ddb9026a813b5aff0d50599fb3e"
+    },
+    "ui.auto.a0e0273a78ad": {
+      "text": "Wipe",
+      "source_hash": "3404644e01177ee996b69247aa3967e7a3f66702c5ff0f7270591e8d9622183b"
+    },
+    "ui.auto.79f49544d53e": {
+      "text": "Proxy (what the model sees)",
+      "source_hash": "84ff9d56b310f7ee68eeec1416d6109e0a7718901630aa53b215721a42c2508e"
+    },
+    "ui.auto.e19243d70b4e": {
+      "text": "Model output (raw)",
+      "source_hash": "dec2b63a81d8da6bb1dbebe7e6f33964706fbc18b2bafba0dd378f7581809469"
+    },
+    "ui.auto.56d9f58358cc": {
+      "text": "Difference (amplified)",
+      "source_hash": "e90b56703c2611e7635b01262f7027dbe624eca4594618299be67f40e7710454"
+    },
+    "ui.auto.130cd7fe3334": {
+      "text": "Classic",
+      "source_hash": "ae25d6481fc1741ffee4a95cd05de7b6375f7e1b0c63c006640b366094f2c4a9"
+    },
+    "ui.auto.e80364e60301": {
+      "text": "Matched residual",
+      "source_hash": "ed8e25f3f6957dc5fb38444dbd858ffd366f26463cc1d3774bb0cd7a1775cec6"
+    },
+    "ui.auto.3c2acec19ca7": {
+      "text": "Matched residual + DLSS",
+      "source_hash": "8ba04facb2d1fb167012215c85e142fea479ede613582d427d6456faac72d017"
+    },
+    "ui.auto.30158df4c8fe": {
+      "text": "Off (soft knee)",
+      "source_hash": "4e9772fad51c2e6f4d15131e962af20648944f1e6ff7502d39c56b2ae7b3a724"
+    },
+    "ui.auto.401ef4f184b1": {
+      "text": "Neutwo proxy + composed",
+      "source_hash": "97a3b2e3bee915597d8fc895ac3beedbf1c040cb6585bc11a51d89b5adc61ade"
+    },
+    "ui.auto.26edb51a1761": {
+      "text": "Neutwo proxy + replace",
+      "source_hash": "ff2c3c709414cb442e12c6d6977b05fdd1e110462da2e9f186990b9442fbf555"
+    },
+    "ui.auto.7a9ee35aec49": {
+      "text": "Hybrid proxy + composed",
+      "source_hash": "397eeeccf60bf099454c3ea73b14bb74253880bcfc67fd22fc5a192e3814980c"
+    },
+    "ui.auto.384dc7a5efb1": {
+      "text": "Hybrid proxy + replace",
+      "source_hash": "2ba1bc4f1f16936afae86a6e95fb640cc82d024506b07c91aa0aee47719243aa"
+    },
+    "ui.auto.2763c2e63a34": {
+      "text": "Manual paper white",
+      "source_hash": "3018182621acbcc6e712bc9422c418aae1f3efb3a1c44f22b07a7c3a45e9c5f1"
+    },
+    "ui.auto.e76a0e23ca2c": {
+      "text": "Game exposure",
+      "source_hash": "b5954cec121a9215f3b7ce27ef765c570eecd5c6122013f39aa21c39ca87f7a5"
+    },
+    "ui.auto.528f9a192c93": {
+      "text": "Scanned exposure (experimental)",
+      "source_hash": "791f89394b0da093867ed9d71b81748be703941a5130bf3a20c70e0030e1a6a1"
+    },
+    "ui.auto.d1c95bdf9b39": {
+      "text": "The game processes clean input through SR/RR and its effects. The separately upscaled NR edit is applied to the finished picture.",
+      "source_hash": "93a566c6bfaaf5d70862568adbb78b2e5fc6d1b4a911874f420c68135bc2c284"
+    },
+    "ui.auto.37d8398ae779": {
+      "text": "The game processes clean input through SR/RR. The separately upscaled NR edit is applied after upscale.",
+      "source_hash": "381946793d54d8789f97f9f74bb7f18f47eba0e066754f5b9d995ce5d800fb85"
+    },
+    "ui.auto.cf7167f7e8c2": {
+      "text": "Best when can be used, some games are not compatible (e.g. Cyberpunk)\nand will fallback to Aggressive",
+      "source_hash": "f9e917e4b67a8f5d3ab550d0fba01bb791232ed84eb3fcad2bcf7f3d43906083"
+    },
+    "ui.auto.e0049a66519c": {
+      "text": "On",
+      "source_hash": "130011756125313c72f2cab730db4347e2841526d236a89cb25f38789fa49229"
+    },
+    "ui.auto.9c74c2e5830d": {
+      "text": "That's likely unintended and will lead to big OptiScaler.log\nPlease disable logging to file and delete OptiScaler.log",
+      "source_hash": "ab98b926407fdc0dd34c04cf5cb2883b573a92100e63d70e2536140ec8005de7"
+    },
+    "ui.auto.5553c187b667": {
+      "text": "Error while compiling a shader!",
+      "source_hash": "5b5c53d9fc417c11f4f2489f8cf161a9c76caaf24a2d35bad46bf0cf70d4ae28"
+    },
+    "ui.auto.3a6d1a65cef0": {
+      "text": "Can't init FSR FG\nAre you missing the required DLLs?",
+      "source_hash": "e84ed7ba32112810c5597bf4fa45f8680caeb922081e91d4fede00089c0b54f6"
+    },
+    "ui.auto.78247856dac9": {
+      "text": "Can't init XeFG\nAre you missing the required DLLs?",
+      "source_hash": "66e5a7124d268a816fa6a2599a63b5c9eed2f348db2579b85a6201c66db52f29"
+    },
+    "ui.auto.b81959bf086c": {
+      "text": "Can't init DLSSG Output\nAre you missing the streamline folder?",
+      "source_hash": "6e79609f89dd9ecf10e4f842f201a90973a5823122703964609e2e34043c4991"
+    },
+    "ui.auto.4856ea8afba7": {
+      "text": "Falling back to FSR 2.2",
+      "source_hash": "e7506ec26d4fa59a4663ecc621cdd4486562d7f75191eecb83f66b70ad7c8d09"
+    },
+    "ui.auto.50c4c35ac3a9": {
+      "text": "Falling back to XeSS",
+      "source_hash": "a3566816ed445488413d4fdfeb4deebfda34362dee2f215b2703cbd71c3aeec4"
+    },
+    "ui.auto.1351bb9361ee": {
+      "text": "Falling back to FSR 2.1.2",
+      "source_hash": "4ddf7f344713aa0787bffa255dbe8f457b51f6340b81414e05e849a32e149c01"
+    },
+    "ui.auto.00aa84c10b99": {
+      "text": "Failed to create a shared texture\nMake sure you are using at least Wine/Proton 11",
+      "source_hash": "14f897eb855e83a5c64b951b95be47fc76650baeed2376172dfb2c64ca5d5ce9"
+    },
+    "ui.auto.2fedcaaa860e": {
+      "text": "Upscaler failed to run!",
+      "source_hash": "b56065ec389295dd66a8793b9e8ffe23010f6918996c5de5867a6a5eb0c6cd3e"
+    },
+    "ui.auto.9c24f2b186a5": {
+      "text": "{} is not available.\nFalling back to {}.",
+      "source_hash": "1f7664cf90cd5ead402f90fb23e121fa766714a828fc6760e92fe3fa9936dd29"
+    },
+    "ui.auto.589b9087814e": {
+      "text": "{} is not available and can't fallback",
+      "source_hash": "944347b8b4d667297700a16f1855c51ede7d1e919583e3586a8d720e9529a690"
+    },
+    "ui.auto.8b8cbadb6131": {
+      "text": "Couldn't load libxess.dll\nCheck if the dll is present",
+      "source_hash": "8137ed6de522f8d13e0efa13496d9f086d09ef2c0e83cb117e9b88481687a776"
+    },
+    "ui.auto.58be238dd555": {
+      "text": "Couldn't create XeSS context\n{}",
+      "source_hash": "7304a1c7fde13ea43eb2554a6f5c45230f85ebdc4ff55b34ad1587ee89bfd075"
+    },
+    "ui.auto.b4e9232d42ef": {
+      "text": "Couldn't load libxess_dx11.dll\nCheck if the dll is present",
+      "source_hash": "c3976b861e4aae80cf5d3b7ff5cb616f10d3a31aa85e3911afbb95b32bc3e2c7"
+    },
+    "ui.auto.fa0bfebd7847": {
+      "text": "Can't load amd_fidelityfx_dx12\nDid you forget to extract that dll?",
+      "source_hash": "d7242fcf690bf26f8a8281badd1a2ac3b2d95f9a57eaa7f706087ee06bb8660a"
     }
   }
 }

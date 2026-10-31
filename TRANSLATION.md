@@ -4,7 +4,7 @@
 
 The localization pipeline keeps two persisted source inventories and one shared Chinese store:
 
-- `master/catalog.json`, `master/en-US.json`, `master/pending.json`: current upstream `master`.
+- `master/catalog.json`, `master/en-US.json`, `master/pending.json`: current upstream `main` (the channel directory retains the shared name `master`).
 - `stable/catalog.json`, `stable/en-US.json`, `stable/pending.json`: current latest stable tag.
 - `zh-CN.json`: shared translations tied to the exact English `source_hash`.
 - `translation-memory.zh-CN.json`: reviewed exact-source translations used to seed either channel.
@@ -101,3 +101,13 @@ The first command updates only fresh `reviewed` entries in translation memory. M
 ## Fork-specific UI
 
 扫描范围包含 `OptiScaler/dlssnr/**`。普通 OptiScaler 文本复用共享中文；wilsjo2/OptiScaler-DLSSNR-PreSR-Multipass 新增文本只在首次发现或源文变化时进入待翻译列表。
+
+## Pre-SR v0.8.10 UI coverage
+
+The controls now live in `DlssNr_MenuControls.cpp`. Scoped rules cover the moved sliders, checkbox helpers, model arrays, deferred `std::format` pass labels (rewritten through `Loc::F`), conditional help text and NUL-separated combo choices. The validator preserves combo item separators as well as placeholders and hidden IDs. AI-authored additions remain `machine_translated`; they do not replace reviewed translations or enter reviewed translation memory automatically.
+
+### Display-only status text
+
+`Localization/status.zh-CN.json` contains exact known renderer status messages and narrowly bounded templates. `StatusLocalization.h` translates only the displayed copy, invoked through `Loc::DS` at audited NR menu call sites. The renderer's stored English status, equality checks, logs, error payloads, paths and technical IDs are not rewritten. Template parameters remain byte-for-byte unchanged; unknown messages fall back to English. Denoise timing suffixes are translated only when both the base status and suffix are recognized.
+
+Run `python tools/audit_status_sources.py --source _upstream --out reports/master-status-audit.json` (and the stable source equivalent) to check newly added static producer messages and review dynamic compositions. The audit is deliberately separate from the ordinary UI catalog so `pending=0` cannot hide opaque `%s` diagnostic sources. Tests compile and run the pure C++ status matcher where a portable compiler is available; a Windows build and GPU/game validation remain separate requirements.
